@@ -527,8 +527,8 @@
 			"postTypes": [ "page" ]
 		},
 		{
-			"name": "sidebar-post-template",
-			"title": "Post with sidebar",
+			"name": "no-sidebar-post-template",
+			"title": "No Sidebar",
 			"postTypes": [ "post" ]
 		}
 	]

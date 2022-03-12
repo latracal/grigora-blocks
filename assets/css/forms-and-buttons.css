@@ -41,8 +41,8 @@ input[type="submit"] {
 	border: 2px solid var(--wp--custom--button-border-color);
 	padding: var(--wp--custom--button-padding);
 	border-radius: var(--wp--custom--button-border-radius);
-	background: var(--wp--preset--color--secondary);
-	color: var(--wp--preset--color--foreground);
+	background: var(--wp--preset--color--button);
+	color: var(--wp--preset--color--buttontext);
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
@@ -52,7 +52,7 @@ input[type="reset"]:focus,
 input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--button);
 	filter: brightness(94%) !important;
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
@@ -62,7 +62,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	border-color: var(--wp--custom--button-border-color);
 	box-shadow: var(--wp--custom--button-highlight);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--button);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
 	margin-bottom: -1px;
@@ -73,7 +73,7 @@ input[type="reset"]:visited,
 input[type="submit"]:visited {
 	background-color: initial;
 	border-color: var(--wp--custom--button-border-color);
-	color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--buttontext);
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
