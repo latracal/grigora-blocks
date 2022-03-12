@@ -391,7 +391,7 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--foreground)"
+					"text": "var(--wp--preset--color--primary)"
 				}
 			}
 		},
@@ -425,12 +425,7 @@
 				}
 			},
 			"core/post-navigation-link": {
-				"spacing": {
-					"margin": {
-						"top": "calc(var(--wp--custom--v-spacing) * 3)",
-						"bottom": "var(--wp--custom--v-spacing)"
-					}
-				}
+
 			},
 			"core/query-pagination": {
 				"spacing": {
@@ -449,7 +444,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--primary)"
+							"text": "inherit"
 						}
 					}
 				}
@@ -464,7 +459,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--primary)"
+							"text": "inherit"
 						}
 					}
 				}
@@ -479,7 +474,7 @@
 				"elements": {
 					"link": {
 						"color": {
-							"text": "var(--wp--preset--color--primary)"
+							"text": "inherit"
 						}
 					}
 				}
@@ -488,6 +483,15 @@
 				"spacing": {
 					"padding": {
 						"left": "0px"
+					}
+				}
+			},
+			"core/heading": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "inherit"
+						}
 					}
 				}
 			}
@@ -522,13 +526,28 @@
 			"postTypes": [ "post","page" ]
 		},
 		{
-			"name": "sidebar-page-template",
-			"title": "Page with sidebar",
+			"name": "no-sidebar-page-template",
+			"title": "No Sidebar Page",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "no-sidebar-widewidth-page-template",
+			"title": "No Sidebar Page - Wide Width",
+			"postTypes": [ "page" ]
+		},
+		{
+			"name": "no-sidebar-fullwidth-page-template",
+			"title": "No Sidebar Page - Full Width",
 			"postTypes": [ "page" ]
 		},
 		{
 			"name": "no-sidebar-post-template",
-			"title": "No Sidebar",
+			"title": "No Sidebar Post",
+			"postTypes": [ "post" ]
+		},
+		{
+			"name": "no-sidebar-widewidth-post-template",
+			"title": "No Sidebar Post - Wide Width",
 			"postTypes": [ "post" ]
 		}
 	]
