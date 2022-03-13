@@ -23,14 +23,14 @@ define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
  * @return void
  */
 function grigora_setup() {
-	add_theme_support( 'wp-block-styles' );
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	add_editor_style( './assets/css/style-shared.min.css' );
 
 	/*
 	 * Load additional block styles.
 	 * See details on how to add more styles in the readme.txt.
 	 */
-	$styled_blocks = [ 'button', 'file', 'latest-comments', 'latest-posts', 'post-title', 'quote', 'search' ];
+	$styled_blocks = [  ];
 	foreach ( $styled_blocks as $block_name ) {
 		$args = array(
 			'handle' => "grigora-$block_name",
