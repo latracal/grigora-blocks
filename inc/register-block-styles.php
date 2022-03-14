@@ -80,6 +80,38 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'  => 'grigora-button-effect-2',
+			'label' => __( 'Button with effect 2', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'  => 'grigora-button-effect-3',
+			'label' => __( 'Button with effect 3', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'  => 'grigora-button-effect-4',
+			'label' => __( 'Button with effect 4', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/button',
+		array(
+			'name'  => 'grigora-button-effect-5',
+			'label' => __( 'Button with effect 5', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/list',
 		array(
 			'name'  => 'grigora-no-marker-list',

@@ -217,7 +217,7 @@
 		left: 0;
 		z-index: -1;			  
 		opacity: 0;
-		background: red;
+		background: #5092D4;
 		transform: scale(0.1, 1);
 	}
 
@@ -236,3 +236,190 @@
 		opacity: 0;
 	}	
 }
+
+
+.is-style-grigora-button-effect-2  .wp-block-button__link {	
+	color: currentColor;
+	position: relative;
+	transition: all 0.3s;
+	background-color: transparent;
+	box-shadow:none;
+	border-style: none;
+	z-index: 2;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		transition: all 0.3s;
+		border: 1px solid currentColor;
+	}
+
+
+	&:hover::after {
+		animation-name: rotatecw;
+		animation-duration: 2s;
+	}
+	&:hover::before {
+		animation-name: rotateccw; 
+		animation-duration: 3s;
+	}
+	&:hover::after, &:hover::before {
+		left: 10%;
+		width: 64px;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes rotatecw {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(360deg);}
+	}
+
+	@keyframes rotateccw {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(-360deg);}
+	}
+  
+}
+
+
+.is-style-grigora-button-effect-3  .wp-block-button__link {	
+	position: relative;
+	color: currentColor;
+	background-color: transparent;
+	border: 1px solid currentColor;
+	border-radius: 0;
+	z-index: 2;
+
+	&:after {
+		content: "";
+		background-color: #ffe54c;
+		width: 100%;
+		z-index: -1;
+		position: absolute;
+		height: 100%;
+		top: 7px;
+		left: 7px;
+		transition: 0.2s;
+	  }
+
+	  &:hover:after {
+		top: 0px;
+		left: 0px;
+	  }
+}
+
+
+.is-style-grigora-button-effect-4  .wp-block-button__link {	
+	position: relative;
+	color: currentColor;
+	background-color: transparent;
+	border: 1px solid currentColor;
+	border-radius: 0;
+	z-index: 2;
+
+	&:before{	
+		transition: transform 0.15s, 0.15s border-radius 0.15s;
+		opacity: 0;
+		background: rgba(255, 255, 255, 0.1);
+		transform: scale(0.1, 0.1);
+		border-radius: 50%;
+	}
+
+	&:hover:before{
+		opacity: 1;
+		transform: scale(1, 1);
+		border-radius: 0;
+	}
+
+	&:after{
+		transition: all 0.3s;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	&:hover:after{
+		opacity: 0;
+	}
+}
+
+.is-style-grigora-button-effect-5  .wp-block-button__link, .is-style-grigora-button-effect-5  .wp-block-button__link::after{	
+	width: 380px;
+	height: 86px;
+	font-size: 36px;
+	font-family: 'Bebas Neue', cursive;
+	background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+	border: 0;
+	color: #fff;
+	letter-spacing: 3px;
+	line-height: 88px;
+	box-shadow: 6px 0px 0px #00E6F6;
+	outline: transparent;
+	position: relative;
+}
+
+.is-style-grigora-button-effect-5  .wp-block-button__link::after{
+	--slice-0: inset(50% 50% 50% 50%);
+	--slice-1: inset(80% -6px 0 0);
+	--slice-2: inset(50% -6px 30% 0);
+	--slice-3: inset(10% -6px 85% 0);
+	--slice-4: inset(40% -6px 43% 0);
+	--slice-5: inset(80% -6px 5% 0);
+}
+
+
+.is-style-grigora-button-effect-5  .wp-block-button__link:hover::after {
+	animation: 1s glitch;
+	animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+	0% {
+	  clip-path: var(--slice-1);
+	  transform: translate(-20px, -10px);
+	}
+	10% {
+	  clip-path: var(--slice-3);
+	  transform: translate(10px, 10px);
+	}
+	20% {
+	  clip-path: var(--slice-1);
+	  transform: translate(-10px, 10px);
+	}
+	30% {
+	  clip-path: var(--slice-3);
+	  transform: translate(0px, 5px);
+	}
+	40% {
+	  clip-path: var(--slice-2);
+	  transform: translate(-5px, 0px);
+	}
+	50% {
+	  clip-path: var(--slice-3);
+	  transform: translate(5px, 0px);
+	}
+	60% {
+	  clip-path: var(--slice-4);
+	  transform: translate(5px, 10px);
+	}
+	70% {
+	  clip-path: var(--slice-2);
+	  transform: translate(-10px, 10px);
+	}
+	80% {
+	  clip-path: var(--slice-5);
+	  transform: translate(20px, -10px);
+	}
+	90% {
+	  clip-path: var(--slice-1);
+	  transform: translate(-10px, 0px);
+	}
+	100% {
+	  clip-path: var(--slice-1);
+	  transform: translate(0);
+	}
+  }
