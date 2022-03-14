@@ -12,3 +12,4 @@ package.json export-ignore
 phpcs.xml.dist export-ignore
 phpstan.neon.dist export-ignore
 postcss.config.js export-ignore
+node_modules/ export-ignore
