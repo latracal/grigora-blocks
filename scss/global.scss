@@ -1,3 +1,11 @@
+@import "blocks/button";
+@import "blocks/file";
+@import "blocks/latest-comments";
+@import "blocks/latest-posts";
+@import "blocks/post-title";
+@import "blocks/quote";
+@import "blocks/search";
+
 html {
 	scroll-behavior: smooth;
 }
@@ -108,4 +116,7 @@ h2 a {
 
 figure {
 	max-width: 100% !important;
+}
+.is-style-grigora-horizontalquery {
+	background-color: #000;
 }
