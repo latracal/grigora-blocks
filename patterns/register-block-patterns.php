@@ -71,3 +71,4 @@ function grigora_register_block_patterns() {
 	}
 }
 add_action( 'init', 'grigora_register_block_patterns', 9 );
+
