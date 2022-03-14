@@ -1,0 +1,111 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+Sticky button is experimental, only use it on the front for screens above 782px width.
+*/
+@media screen and (min-width: 782px) {
+	.is-style-grigora-sticky .wp-block-navigation__responsive-container-open {
+		position: fixed;
+		top: 2em;
+		right: 2em;
+	}
+
+	/* Move the sticky position down to adjust for the WordPress admin bar */
+	.admin-bar
+		.is-style-grigora-sticky
+		.wp-block-navigation__responsive-container-open {
+		top: calc(2em + 32px);
+	}
+}
+
+.main-body {
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.main-primary {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.grigora-sidebar {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+	.main-primary {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.grigora-sidebar {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.grigora-sidebar ul,
+.grigora-sidebar ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.grigora-sidebar ul li ul {
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+.wp-block-column:first-child .grigora-sidebar {
+	padding-right: 30px;
+}
+
+.wp-block-column:last-child .grigora-sidebar {
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.wp-block-column:first-child .grigora-sidebar {
+		padding-right: 0px;
+	}
+
+	.wp-block-column:last-child .grigora-sidebar {
+		padding-left: 0px;
+	}
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+.wp-block-post-excerpt__more-link {
+	display: block;
+	background-color: var(--wp--preset--color--button);
+	color: var(--wp--preset--color--buttontext);
+	text-align: center;
+	margin-top: 10px;
+	padding: 5px 0px;
+	border-radius: 3px;
+}
+
+.wp-block-post-excerpt__more-link:hover {
+	filter: brightness(94%);
+}
+
+figure {
+	max-width: 100% !important;
+}

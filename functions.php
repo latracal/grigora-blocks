@@ -25,7 +25,17 @@ define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 function grigora_setup() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	add_theme_support( 'wp-block-styles' );
-	add_editor_style( './assets/css/style-shared.min.css' );
+
+
+	add_theme_support( 'editor-styles' );
+		
+
+		// Enqueue editor styles and fonts.
+	add_editor_style(
+		array(
+			'./dist/editor.min.css'
+		)
+	);
 
 	/*
 	 * Load additional block styles.
@@ -55,7 +65,7 @@ add_action( 'after_setup_theme', 'grigora_setup' );
 function grigora_styles() {
 	wp_enqueue_style(
 		'grigora-style',
-		get_stylesheet_uri(),
+		get_theme_file_uri('dist/css/global.min.css'),
 		[],
 		GRIGORA_VERSION
 	);
