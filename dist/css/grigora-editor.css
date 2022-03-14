@@ -321,13 +321,17 @@
 
 .is-style-grigora-button-effect-5 .wp-block-button__link,
 .is-style-grigora-button-effect-5 .wp-block-button__link::after {
-  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  background-color: inherit;
   border: 0;
   color: #fff;
   -webkit-box-shadow: 6px 0px 0px #00e6f6;
           box-shadow: 6px 0px 0px #00e6f6;
   outline: transparent;
   position: relative;
+}
+
+.is-style-grigora-button-effect-5 .wp-block-button__link {
+  background-color: #ff013c;
 }
 
 .is-style-grigora-button-effect-5 .wp-block-button__link::after {
@@ -338,7 +342,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
   -webkit-clip-path: inset(50% 50% 50% 50%);
           clip-path: inset(50% 50% 50% 50%);
@@ -929,17 +932,17 @@ ul ul li .wp-block-navigation-submenu__toggle {
 }
 
 .is-style-grigora-border {
-  border: 1px solid currentColor;
+  border: 1px solid gray;
 }
 
 .is-style-grigora-shadow-border {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid currentColor;
+  border: 1px solid gray;
 }
 
 .is-style-grigora-border-rounded {
-  border: 1px solid currentColor;
+  border: 1px solid gray;
   border-radius: 4px;
 }
 
@@ -952,7 +955,7 @@ ul ul li .wp-block-navigation-submenu__toggle {
 .is-style-grigora-shadow-border-rounded {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid currentColor;
+  border: 1px solid gray;
   border-radius: 4px;
 }
 /*# sourceMappingURL=grigora-editor.css.map */
