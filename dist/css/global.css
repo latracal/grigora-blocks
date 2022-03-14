@@ -505,6 +505,24 @@
   border: 1px solid currentColor;
 }
 
+.is-style-grigora-border-rounded {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
+.is-style-grigora-shadow-rounded {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.is-style-grigora-shadow-border-rounded {
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
 .wp-block-file .wp-block-file__button {
   font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--system);

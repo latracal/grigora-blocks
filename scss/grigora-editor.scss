@@ -211,3 +211,19 @@ ul ul li .wp-block-navigation-submenu__toggle {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid currentColor;
 }
+
+.is-style-grigora-border-rounded{
+    border: 1px solid currentColor;
+    border-radius: 4px;
+}
+
+.is-style-grigora-shadow-rounded{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);  
+    border-radius: 4px;
+}
+
+.is-style-grigora-shadow-border-rounded{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid currentColor; 
+    border-radius: 4px;
+}
