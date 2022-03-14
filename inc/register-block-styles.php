@@ -75,7 +75,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-1',
-			'label' => __( 'Button with effect 1', 'grigora' ),
+			'label' => __( 'Button with exapanding background color', 'grigora' ),
 		)
 	);
 
@@ -83,7 +83,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-2',
-			'label' => __( 'Button with effect 2', 'grigora' ),
+			'label' => __( 'Button with effect rotate', 'grigora' ),
 		)
 	);
 
@@ -91,7 +91,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-3',
-			'label' => __( 'Button with effect 3', 'grigora' ),
+			'label' => __( 'Button with effect overlay', 'grigora' ),
 		)
 	);
 
@@ -99,7 +99,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-4',
-			'label' => __( 'Button with effect 4', 'grigora' ),
+			'label' => __( 'Button with effect background', 'grigora' ),
 		)
 	);
 
@@ -107,7 +107,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-5',
-			'label' => __( 'Button with effect 5', 'grigora' ),
+			'label' => __( 'Button with effect glitch', 'grigora' ),
 		)
 	);
 
