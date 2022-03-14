@@ -112,7 +112,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0cf;
   border-radius: 10rem;
   z-index: -2;
 }
@@ -124,7 +123,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #008fb3;
+  background-color: rgba(0, 0, 0, 0.199);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 10rem;
@@ -263,98 +262,6 @@
   -webkit-transform: scale(1, 0.1);
           transform: scale(1, 0.1);
   opacity: 0;
-}
-
-.is-style-grigora-button-effect-2 .wp-block-button__link {
-  color: currentColor;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-style: none;
-  z-index: 2;
-}
-
-.is-style-grigora-button-effect-2 .wp-block-button__link::before, .is-style-grigora-button-effect-2 .wp-block-button__link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid currentColor;
-}
-
-.is-style-grigora-button-effect-2 .wp-block-button__link:hover::after {
-  -webkit-animation-name: rotatecw;
-          animation-name: rotatecw;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.is-style-grigora-button-effect-2 .wp-block-button__link:hover::before {
-  -webkit-animation-name: rotateccw;
-          animation-name: rotateccw;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-.is-style-grigora-button-effect-2 .wp-block-button__link:hover::after, .is-style-grigora-button-effect-2 .wp-block-button__link:hover::before {
-  left: 10%;
-  width: 64px;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes rotatecw {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotatecw {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotateccw {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes rotateccw {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
 }
 
 .is-style-grigora-button-effect-4 .wp-block-button__link::before,

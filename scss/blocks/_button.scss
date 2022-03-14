@@ -98,7 +98,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #0cf;
 		border-radius: 10rem;
 		z-index: -2;
 	}
@@ -109,7 +108,7 @@
 		left: 0;
 		width: 0%;
 		height: 100%;
-		background-color: darken(#0cf, 15%);
+		background-color: darken(rgba(0, 0, 0, 0.199), 15%);
 		transition: all 0.3s;
 		border-radius: 10rem;
 		z-index: -1;
@@ -236,62 +235,6 @@
 	}
 }
 
-.is-style-grigora-button-effect-2 .wp-block-button__link {
-	color: currentColor;
-	position: relative;
-	transition: all 0.3s;
-	background-color: transparent;
-	box-shadow: none;
-	border-style: none;
-	z-index: 2;
-
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		bottom: 0;
-		left: 0;
-		z-index: 1;
-		transition: all 0.3s;
-		border: 1px solid currentColor;
-	}
-
-	&:hover::after {
-		animation-name: rotatecw;
-		animation-duration: 2s;
-	}
-	&:hover::before {
-		animation-name: rotateccw;
-		animation-duration: 3s;
-	}
-	&:hover::after,
-	&:hover::before {
-		left: 10%;
-		width: 64px;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-	}
-
-	@keyframes rotatecw {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
-	@keyframes rotateccw {
-		from {
-			transform: rotate(0deg);
-		}
-		to {
-			transform: rotate(-360deg);
-		}
-	}
-}
 
 .is-style-grigora-button-effect-4 .wp-block-button__link::before,
 .is-style-grigora-button-effect-4 .wp-block-button__link::after {
