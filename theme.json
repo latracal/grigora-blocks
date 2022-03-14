@@ -516,6 +516,14 @@
 	],
 	"customTemplates": [
 		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
 			"name": "no-title-template",
 			"title": "No title",
 			"postTypes": [ "post","page" ]
