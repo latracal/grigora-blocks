@@ -286,12 +286,16 @@
 
 .is-style-grigora-button-effect-5 .wp-block-button__link,
 .is-style-grigora-button-effect-5 .wp-block-button__link::after {
-	background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+	background-color: inherit;
 	border: 0;
 	color: #fff;
 	box-shadow: 6px 0px 0px #00e6f6;
 	outline: transparent;
 	position: relative;
+}
+
+.is-style-grigora-button-effect-5 .wp-block-button__link {
+	background-color: #ff013c;
 }
 
 $slice-0: inset(50% 50% 50% 50%);
@@ -309,13 +313,6 @@ $slice-5: inset(80% -6px 5% 0);
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(
-		45deg,
-		transparent 3%,
-		#00e6f6 3%,
-		#00e6f6 5%,
-		#ff013c 5%
-	);
 	text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
 	clip-path: $slice-0;
 }
