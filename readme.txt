@@ -41,17 +41,6 @@ composer install
 This theme includes both human-readable and minified CSS inside the assets/css folder.
 For improved performance, the theme loads the minified CSS on the front and in the editor.
 
-To make changes to the CSS:
-1) Edit the human readable CSS file (the .css file that does not end with .min.css)
-2) Minify the CSS by running the command: gulp
-
-To add additional block styles:
-1) Create a new CSS file inside the assets/css/blocks folder.
-Use the slug of the block as the file name: latest-comments.css
-2) Next, open functions.php and add the slug to the $styled_blocks array inside the setup function.
-3) Minify the CSS with the command: gulp
-
-To watch for changes, use the command: gulp watch
 
 To compare your code against the CSS coding standards, use the command: npm run lint:css
 

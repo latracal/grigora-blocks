@@ -13,7 +13,9 @@
  *
  * @since 1.0.0
  */
+define( 'GRIGORA_DEBUG', true );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
+
 
 /**
  * Add theme support for block styles and editor style.
@@ -59,11 +61,12 @@ add_action( 'after_setup_theme', 'grigora_setup' );
  * @return void
  */
 function grigora_styles() {
+	$ver = GRIGORA_DEBUG ? time() : GRIGORA_VERSION;
 	wp_enqueue_style(
 		'grigora-style',
 		get_theme_file_uri('dist/css/global.min.css'),
 		[],
-		GRIGORA_VERSION
+		$ver
 	);
 }
 add_action( 'wp_enqueue_scripts', 'grigora_styles' );
