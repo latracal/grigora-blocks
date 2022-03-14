@@ -200,3 +200,7 @@ input[type="submit"]:visited {
 .is-style-grigora-list-underline ul li {
 	border: none;
 }
+
+ul ul li .wp-block-navigation-submenu__toggle {
+	margin-right: 20px;
+}

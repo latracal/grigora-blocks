@@ -57,12 +57,9 @@ function grigora_register_block_patterns() {
 	// Array of block pattern names.
 	$block_patterns = array(
 		'404',
-		'columns-with-images',
-		'dual-images',
 		'footer-links',
-		'header-featured-image',
-		'quote-with-image',
 		'search',
+		'query/query-horizontal',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
@@ -87,9 +84,5 @@ add_action( 'init', 'grigora_register_block_patterns', 9 );
  * @return void
  */
 function grigora_unregister_patterns() {
-	unregister_block_pattern( 'core/query-small-posts' );
-	unregister_block_pattern( 'core/query-large-title-posts' );
-	unregister_block_pattern( 'core/query-offset-posts' );
-	unregister_block_pattern_category( 'header' );
 }
 add_action( 'init', 'grigora_unregister_patterns', 10 );
