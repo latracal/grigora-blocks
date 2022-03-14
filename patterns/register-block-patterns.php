@@ -71,18 +71,3 @@ function grigora_register_block_patterns() {
 	}
 }
 add_action( 'init', 'grigora_register_block_patterns', 9 );
-
-/**
- * This is an example of how to unregister a core block pattern and a block pattern category.
- * Must be called after the patterns and pattern categories that you want to unregister have been added.
- *
- * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern/
- * @see https://developer.wordpress.org/reference/functions/unregister_block_pattern_category/
- *
- * @since 1.0.0
- *
- * @return void
- */
-function grigora_unregister_patterns() {
-}
-add_action( 'init', 'grigora_unregister_patterns', 10 );
