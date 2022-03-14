@@ -47,5 +47,21 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/categories',
+		array(
+			'name'  => 'grigora-no-marker-list',
+			'label' => __( 'No markers', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/page-list',
+		array(
+			'name'  => 'grigora-no-marker-list',
+			'label' => __( 'No markers', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
