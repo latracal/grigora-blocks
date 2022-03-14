@@ -82,22 +82,6 @@ function grigora_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
-			'name'  => 'grigora-button-effect-2',
-			'label' => __( 'Button with effect rotate', 'grigora' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/button',
-		array(
-			'name'  => 'grigora-button-effect-3',
-			'label' => __( 'Button with effect overlay', 'grigora' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/button',
-		array(
 			'name'  => 'grigora-button-effect-4',
 			'label' => __( 'Button with effect background', 'grigora' ),
 		)
