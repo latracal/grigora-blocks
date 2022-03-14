@@ -73,6 +73,17 @@
           box-shadow: var(--wp--custom--button-highlight);
 }
 
+.is-style-grigora-flat-outline .wp-block-button__link,
+.is-style-grigora-flat-outline .wp-block-button__link:active,
+.is-style-grigora-flat-outline .wp-block-button__link:focus,
+.is-style-grigora-flat-outline .wp-block-button__link:hover,
+.is-style-grigora-flat-outline .wp-block-button__link:visited {
+  color: currentColor;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 0;
+}
+
 .wp-block-file .wp-block-file__button {
   font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--system);
