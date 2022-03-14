@@ -250,4 +250,16 @@ button.wp-block-navigation__responsive-container-open:visited {
 ul ul li .wp-block-navigation-submenu__toggle {
   margin-right: 20px;
 }
+
+.grigora-sidebar ul,
+.grigora-sidebar ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grigora-sidebar ul li ul {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
 /*# sourceMappingURL=editor.css.map */
