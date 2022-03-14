@@ -107,10 +107,12 @@ figure {
 	max-width: 100% !important;
 }
 
-.post-navigation-link-previous::before {
-	content: "← ";
+.post-navigation-link-previous a::before {
+	content: "← \00a0";
+	display: inline-block;
 }
 
-.post-navigation-link-next::after {
-	content: " →";
+.post-navigation-link-next a::after {
+	content: "\00a0 →";
+	display: inline-block;
 }
