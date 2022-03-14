@@ -202,6 +202,18 @@ https://github.com/WordPress/gutenberg/pull/35703
   margin-left: -4rem;
 }
 
+ul.is-style-grigora-no-marker-list,
+ol.is-style-grigora-no-marker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.is-style-grigora-no-marker-list li ul {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
 .wp-block-search .wp-block-search__button {
   font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--system);
@@ -481,17 +493,5 @@ button.wp-block-navigation__responsive-container-open:visited {
 
 ul ul li .wp-block-navigation-submenu__toggle {
   margin-right: 20px;
-}
-
-.grigora-sidebar ul,
-.grigora-sidebar ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.grigora-sidebar ul li ul {
-  margin-left: 1em;
-  margin-top: 0.5em;
 }
 /*# sourceMappingURL=grigora-editor.css.map */
