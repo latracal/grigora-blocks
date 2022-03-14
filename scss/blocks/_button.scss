@@ -98,7 +98,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #0cf;
 		border-radius: 10rem;
 		z-index: -2;
 	}
@@ -109,7 +108,7 @@
 		left: 0;
 		width: 0%;
 		height: 100%;
-		background-color: darken(#0cf, 15%);
+		background-color: darken(rgba(0, 0, 0, 0.199), 15%);
 		transition: all 0.3s;
 		border-radius: 10rem;
 		z-index: -1;

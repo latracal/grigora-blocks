@@ -119,5 +119,29 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'grigora-shadow',
+			'label' => __( 'Column with shadow', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'grigora-border',
+			'label' => __( 'Column with border', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'grigora-shadow-border',
+			'label' => __( 'Column with shadow and border', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
