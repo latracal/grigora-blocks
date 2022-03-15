@@ -834,6 +834,13 @@
   border-left-color: crimson;
 }
 
+.is-style-grigora-tag-style-2 a {
+  text-decoration: none;
+  background-color: #eee;
+  padding: .5rem;
+  border-radius: 4px;
+}
+
 .wp-block-file .wp-block-file__button {
   font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--system);
