@@ -59,6 +59,7 @@
 		content: "";
 		position: absolute;
 		left: 0;
+		top: auto;
 		bottom: 2px;
 		height: 1px;
 		width: 95%;
@@ -87,11 +88,14 @@
 .is-style-grigora-heading-5 {
 	position: relative;
 	text-align: center;
-	text-transform: uppercase;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	grid-template-rows: 16px 0;
 	grid-gap: 22px;
+
+	&::after {
+		position: static;
+	}
 
 	&:after,
 	&:before {
