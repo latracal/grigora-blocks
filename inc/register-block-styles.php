@@ -207,5 +207,61 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-1',
+			'label' => __( 'Separator Style 1', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-2',
+			'label' => __( 'Separator Style 2', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-3',
+			'label' => __( 'Separator Style 3', 'grigora' ),
+		)
+	);
+	
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-4',
+			'label' => __( 'Separator Style 4', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-5',
+			'label' => __( 'Separator Style 5', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-6',
+			'label' => __( 'Separator Style 6', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'grigora-separator-7-animated',
+			'label' => __( 'Separator Style 7 animated', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );

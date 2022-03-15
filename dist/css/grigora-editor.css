@@ -1067,4 +1067,63 @@ ul ul li .wp-block-navigation-submenu__toggle {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
+
+.is-style-grigora-separator-1 {
+  margin: 1.5em auto;
+  position: relative;
+  height: 9px;
+  width: 9px !important;
+  border: transparent;
+  overflow: visible;
+  background-image: url('data:image/svg+xml;utf8,<svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><rect x="0.75" y="0.5" width="8" height="8" rx="4" fill="%231CB0A8" /></svg>');
+}
+
+.is-style-grigora-separator-1:before {
+  position: absolute;
+  height: 9px;
+  width: 10px;
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg width="10" height="9" viewBox="0 0 10 9" xmlns="http://www.w3.org/2000/svg"><path d="M3.91043 1.29752C4.30449 0.688518 5.19551 0.688519 5.58957 1.29752L9.25143 6.95675C9.68196 7.62211 9.20436 8.5 8.41186 8.5H1.08814C0.29564 8.5 -0.181954 7.62211 0.248574 6.95675L3.91043 1.29752Z" fill="%23FCB643" /></svg>');
+  left: -18px;
+}
+
+.is-style-grigora-separator-1:after {
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  content: '';
+  background-image: url('data:image/svg+xml;utf8,<svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg"><rect x="0.75" y="0.5" width="8" height="8" rx="1" fill="%23EF4056" /></svg>');
+  right: -18px;
+}
+
+.is-style-grigora-separator-2 {
+  height: 30px;
+  width: 100% !important;
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#369A7E), color-stop(0.49, #369A7E), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
+  border-bottom: none;
+}
+
+.is-style-grigora-separator-3 {
+  height: 30px;
+  width: 100% !important;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#369A7E), color-stop(0.49, #369A7E), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
+  border-bottom: none;
+}
+
+.is-style-grigora-separator-4 {
+  width: 100% !important;
+  height: 100px;
+  background: linear-gradient(to right bottom, #823A9C 49%, #fff 50%), linear-gradient(-50deg, #ffffff 16px, #000 0);
+  border-bottom: none;
+}
+
+.is-style-grigora-separator-5 {
+  width: 100% !important;
+  height: 100px;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(49%, #fff), color-stop(50%, #823A9C));
+  background: linear-gradient(to left bottom, #fff 49%, #823A9C 50%);
+  border-bottom: none;
+}
 /*# sourceMappingURL=grigora-editor.css.map */
