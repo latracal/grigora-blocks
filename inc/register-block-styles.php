@@ -167,5 +167,13 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/headings',
+		array(
+			'name'  => 'grigora-heading-1',
+			'label' => __( 'Heading Style 1', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
