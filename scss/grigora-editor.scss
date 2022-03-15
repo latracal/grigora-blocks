@@ -392,3 +392,152 @@ ul ul li .wp-block-navigation-submenu__toggle {
     background: linear-gradient(to left bottom, #fff 49%, #823A9C 50%);
     border-bottom: none;
 }
+
+
+.is-style-grigora-separator-6 {
+    width: 100% !important;
+    height: 1px;
+    display: block;
+    position: relative;
+    margin-bottom: 0em;
+    border-bottom: none;
+    padding: 2em 0;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 50%;
+        left: 0;
+    }
+
+    &:before {
+        background: linear-gradient( 90deg, #10111F 0%, #10111F 50%, transparent 50%, transparent 100% );
+        background-size: 15px;
+        background-position: center;
+        z-index: 1;
+
+    }
+
+    &:after {
+        transition: opacity 0.3s ease, animation 0.3s ease;
+        background: linear-gradient(
+            to right, 
+            #62efab 5%, 
+            #F2EA7D 15%, 
+            #F2EA7D 25%, 
+            #FF8797 35%, 
+            #FF8797 45%, 
+            #e1a4f4 55%, 
+            #e1a4f4 65%, 
+            #82fff4 75%, 
+            #82fff4 85%, 
+            #62efab 95%);
+        background-size: 200%;
+        background-position: 0%;
+        animation: bar 15s linear infinite;
+
+    }
+
+    @keyframes bar {
+        0% { background-position: 0%; }
+        100% { background-position: 200%; }
+    }
+}
+
+.is-style-grigora-separator-7-animated {
+    width: 100% !important;
+    height: 1px;
+    display: block;
+    position: relative;
+    margin-bottom: 0em;
+    border-bottom: none;
+    padding: 2em 0;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 50%;
+        left: 0;
+    }
+
+    &:before {
+        background: linear-gradient( 90deg, #10111F 0%, #10111F 50%, transparent 50%, transparent 100% );
+        background-size: 15px;
+        background-position: center;
+        z-index: 1;
+
+    }
+
+    &:after {
+        transition: opacity 0.3s ease, animation 0.3s ease;
+        background: linear-gradient(
+            to right, 
+            #62efab 5%, 
+            #F2EA7D 15%, 
+            #F2EA7D 25%, 
+            #FF8797 35%, 
+            #FF8797 45%, 
+            #e1a4f4 55%, 
+            #e1a4f4 65%, 
+            #82fff4 75%, 
+            #82fff4 85%, 
+            #62efab 95%);
+        background-size: 200%;
+        background-position: 0%;
+        animation: bar 15s linear infinite;
+
+    }
+
+    @keyframes bar {
+        0% { background-position: 0%; }
+        100% { background-position: 200%; }
+    }
+
+    &:before {
+        background: linear-gradient( 
+            90deg, 
+            #10111F 0%, #10111F 5%, 
+            transparent 5%, transparent 10%, 
+            #10111F 10%, #10111F 15%, 
+            transparent 15%, transparent 20%, 
+            #10111F 20%, #10111F 25%,
+            transparent 25%, transparent 30%,
+            #10111F 30%, #10111F 35%, 
+            transparent 35%, transparent 40%, 
+            #10111F 40%, #10111F 45%, 
+            transparent 45%, transparent 50%, 
+            #10111F 50%, #10111F 55%,
+            transparent 55%, transparent 60%,
+            #10111F 60%, #10111F 65%,
+            transparent 65%, transparent 70%, 
+            #10111F 70%, #10111F 75%, 
+            transparent 75%, transparent 80%, 
+            #10111F 80%, #10111F 85%,
+            transparent 85%, transparent 90%,
+            #10111F 90%, #10111F 95%, 
+            transparent 95%, transparent 100% );
+
+        background-size: 15px * 10;
+        background-position: center;
+        z-index: 1;
+        
+        animation: bar 120s linear infinite;
+        
+    }
+    
+    &:hover {
+        &:before {
+            animation-duration: 20s;
+        }
+        &:after {
+            animation-duration: 2s;
+        }
+    }
+
+}
