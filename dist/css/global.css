@@ -1222,7 +1222,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.wp-block-navigation .wp-block-navigation-item .wp-block-navigation__submenu-icon {
+.wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
   margin-right: 1rem;
 }
 
