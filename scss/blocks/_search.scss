@@ -5,14 +5,14 @@
 	border: 2px solid var(--wp--custom--button-border-color);
 	padding: var(--wp--custom--button-padding);
 	border-radius: var(--wp--custom--button-border-radius);
-	background: var(--wp--preset--color--secondary);
-	color: var(--wp--preset--color--foreground);
+	background: var(--wp--preset--color--button);
+	color: var(--wp--preset--color--buttontext);
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .wp-block-search .wp-block-search__button:focus,
 .wp-block-search .wp-block-search__button:hover {
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--buttontext);
 	filter: brightness(94%) !important;
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
@@ -20,7 +20,7 @@
 .wp-block-search .wp-block-search__button:active {
 	border-color: var(--wp--custom--button-border-color);
 	box-shadow: var(--wp--custom--button-highlight);
-	color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--buttontext);
 	filter: brightness(93%) !important;
 	margin-top: 1px;
 	margin-bottom: -1px;
@@ -29,7 +29,7 @@
 .wp-block-search .wp-block-search__button:visited {
 	background-color: initial;
 	border-color: var(--wp--custom--button-border-color);
-	color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--buttontext);
 	box-shadow: var(--wp--custom--small-button-shadow);
 }
 
