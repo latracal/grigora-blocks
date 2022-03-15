@@ -37,6 +37,14 @@ body {
 	margin-right: 1rem !important;
 }
 
+pre{
+	white-space: pre-wrap;
+}
+
+.wp-block-post-comments .comment-meta{
+	margin-left: 0;
+}
+
 /*
 Sticky button is experimental, only use it on the front for screens above 782px width.
 */
