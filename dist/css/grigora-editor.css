@@ -586,12 +586,15 @@
 }
 
 .is-style-grigora-heading-1:after {
+  top: auto !important;
+  bottom: auto !important;
+  right: auto !important;
   width: 100px;
   height: 1px;
   display: block;
   content: "";
   position: relative;
-  left: 50%;
+  left: 50% !important;
   margin-left: -50px;
   background-color: #b80000;
 }
@@ -667,14 +670,17 @@
 }
 
 .is-style-grigora-heading-5::after {
-  position: static;
+  position: static !important;
+  bottom: auto !important;
+  right: auto !important;
+  left: auto !important;
 }
 
 .is-style-grigora-heading-5:after, .is-style-grigora-heading-5:before {
   content: " ";
   display: block;
   border-bottom: 2px solid #ccc;
-  top: 50%;
+  top: 50% !important;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
