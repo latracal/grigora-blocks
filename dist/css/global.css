@@ -1012,7 +1012,7 @@ https://github.com/WordPress/gutenberg/pull/35703
   }
 }
 
-.taxonomy-post_tag a {
+.is-style-grigora-tag-style a {
   background: #eee;
   border-radius: 3px 0 0 3px;
   display: inline-block;
@@ -1025,7 +1025,7 @@ https://github.com/WordPress/gutenberg/pull/35703
   -webkit-transition: color 0.2s;
 }
 
-.taxonomy-post_tag a::before {
+.is-style-grigora-tag-style a::before {
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
@@ -1038,7 +1038,7 @@ https://github.com/WordPress/gutenberg/pull/35703
   top: 10px;
 }
 
-.taxonomy-post_tag a:after {
+.is-style-grigora-tag-style a:after {
   background: #fff;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
@@ -1049,12 +1049,12 @@ https://github.com/WordPress/gutenberg/pull/35703
   top: 0;
 }
 
-.taxonomy-post_tag a:hover {
+.is-style-grigora-tag-style a:hover {
   background-color: crimson;
   color: white;
 }
 
-.taxonomy-post_tag a:hover::after {
+.is-style-grigora-tag-style a:hover::after {
   border-left-color: crimson;
 }
 
