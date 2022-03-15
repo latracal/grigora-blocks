@@ -1,6 +1,7 @@
 .is-style-grigora-separator-1 {
 	margin: 1.5em auto;
 	position: relative;
+	opacity: 1;
 	height: 9px;
 	width: 9px !important;
 	border: transparent;
@@ -32,6 +33,7 @@
 .is-style-grigora-separator-2 {
 	height: 30px;
 	width: 100% !important;
+	opacity: 1;
 	background: -webkit-gradient(
 		radial,
 		50% 0,
@@ -58,6 +60,7 @@
 .is-style-grigora-separator-3 {
 	height: 30px;
 	width: 100% !important;
+	opacity: 1;
 	background: -webkit-gradient(
 		radial,
 		50% 100%,
@@ -78,6 +81,7 @@
 .is-style-grigora-separator-4 {
 	width: 100% !important;
 	height: 100px;
+	opacity: 1;
 	background: linear-gradient(to right bottom, #823a9c 49%, #fff 50%),
 		linear-gradient(-50deg, #ffffff 16px, #000 0);
 	border-bottom: none;
@@ -93,6 +97,7 @@
 .is-style-grigora-separator-5 {
 	width: 100% !important;
 	height: 100px;
+	opacity: 1;
 	background: linear-gradient(to right bottom, #fff 49%, #823a9c 50%);
 	border-bottom: none;
 }
@@ -101,6 +106,7 @@
 }
 
 .is-style-grigora-separator-6 {
+	opacity: 1;
 	width: 100% !important;
 	height: 1px;
 	display: block;
@@ -163,6 +169,7 @@
 }
 
 .is-style-grigora-separator-7-animated {
+	opacity: 1;
 	width: 100% !important;
 	height: 1px;
 	display: block;
