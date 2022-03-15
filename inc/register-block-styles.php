@@ -263,5 +263,37 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/quote',
+		array(
+			'name'  => 'grigora-quote-quotation-marks',
+			'label' => __( 'Quote Style 1', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/quote',
+		array(
+			'name'  => 'grigora-quote-quotation-mark-2',
+			'label' => __( 'Quote Style 2', 'grigora' ),
+		)
+	);
+	
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/quote',
+		array(
+			'name'  => 'grigora-quote-quotation-mark-3',
+			'label' => __( 'Quote Style 3', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/quote',
+		array(
+			'name'  => 'grigora-quote-quotation-mark-4',
+			'label' => __( 'Quote Style 4', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
