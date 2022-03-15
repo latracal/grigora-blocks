@@ -303,5 +303,13 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/query-pagination',
+		array(
+			'name'  => 'grigora-query-pagination',
+			'label' => __( 'Pagination Style', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
