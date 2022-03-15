@@ -1015,15 +1015,15 @@ ul.is-style-grigora-no-marker-list li ul {
   border: 2px solid var(--wp--custom--button-border-color);
   padding: var(--wp--custom--button-padding);
   border-radius: var(--wp--custom--button-border-radius);
-  background: var(--wp--preset--color--secondary);
-  color: var(--wp--preset--color--foreground);
+  background: var(--wp--preset--color--button);
+  color: var(--wp--preset--color--buttontext);
   -webkit-box-shadow: var(--wp--custom--small-button-shadow);
           box-shadow: var(--wp--custom--small-button-shadow);
 }
 
 .wp-block-search .wp-block-search__button:focus,
 .wp-block-search .wp-block-search__button:hover {
-  color: var(--wp--preset--color--background);
+  color: var(--wp--preset--color--buttontext);
   -webkit-filter: brightness(94%) !important;
           filter: brightness(94%) !important;
   -webkit-box-shadow: var(--wp--custom--small-button-shadow);
@@ -1034,7 +1034,7 @@ ul.is-style-grigora-no-marker-list li ul {
   border-color: var(--wp--custom--button-border-color);
   -webkit-box-shadow: var(--wp--custom--button-highlight);
           box-shadow: var(--wp--custom--button-highlight);
-  color: var(--wp--preset--color--foreground);
+  color: var(--wp--preset--color--buttontext);
   -webkit-filter: brightness(93%) !important;
           filter: brightness(93%) !important;
   margin-top: 1px;
@@ -1044,7 +1044,7 @@ ul.is-style-grigora-no-marker-list li ul {
 .wp-block-search .wp-block-search__button:visited {
   background-color: initial;
   border-color: var(--wp--custom--button-border-color);
-  color: var(--wp--preset--color--foreground);
+  color: var(--wp--preset--color--buttontext);
   -webkit-box-shadow: var(--wp--custom--small-button-shadow);
           box-shadow: var(--wp--custom--small-button-shadow);
 }
