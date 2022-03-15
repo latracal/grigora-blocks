@@ -167,5 +167,45 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'grigora-heading-1',
+			'label' => __( 'Heading Style 1', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'grigora-heading-2',
+			'label' => __( 'Heading Style 2', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'grigora-heading-3',
+			'label' => __( 'Heading Style 3', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'grigora-heading-4',
+			'label' => __( 'Heading Style 4', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'grigora-heading-5',
+			'label' => __( 'Heading Style 5', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
