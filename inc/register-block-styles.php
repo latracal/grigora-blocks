@@ -256,14 +256,6 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/separator',
-		array(
-			'name'  => 'grigora-separator-7-animated',
-			'label' => __( 'Separator Style 7 animated', 'grigora' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/quote',
 		array(
 			'name'  => 'grigora-quote-quotation-marks',

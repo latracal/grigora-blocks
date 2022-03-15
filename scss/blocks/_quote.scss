@@ -56,7 +56,7 @@
 }
 .wp-block-quote.is-style-grigora-quote-quotation-marks:before,
 .wp-block-quote.is-style-grigora-quote-quotation-marks:after {
-	font-family: FontAwesome;
+	font-family: "Times New Roman", Times, serif;
 	position: absolute;
 	color: #039be5;
 	font-size: 4rem;
@@ -68,6 +68,7 @@
 	right: 100%;
 }
 .wp-block-quote.is-style-grigora-quote-quotation-marks:after {
+	bottom: auto;
 	content: "\201D";
 	margin-left: -20px;
 	left: 100%;
@@ -82,24 +83,24 @@
 	color: #484748;
 	margin: 1rem auto 2rem;
 
-	p{
+	p {
 		display: inline;
 		margin-left: 0;
 	}
 
-	cite{
+	cite {
 		color: #bdbec0;
 		margin-left: 1rem;
 
-		&::before{
-			content: '\2015';
+		&::before {
+			content: "\2015";
 			margin-right: 1rem;
 		}
 	}
 }
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-2:after {
-	font-family: FontAwesome;
+	font-family: "Times New Roman", Times, serif;
 	position: absolute;
 	color: #039be5;
 	font-size: 4rem;
@@ -108,6 +109,8 @@
 	content: none;
 }
 .wp-block-quote.is-style-grigora-quote-quotation-mark-2:after {
+	top: auto;
+	right: auto;
 	content: "\201D";
 	color: #bdbec0;
 	height: 100%;
@@ -116,9 +119,8 @@
 	bottom: 60px;
 	font-size: 10rem;
 	font-weight: 700;
-	font-family: 'Verdana', serif;
+	font-family: "Verdana", serif;
 }
-
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-3 {
 	position: relative;
@@ -128,58 +130,44 @@
 	margin: 1rem auto 2rem;
 	border-left: 5px solid #039be5;
 
-	p{
+	p {
 		position: relative;
 		display: inline;
 		margin-left: 2rem;
 	}
 
-	cite{
+	cite {
 		position: relative;
 		margin-left: 1rem;
 
-		&::before{
-			content: '\2015'' ';
+		&::before {
+			content: "\2015"" ";
 		}
 	}
 }
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-3:before,
-.wp-block-quote.is-style-grigora-quote-quotation-mark-3:after{
+.wp-block-quote.is-style-grigora-quote-quotation-mark-3:after {
 	content: none;
 }
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-3 p:before,
-.wp-block-quote.is-style-grigora-quote-quotation-mark-3 cite:after {
-	font-family: FontAwesome;
-	position: absolute;
-	color: #039be5;
-	font-size: 3rem;
-}
 .wp-block-quote.is-style-grigora-quote-quotation-mark-3 p:before {
-	content: "\201D";
+	content: " ";
 	top: -20px;
 	right: 100%;
 }
-.wp-block-quote.is-style-grigora-quote-quotation-mark-3 cite:after {
-	content: "\201C";
-	margin-left: 5px;
-	top: 10px;
-}
-
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-4 {
+	box-sizing: content-box;
 	position: relative;
 	padding: 1rem 1.2rem;
 	width: 80%; /* create space for the quotes */
 	color: #484748;
 	margin: 1rem auto 2rem;
 
-	p{
-		font-family: 'Abril Fatface', cursive;
+	p {
 		position: relative;
-		font-size: 2.8rem;
-		font-weight: normal;
 		line-height: 1;
 		margin: 0;
 		border: 2px solid #fff;
@@ -188,21 +176,21 @@
 		padding: 25px;
 
 		&::after {
-			content:"";
+			content: "";
 			position: absolute;
-			border: 2px solid ;
+			border: 2px solid;
 			border-radius: 0 50px 0 0;
 			width: 60px;
-			height: 60px;
-			bottom: -62px;
+			height: 30px;
+			bottom: -32px;
 			left: 50px;
 			border-bottom: none;
 			border-left: none;
-			z-index: 3; 
+			z-index: 3;
 		}
 
 		&::before {
-			content:"";
+			content: "";
 			position: absolute;
 			width: 80px;
 			border: 6px solid #fff;
@@ -212,20 +200,18 @@
 		}
 	}
 
-	cite{
+	cite {
 		margin-left: 9rem;
-		font-size: 1.3rem;
-		font-weight: 400;
 
-		&::before{
-			content: '\2015'' ';
+		&::before {
+			content: "\2015"" ";
 		}
 	}
 }
 
 .wp-block-quote.is-style-grigora-quote-quotation-mark-4:before,
 .wp-block-quote.is-style-grigora-quote-quotation-mark-4:after {
-	font-family: FontAwesome;
+	font-family: "Times New Roman", Times, serif;
 	position: absolute;
 	color: #039be5;
 	font-size: 4rem;
