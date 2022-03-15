@@ -1260,6 +1260,14 @@ ul.is-style-grigora-no-marker-list li ul {
   vertical-align: middle;
 }
 
+.is-style-grigora-query-pagination .wp-block-query-pagination-next,
+.is-style-grigora-query-pagination .wp-block-query-pagination-previous {
+  text-decoration: none;
+  background-color: #eee;
+  padding: .1rem .5rem;
+  border-radius: 4px;
+}
+
 html {
   scroll-behavior: smooth;
 }
