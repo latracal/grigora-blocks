@@ -1599,6 +1599,10 @@ ul.is-style-grigora-no-marker-list li ul {
   color: #fff;
 }
 
+.is-style-grigora-post-author-style-1 img {
+  border-radius: 50%;
+}
+
 textarea {
   padding: 1rem;
   width: 100%;

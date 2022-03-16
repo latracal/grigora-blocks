@@ -376,12 +376,19 @@ function grigora_register_block_styles() {
 		)
 	);
 
-
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/navigation',
 		array(
 			'name'  => 'grigora-navigation-style-1',
 			'label' => __( 'Navigation Style 1', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/post-author',
+		array(
+			'name'  => 'grigora-post-author-style-1',
+			'label' => __( 'Post Author Style 1', 'grigora' ),
 		)
 	);
 
