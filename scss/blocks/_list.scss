@@ -20,32 +20,31 @@ ul.is-style-grigora-no-marker-list li ul {
 	margin-left: 1em;
 }
 
-.is-style-grigora-ordered-list-style-1{
-	counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    *list-style: decimal; /* Keep using default numbering for IE6/7 */
-    font: 15px 'trebuchet MS', 'lucida sans';
-    padding: 0;
-    margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+.is-style-grigora-ordered-list-style-1 {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 
-	ol{
+	ol {
 		list-style: none;
 	}
 
-	li{
+	li {
 		position: relative;
 		display: block;
-		padding: .4em .4em .4em 2em;
-		*padding: .4em;
-		margin: .5em 0;
+		padding: 0.4em 0.4em 0.4em 2em;
+		*padding: 0.4em;
+		margin: 0.5em 0;
 		background: #ddd;
-		color: #444;
+		color: currentColor;
 		text-decoration: none;
-		border-radius: .3em;
-		transition: all .3s ease-out;
+		border-radius: 0.3em;
+		transition: all 0.3s ease-out;
 
-		&:before{
+		&:before {
 			content: counter(li);
 			counter-increment: li;
 			position: absolute;
@@ -56,40 +55,39 @@ ul.is-style-grigora-no-marker-list li ul {
 			height: 2em;
 			width: 2em;
 			line-height: 2em;
-			border: .3em solid #fff;
+			border: 0.3em solid #fff;
 			text-align: center;
 			font-weight: bold;
 			border-radius: 2em;
-			transition: all .3s ease-out;
-		  }
+			transition: all 0.3s ease-out;
+		}
 	}
 }
 
-.is-style-grigora-ordered-list-style-2{
-	counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    *list-style: decimal; /* Keep using default numbering for IE6/7 */
-    font: 15px 'trebuchet MS', 'lucida sans';
-    padding: 0;
-    margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+.is-style-grigora-ordered-list-style-2 {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 
-	ol{
+	ol {
 		list-style: none;
 	}
 
-	li{
+	li {
 		position: relative;
 		display: block;
-		padding: .4em .4em .4em .8em;
-		*padding: .4em;
-		margin: .5em 0 .5em 2.5em;
+		padding: 0.4em 0.4em 0.4em 0.8em;
+		*padding: 0.4em;
+		margin: 0.5em 0 0.5em 2.5em;
 		background: #ddd;
-		color: #444;
+		color: currentColor;
 		text-decoration: none;
-		transition: all .3s ease-out;
+		transition: all 0.3s ease-out;
 
-		&:before{
+		&:before {
 			content: counter(li);
 			counter-increment: li;
 			position: absolute;
@@ -102,37 +100,38 @@ ul.is-style-grigora-no-marker-list li ul {
 			line-height: 2em;
 			text-align: center;
 			font-weight: bold;
-		  }
+		}
 
-		  &:after{
+		&:after {
 			position: absolute;
-			content: '';
-			border: .5em solid transparent;
+			content: "";
+			border: 0.5em solid transparent;
 			left: -1em;
 			top: 50%;
-			margin-top: -.5em;
-			transition: all .3s ease-out;
-		  }
+			margin-top: -0.5em;
+			transition: all 0.3s ease-out;
+		}
 	}
 }
 
-.is-style-grigora-list-style-3{
+.is-style-grigora-list-style-3 {
 	list-style: none;
 
-	ol,ul{
+	ol,
+	ul {
 		list-style: none;
 	}
 
-	li{
-		&::before{
-			content: '';
+	li {
+		&::before {
+			content: "";
 			padding-left: 1.5rem;
 			margin: 0.75rem auto;
 			background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M8,0A8,8,0,1,1,0,8,8,8,0,0,1,8,0Zm3.67,7.45L7.3,3.08a.77.77,0,0,0-1.09,0h0l-.55.55a.77.77,0,0,0,0,1.09h0L8.94,8,5.66,11.28a.77.77,0,0,0,0,1.09h0l.55.55a.77.77,0,0,0,1.09,0h0l4.37-4.37a.77.77,0,0,0,0-1.09h0Z" fill="%234b5623" opacity="0.8"/></svg>');
 			background-repeat: no-repeat;
 			background-size: 1rem 1rem;
 			background-position-x: left;
-			background-position-y: center;	
+			background-position-y: center;
 		}
 	}
 }
