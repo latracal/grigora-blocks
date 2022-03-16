@@ -575,6 +575,7 @@
 
 .is-style-grigora-heading-3 {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .is-style-grigora-heading-3:before {
@@ -1202,7 +1203,6 @@ ol.is-style-grigora-no-marker-list {
 
 ul.is-style-grigora-no-marker-list li ul {
   margin-left: 1em;
-  margin-top: 0.5em;
 }
 
 .is-style-grigora-no-marker-list ul,
@@ -1214,10 +1214,9 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-grigora-no-marker-list ul li ul {
   margin-left: 1em;
-  margin-top: 0.5em;
 }
 
-.is-style-grigora-list-style-1 {
+.is-style-grigora-ordered-list-style-1 {
   counter-reset: li;
   /* Initiate a counter */
   list-style: none;
@@ -1230,11 +1229,11 @@ ul.is-style-grigora-no-marker-list li ul {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-.is-style-grigora-list-style-1 ol {
+.is-style-grigora-ordered-list-style-1 ol {
   list-style: none;
 }
 
-.is-style-grigora-list-style-1 li {
+.is-style-grigora-ordered-list-style-1 li {
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
@@ -1248,7 +1247,7 @@ ul.is-style-grigora-no-marker-list li ul {
   transition: all .3s ease-out;
 }
 
-.is-style-grigora-list-style-1 li:before {
+.is-style-grigora-ordered-list-style-1 li:before {
   content: counter(li);
   counter-increment: li;
   position: absolute;
@@ -1263,6 +1262,62 @@ ul.is-style-grigora-no-marker-list li ul {
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-ordered-list-style-2 {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.is-style-grigora-ordered-list-style-2 ol {
+  list-style: none;
+}
+
+.is-style-grigora-ordered-list-style-2 li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  *padding: .4em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-ordered-list-style-2 li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.is-style-grigora-ordered-list-style-2 li:after {
+  position: absolute;
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
@@ -1333,7 +1388,6 @@ ol.is-style-grigora-no-marker-list {
 
 ul.is-style-grigora-no-marker-list li ul {
   margin-left: 1em;
-  margin-top: 0.5em;
 }
 
 .is-style-grigora-no-marker-list ul,
@@ -1345,10 +1399,9 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-grigora-no-marker-list ul li ul {
   margin-left: 1em;
-  margin-top: 0.5em;
 }
 
-.is-style-grigora-list-style-1 {
+.is-style-grigora-ordered-list-style-1 {
   counter-reset: li;
   /* Initiate a counter */
   list-style: none;
@@ -1361,11 +1414,11 @@ ul.is-style-grigora-no-marker-list li ul {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-.is-style-grigora-list-style-1 ol {
+.is-style-grigora-ordered-list-style-1 ol {
   list-style: none;
 }
 
-.is-style-grigora-list-style-1 li {
+.is-style-grigora-ordered-list-style-1 li {
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
@@ -1379,7 +1432,7 @@ ul.is-style-grigora-no-marker-list li ul {
   transition: all .3s ease-out;
 }
 
-.is-style-grigora-list-style-1 li:before {
+.is-style-grigora-ordered-list-style-1 li:before {
   content: counter(li);
   counter-increment: li;
   position: absolute;
@@ -1394,6 +1447,62 @@ ul.is-style-grigora-no-marker-list li ul {
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-ordered-list-style-2 {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.is-style-grigora-ordered-list-style-2 ol {
+  list-style: none;
+}
+
+.is-style-grigora-ordered-list-style-2 li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  *padding: .4em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-ordered-list-style-2 li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.is-style-grigora-ordered-list-style-2 li:after {
+  position: absolute;
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }

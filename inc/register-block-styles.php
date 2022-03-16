@@ -350,6 +350,23 @@ function grigora_register_block_styles() {
 			'label' => __( 'Buttons', 'grigora' ),
 		)
 	);
-	
+
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/list',
+		array(
+			'name'  => 'grigora-ordered-list-style-1',
+			'label' => __( 'Ordered List Style 1', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/list',
+		array(
+			'name'  => 'grigora-ordered-list-style-2',
+			'label' => __( 'Ordered List Style 2', 'grigora' ),
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
