@@ -1187,6 +1187,10 @@ ul.is-style-grigora-no-marker-list li ul {
   vertical-align: middle;
 }
 
+.is-style-grigora-search-style .wp-block-search__input {
+  border-radius: 30px;
+}
+
 .is-style-grigora-separator-1 {
   margin: 1.5em auto;
   position: relative;
