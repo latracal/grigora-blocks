@@ -59,7 +59,6 @@ function grigora_register_block_patterns() {
 		'404',
 		'footer-links',
 		'search',
-		'query/query-horizontal',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
