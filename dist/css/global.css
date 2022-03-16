@@ -1545,6 +1545,29 @@ ul.is-style-grigora-no-marker-list li ul {
   background-position-y: center;
 }
 
+.is-style-grigora-navigation-style-1 .wp-block-navigation__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #EBECF1;
+  border-radius: 30px;
+}
+
+.is-style-grigora-navigation-style-1 .wp-block-navigation__container li {
+  padding: .5rem 1rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 4px;
+}
+
+.is-style-grigora-navigation-style-1 .wp-block-navigation__container li a:hover {
+  color: #fff;
+}
+
+.is-style-grigora-navigation-style-1 .wp-block-navigation__container li:hover {
+  background-color: #EC4138;
+}
+
 html {
   scroll-behavior: smooth;
 }
