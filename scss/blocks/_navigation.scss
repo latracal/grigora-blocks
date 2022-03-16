@@ -21,3 +21,32 @@
         }
     }
 }
+
+.is-style-grigora-navigation-style-2{
+    .wp-block-navigation__container{
+        justify-content: center;
+        background: #6BBE92;
+
+        &:before{
+            content: '';
+            height: 6px;
+            background: #3E8760 !important;
+            position: absolute;
+            bottom: 0;
+            width: 120px;
+            z-index: 2;
+            -webkit-transition: all 0.35s;
+            -moz-transition: all 0.35s;
+            -ms-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+
+        li{ 
+            padding: .5rem 1rem;
+
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
