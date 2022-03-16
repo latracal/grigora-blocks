@@ -380,7 +380,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--background)",
+			"background": "var(--wp--preset--color--canvas)",
 			"text": "var(--wp--preset--color--foreground)"
 		},
 		"typography": {

@@ -16,12 +16,15 @@
 	}
 
 	&:after {
+		top: auto !important;
+		bottom: auto !important;
+		right: auto !important;
 		width: 100px;
 		height: 1px;
 		display: block;
 		content: "";
 		position: relative;
-		left: 50%;
+		left: 50% !important;
 		margin-left: -50px;
 		background-color: #b80000;
 	}
@@ -44,6 +47,7 @@
 
 .is-style-grigora-heading-3 {
 	position: relative;
+	padding-bottom: 10px;
 
 	&:before {
 		content: "";
@@ -94,7 +98,10 @@
 	grid-gap: 22px;
 
 	&::after {
-		position: static;
+		position: static !important;
+		bottom: auto !important;
+		right: auto !important;
+		left: auto !important;
 	}
 
 	&:after,
@@ -102,7 +109,7 @@
 		content: " ";
 		display: block;
 		border-bottom: 2px solid #ccc;
-		top: 50%;
+		top: 50% !important;
 		transform: translateY(50%);
 	}
 }
