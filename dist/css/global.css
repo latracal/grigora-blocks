@@ -1211,6 +1211,56 @@ ul.is-style-grigora-no-marker-list li ul {
   margin-top: 0.5em;
 }
 
+.is-style-grigora-list-style-1 {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.is-style-grigora-list-style-1 ol {
+  list-style: none;
+}
+
+.is-style-grigora-list-style-1 li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-list-style-1 li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #87ceeb;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
 .wp-block-search .wp-block-search__button {
   font-size: var(--wp--preset--font-size--small);
   font-family: var(--wp--preset--font-family--system);
@@ -1266,6 +1316,80 @@ ul.is-style-grigora-no-marker-list li ul {
   background-color: #eee;
   padding: .1rem .5rem;
   border-radius: 4px;
+}
+
+ul.is-style-grigora-no-marker-list,
+ol.is-style-grigora-no-marker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.is-style-grigora-no-marker-list li ul {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.is-style-grigora-no-marker-list ul,
+.is-style-grigora-no-marker-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.is-style-grigora-no-marker-list ul li ul {
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
+
+.is-style-grigora-list-style-1 {
+  counter-reset: li;
+  /* Initiate a counter */
+  list-style: none;
+  /* Remove default numbering */
+  *list-style: decimal;
+  /* Keep using default numbering for IE6/7 */
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.is-style-grigora-list-style-1 ol {
+  list-style: none;
+}
+
+.is-style-grigora-list-style-1 li {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.is-style-grigora-list-style-1 li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #87ceeb;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 html {
