@@ -1562,6 +1562,8 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-grigora-navigation-style-1 .wp-block-navigation__container li:hover svg {
   stroke: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .is-style-grigora-navigation-style-1 .wp-block-navigation__container li .wp-block-navigation__submenu-container li {
@@ -1578,6 +1580,11 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-grigora-navigation-style-1 .wp-block-navigation__container li .wp-block-navigation__submenu-container li:hover a {
   color: #fff;
+}
+
+.is-style-grigora-navigation-style-1 .wp-block-navigation__container li .wp-block-navigation__submenu-container li svg {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
 .is-style-grigora-navigation-style-1 .wp-block-navigation__container li .wp-block-navigation__submenu-container li .wp-block-navigation__submenu-container li {
