@@ -1,4 +1,8 @@
 .is-style-grigora-navigation-style-1{
+    .wp-block-navigation:not([style*=text-decoration]) a:focus{
+        color: #fff;
+    }
+
     .wp-block-navigation__container{
         justify-content: center;
         border: 1px solid #EBECF1;
@@ -17,35 +21,48 @@
 
             &:hover{
                 background-color: #EC4138;
+
+                a{
+                    color: #fff;
+                }
+
+                svg{
+                    stroke: #fff;
+                }
             }
-        }
-    }
-}
 
-.is-style-grigora-navigation-style-2{
-    .wp-block-navigation__container{
-        justify-content: center;
-        background: #6BBE92;
+            .wp-block-navigation__submenu-container{
+                li{
+                    border-radius: 0;
 
-        &:before{
-            content: '';
-            height: 6px;
-            background: #3E8760 !important;
-            position: absolute;
-            bottom: 0;
-            width: 120px;
-            z-index: 2;
-            -webkit-transition: all 0.35s;
-            -moz-transition: all 0.35s;
-            -ms-transition: all 0.35s;
-            transition: all 0.35s;
-        }
+                    a{
+                        color: currentColor;
 
-        li{ 
-            padding: .5rem 1rem;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
 
-            a{
-                color: #fff;
+                    &:hover{
+                        a{
+                            color: #fff;
+                        }
+                    }
+
+                    .wp-block-navigation__submenu-container{
+                        li{
+                            border-radius: 0;
+        
+                            a{
+                                color: currentColor;
+        
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
