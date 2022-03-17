@@ -344,6 +344,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/post-terms',
+		array(
+			'name'  => 'grigora-tag-style-3',
+			'label' => __( 'Tag Style 3', 'grigora' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/query-pagination',
 		array(
 			'name'  => 'grigora-query-pagination-buttons',
