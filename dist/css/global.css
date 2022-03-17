@@ -1730,4 +1730,9 @@ figure {
   content: "\00a0 →";
   display: inline-block;
 }
+
+.grigora-comment-box {
+  padding: 3%;
+  padding-bottom: 4%;
+}
 /*# sourceMappingURL=global.css.map */

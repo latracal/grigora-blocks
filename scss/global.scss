@@ -34,19 +34,19 @@ body {
 	margin-right: 1rem;
 }
 
-.wp-block-cover.has-background-dim.alignleft{
+.wp-block-cover.has-background-dim.alignleft {
 	margin-right: 1rem !important;
 }
 
-.wp-caption.alignleft{
+.wp-caption.alignleft {
 	margin-right: 1rem !important;
 }
 
-pre{
+pre {
 	white-space: pre-wrap;
 }
 
-.wp-block-post-comments .comment-meta{
+.wp-block-post-comments .comment-meta {
 	margin-left: 0;
 }
 
@@ -143,4 +143,9 @@ figure {
 .post-navigation-link-next a::after {
 	content: "\00a0 →";
 	display: inline-block;
+}
+
+.grigora-comment-box {
+	padding: 3%;
+	padding-bottom: 4%;
 }
