@@ -1,9 +1,14 @@
 node_modules
 HTML/
 
+grigora-blocks.zip
 
-grigora-pro.zip
-
+.vscode/
+.prettierignore
+composer.json
+composer.lock
+composer.phar
+.babelrc
 
 node_modules
 

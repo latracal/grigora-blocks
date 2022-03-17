@@ -8,95 +8,41 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
 
-A full site editing theme.
+Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 98 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
 
-== Guide ==
+All the CSS is located in scss/ folder.
 
-=== Folder structure ===
+== Installation ==
+1. Visit “Appearance > Themes > Add New”
+2. Search for “Grigora Blocks”
+3. Install and Activate
 
-- Assets. Images, JavaScript, and CSS files.
-- Inc. Filters, fonts, block variations, registered block styles.
-- Parts. HTML template parts.
-- Patterns. Block pattern examples (register and unregister patterns and pattern categories.)
-- Styles. Global style variations.
-- Templates. HTML block templates.
-
-functions.php -Used to enqueue styles and add theme support.
-index.php     -Required to activate the theme.
-style.css     -Required to activate the theme.
-theme.json    -Settings and default styles.
-license.txt   -GPL v2
-readme.txt    -Information about the theme.
-screenshot.png
-
-=== Tooling ===
-
-You can install the tools by opening yor terminal in the themes root folder
-and entering the following commands:
-npm install
-composer install
-
-==== CSS ====
-
-This theme includes both human-readable and minified CSS inside the assets/css folder.
-For improved performance, the theme loads the minified CSS on the front and in the editor.
-
-
-To compare your code against the CSS coding standards, use the command: npm run lint:css
-
-==== PHP ====
-
-To compare your code against the PHP coding standards,
-use the command: composer standards:check
-
-For PHPStan analysis, use the command: composer analyze
-
-==== JavaScript ====
-
-To compare your code against the JavasCript coding standards,
-use the command: npm run lint:js
-
-== Changelog ==
-1.0.0 Initial release
-
-== Licence ==
-grigora is distributed under the terms of the GNU GPL.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-== Resources used to build this theme ==
-
-* Twenty Twenty-Two WordPress theme (C) WordPress.org
-License: GNU General Public License v2.0 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-* Q WordPress theme (C) Ari Stathopoulos
-License: GNU General Public License v2.0 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-* Underscores https://underscores.me/, (C) Automattic, Inc.
 License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-* Webfonts Loader https://github.com/WPTT/webfont-loader
-License: MIT
-License URI: https://github.com/WPTT/webfont-loader/blob/master/LICENSE
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 
-* Full site editing starter theme by Carolina Nymark
+Grigora Blocks, Copyright 2019-2022 Latracal Solutions Private Limited.
+Grigora Blocks is licensed under the GNU General Public License v2 or later.
+
+= SVGs used in Grigora Blocks  =
+Tags Icon in Tags Style 3: Bootstrap Icons library (bi-tag). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
+List Icon in List Style 3: Icon is created by the team and permits anyone to use it. GPLv2 License ( license.txt in same directory)
+3 Icons in Seperator Stlye 1: Public Codepen. Pen Link: https://codepen.io/anthony-liddle/pen/eYpRavv  Mit License. ( https://blog.codepen.io/documentation/licensing/ )
+
+= Webfonts Loader =
+Grigora Block uses Webfonts Loader provided by the WPTT Team to host google fonts locally.
+Licensed under MIT ( https://github.com/WPTT/webfont-loader/blob/master/LICENSE )
+
+= Screenshot Licenses =
+Screenshot image is snapshot of actual website created using Grigora Wordpress Theme.
+The site icon is generated from Logoipsum Placeholder Logos. License: https://logoipsum.com/license/
+Text and heading is Lorem Ipsum and images are generated using Lorem Picsum.
+The image specifically shown in the screenshot is uploaded on negativespaces.co.
+Licensed under CC0 ( https://negativespace.co/food-raspberries-berry/ )
+
+Grigora Block is derived from Full site editing starter theme by Carolina Nymark
 https://fullsiteediting.com
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-
-Images
-Images from pxhere.com. Public domain:
-https://pxhere.com/en/photo/927190 -woman with curly hair
-https://pxhere.com/en/photo/1049910 -woman with t-shirt
-https://pxhere.com/en/photo/1604358 -woman with headphones
