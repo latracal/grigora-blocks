@@ -18,7 +18,7 @@ function grigora_search_title() {
 	if ( isset( $_GET['s'] ) ) {
 		$search_term = sanitize_text_field( wp_unslash( $_GET['s'] ) );
 		/* translators: %s: Search term. */
-		return isset( $search_term ) ? sprintf( esc_html__( 'Search results for "%s"', 'grigora' ), esc_html( $search_term ) ) : __( 'Search results', 'grigora' );
+		return isset( $search_term ) ? sprintf( esc_html__( 'Search results for "%s"', 'grigora-blocks' ), esc_html( $search_term ) ) : __( 'Search results', 'grigora-blocks' );
 	}
 }
 
@@ -51,7 +51,7 @@ function grigora_register_block_patterns() {
 	 */
 	register_block_pattern_category(
 		'images',
-		array( 'label' => esc_html__( 'Images', 'grigora' ) )
+		array( 'label' => esc_html__( 'Images', 'grigora-blocks' ) )
 	);
 
 	// Array of block pattern names.

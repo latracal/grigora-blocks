@@ -7,7 +7,7 @@
  */
 
 return array(
-	'title'      => esc_html__( 'Search', 'grigora' ),
+	'title'      => esc_html__( 'Search', 'grigora-blocks' ),
 	'categories' => array( 'text' ),
 	'inserter'   => false,
 	'content'    => '<!-- wp:heading {"className":"is-style-default","fontSize":"large"} -->

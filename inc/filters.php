@@ -15,7 +15,7 @@ add_filter(
 	'the_title',
 	function( $title ) {
 		if ( ! is_admin() && empty( $title ) ) {
-			$title = _x( '(No title)', 'Used if post or pages has no title', 'grigora' );
+			$title = _x( '(No title)', 'Used if post or pages has no title', 'grigora-blocks' );
 		}
 
 		return $title;

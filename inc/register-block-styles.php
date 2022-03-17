@@ -19,7 +19,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-flat-button',
-			'label' => __( 'Flat button', 'grigora' ),
+			'label' => __( 'Flat button', 'grigora-blocks' ),
 		)
 	);
 
@@ -27,7 +27,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-shadow',
-			'label' => __( 'Button with shadow', 'grigora' ),
+			'label' => __( 'Button with shadow', 'grigora-blocks' ),
 		)
 	);
 
@@ -35,7 +35,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-flat-outline',
-			'label' => __( 'Button with flat outline', 'grigora' ),
+			'label' => __( 'Button with flat outline', 'grigora-blocks' ),
 		)
 	);
 
@@ -43,7 +43,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-flat-shadow',
-			'label' => __( 'Button with flat shadow', 'grigora' ),
+			'label' => __( 'Button with flat shadow', 'grigora-blocks' ),
 		)
 	);
 
@@ -51,7 +51,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-rounded',
-			'label' => __( 'Rounded Button', 'grigora' ),
+			'label' => __( 'Rounded Button', 'grigora-blocks' ),
 		)
 	);
 
@@ -59,7 +59,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-swipe-right',
-			'label' => __( 'Button with swipe right hover', 'grigora' ),
+			'label' => __( 'Button with swipe right hover', 'grigora-blocks' ),
 		)
 	);
 
@@ -67,7 +67,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-diagonal-swipe',
-			'label' => __( 'Button with diagonal swipe', 'grigora' ),
+			'label' => __( 'Button with diagonal swipe', 'grigora-blocks' ),
 		)
 	);
 
@@ -75,7 +75,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-1',
-			'label' => __( 'Button with exapanding background color', 'grigora' ),
+			'label' => __( 'Button with exapanding background color', 'grigora-blocks' ),
 		)
 	);
 
@@ -83,7 +83,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-4',
-			'label' => __( 'Button with effect background', 'grigora' ),
+			'label' => __( 'Button with effect background', 'grigora-blocks' ),
 		)
 	);
 
@@ -91,7 +91,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-5',
-			'label' => __( 'Button with effect glitch', 'grigora' ),
+			'label' => __( 'Button with effect glitch', 'grigora-blocks' ),
 		)
 	);
 
@@ -99,7 +99,7 @@ function grigora_register_block_styles() {
 		'core/list',
 		array(
 			'name'  => 'grigora-no-marker-list',
-			'label' => __( 'No markers', 'grigora' ),
+			'label' => __( 'No markers', 'grigora-blocks' ),
 		)
 	);
 
@@ -107,7 +107,7 @@ function grigora_register_block_styles() {
 		'core/categories',
 		array(
 			'name'  => 'grigora-no-marker-list',
-			'label' => __( 'No markers', 'grigora' ),
+			'label' => __( 'No markers', 'grigora-blocks' ),
 		)
 	);
 
@@ -115,7 +115,7 @@ function grigora_register_block_styles() {
 		'core/page-list',
 		array(
 			'name'  => 'grigora-no-marker-list',
-			'label' => __( 'No markers', 'grigora' ),
+			'label' => __( 'No markers', 'grigora-blocks' ),
 		)
 	);
 
@@ -123,7 +123,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-shadow',
-			'label' => __( 'Column with shadow', 'grigora' ),
+			'label' => __( 'Column with shadow', 'grigora-blocks' ),
 		)
 	);
 
@@ -131,7 +131,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-border',
-			'label' => __( 'Column with border', 'grigora' ),
+			'label' => __( 'Column with border', 'grigora-blocks' ),
 		)
 	);
 
@@ -139,7 +139,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-shadow-border',
-			'label' => __( 'Column with shadow and border', 'grigora' ),
+			'label' => __( 'Column with shadow and border', 'grigora-blocks' ),
 		)
 	);
 
@@ -147,7 +147,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-border-rounded',
-			'label' => __( 'Column with rounded border', 'grigora' ),
+			'label' => __( 'Column with rounded border', 'grigora-blocks' ),
 		)
 	);
 
@@ -155,7 +155,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-shadow-rounded',
-			'label' => __( 'Column with shadow border', 'grigora' ),
+			'label' => __( 'Column with shadow border', 'grigora-blocks' ),
 		)
 	);
 
@@ -163,7 +163,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-shadow-border-rounded',
-			'label' => __( 'Column with rounded shadow and border', 'grigora' ),
+			'label' => __( 'Column with rounded shadow and border', 'grigora-blocks' ),
 		)
 	);
 
@@ -171,7 +171,7 @@ function grigora_register_block_styles() {
 		'core/heading',
 		array(
 			'name'  => 'grigora-heading-1',
-			'label' => __( 'Red Center', 'grigora' ),
+			'label' => __( 'Red Center', 'grigora-blocks' ),
 		)
 	);
 
@@ -179,7 +179,7 @@ function grigora_register_block_styles() {
 		'core/heading',
 		array(
 			'name'  => 'grigora-heading-2',
-			'label' => __( 'Red Left Align', 'grigora' ),
+			'label' => __( 'Red Left Align', 'grigora-blocks' ),
 		)
 	);
 
@@ -187,7 +187,7 @@ function grigora_register_block_styles() {
 		'core/heading',
 		array(
 			'name'  => 'grigora-heading-3',
-			'label' => __( 'Bottom Line Darked', 'grigora' ),
+			'label' => __( 'Bottom Line Darked', 'grigora-blocks' ),
 		)
 	);
 
@@ -195,7 +195,7 @@ function grigora_register_block_styles() {
 		'core/heading',
 		array(
 			'name'  => 'grigora-heading-4',
-			'label' => __( 'Bottom Line', 'grigora' ),
+			'label' => __( 'Bottom Line', 'grigora-blocks' ),
 		)
 	);
 
@@ -203,7 +203,7 @@ function grigora_register_block_styles() {
 		'core/heading',
 		array(
 			'name'  => 'grigora-heading-5',
-			'label' => __( 'Line Around', 'grigora' ),
+			'label' => __( 'Line Around', 'grigora-blocks' ),
 		)
 	);
 
@@ -211,7 +211,7 @@ function grigora_register_block_styles() {
 		'core/post-title',
 		array(
 			'name'  => 'grigora-heading-1',
-			'label' => __( 'Red Center', 'grigora' ),
+			'label' => __( 'Red Center', 'grigora-blocks' ),
 		)
 	);
 
@@ -219,7 +219,7 @@ function grigora_register_block_styles() {
 		'core/post-title',
 		array(
 			'name'  => 'grigora-heading-2',
-			'label' => __( 'Red Left Align', 'grigora' ),
+			'label' => __( 'Red Left Align', 'grigora-blocks' ),
 		)
 	);
 
@@ -227,7 +227,7 @@ function grigora_register_block_styles() {
 		'core/post-title',
 		array(
 			'name'  => 'grigora-heading-3',
-			'label' => __( 'Bottom Line Darked', 'grigora' ),
+			'label' => __( 'Bottom Line Darked', 'grigora-blocks' ),
 		)
 	);
 
@@ -235,7 +235,7 @@ function grigora_register_block_styles() {
 		'core/post-title',
 		array(
 			'name'  => 'grigora-heading-4',
-			'label' => __( 'Bottom Line', 'grigora' ),
+			'label' => __( 'Bottom Line', 'grigora-blocks' ),
 		)
 	);
 
@@ -243,7 +243,7 @@ function grigora_register_block_styles() {
 		'core/post-title',
 		array(
 			'name'  => 'grigora-heading-5',
-			'label' => __( 'Line Around', 'grigora' ),
+			'label' => __( 'Line Around', 'grigora-blocks' ),
 		)
 	);
 
@@ -251,7 +251,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-1',
-			'label' => __( 'Separator Style 1', 'grigora' ),
+			'label' => __( 'Separator Style 1', 'grigora-blocks' ),
 		)
 	);
 
@@ -259,7 +259,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-2',
-			'label' => __( 'Separator Style 2', 'grigora' ),
+			'label' => __( 'Separator Style 2', 'grigora-blocks' ),
 		)
 	);
 
@@ -267,7 +267,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-3',
-			'label' => __( 'Separator Style 3', 'grigora' ),
+			'label' => __( 'Separator Style 3', 'grigora-blocks' ),
 		)
 	);
 	
@@ -275,7 +275,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-4',
-			'label' => __( 'Separator Style 4', 'grigora' ),
+			'label' => __( 'Separator Style 4', 'grigora-blocks' ),
 		)
 	);
 
@@ -283,7 +283,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-5',
-			'label' => __( 'Separator Style 5', 'grigora' ),
+			'label' => __( 'Separator Style 5', 'grigora-blocks' ),
 		)
 	);
 
@@ -291,7 +291,7 @@ function grigora_register_block_styles() {
 		'core/separator',
 		array(
 			'name'  => 'grigora-separator-6',
-			'label' => __( 'Separator Style 6', 'grigora' ),
+			'label' => __( 'Separator Style 6', 'grigora-blocks' ),
 		)
 	);
 
@@ -299,7 +299,7 @@ function grigora_register_block_styles() {
 		'core/quote',
 		array(
 			'name'  => 'grigora-quote-quotation-marks',
-			'label' => __( 'Quote Style 1', 'grigora' ),
+			'label' => __( 'Quote Style 1', 'grigora-blocks' ),
 		)
 	);
 
@@ -307,7 +307,7 @@ function grigora_register_block_styles() {
 		'core/quote',
 		array(
 			'name'  => 'grigora-quote-quotation-mark-2',
-			'label' => __( 'Quote Style 2', 'grigora' ),
+			'label' => __( 'Quote Style 2', 'grigora-blocks' ),
 		)
 	);
 	
@@ -315,7 +315,7 @@ function grigora_register_block_styles() {
 		'core/quote',
 		array(
 			'name'  => 'grigora-quote-quotation-mark-3',
-			'label' => __( 'Quote Style 3', 'grigora' ),
+			'label' => __( 'Quote Style 3', 'grigora-blocks' ),
 		)
 	);
 
@@ -323,7 +323,7 @@ function grigora_register_block_styles() {
 		'core/quote',
 		array(
 			'name'  => 'grigora-quote-quotation-mark-4',
-			'label' => __( 'Quote Style 4', 'grigora' ),
+			'label' => __( 'Quote Style 4', 'grigora-blocks' ),
 		)
 	);
 
@@ -331,7 +331,7 @@ function grigora_register_block_styles() {
 		'core/post-terms',
 		array(
 			'name'  => 'grigora-tag-style',
-			'label' => __( 'Tag Style 1', 'grigora' ),
+			'label' => __( 'Tag Style 1', 'grigora-blocks' ),
 		)
 	);
 
@@ -339,7 +339,7 @@ function grigora_register_block_styles() {
 		'core/post-terms',
 		array(
 			'name'  => 'grigora-tag-style-2',
-			'label' => __( 'Tag Style 2', 'grigora' ),
+			'label' => __( 'Tag Style 2', 'grigora-blocks' ),
 		)
 	);
 
@@ -347,7 +347,7 @@ function grigora_register_block_styles() {
 		'core/post-terms',
 		array(
 			'name'  => 'grigora-tag-style-3',
-			'label' => __( 'Tag Style 3', 'grigora' ),
+			'label' => __( 'Tag Style 3', 'grigora-blocks' ),
 		)
 	);
 
@@ -355,7 +355,7 @@ function grigora_register_block_styles() {
 		'core/query-pagination',
 		array(
 			'name'  => 'grigora-query-pagination-buttons',
-			'label' => __( 'Buttons', 'grigora' ),
+			'label' => __( 'Buttons', 'grigora-blocks' ),
 		)
 	);
 
@@ -364,7 +364,7 @@ function grigora_register_block_styles() {
 		'core/list',
 		array(
 			'name'  => 'grigora-ordered-list-style-1',
-			'label' => __( 'Ordered List Style 1', 'grigora' ),
+			'label' => __( 'Ordered List Style 1', 'grigora-blocks' ),
 		)
 	);
 
@@ -372,7 +372,7 @@ function grigora_register_block_styles() {
 		'core/list',
 		array(
 			'name'  => 'grigora-ordered-list-style-2',
-			'label' => __( 'Ordered List Style 2', 'grigora' ),
+			'label' => __( 'Ordered List Style 2', 'grigora-blocks' ),
 		)
 	);
 
@@ -380,7 +380,7 @@ function grigora_register_block_styles() {
 		'core/list',
 		array(
 			'name'  => 'grigora-list-style-3',
-			'label' => __( 'List Style 3', 'grigora' ),
+			'label' => __( 'List Style 3', 'grigora-blocks' ),
 		)
 	);
 
@@ -388,7 +388,7 @@ function grigora_register_block_styles() {
 		'core/navigation',
 		array(
 			'name'  => 'grigora-navigation-style-1',
-			'label' => __( 'Navigation Style 1', 'grigora' ),
+			'label' => __( 'Navigation Style 1', 'grigora-blocks' ),
 		)
 	);
 
@@ -396,7 +396,7 @@ function grigora_register_block_styles() {
 		'core/post-author',
 		array(
 			'name'  => 'grigora-post-author-style-1',
-			'label' => __( 'Post Author Style 1', 'grigora' ),
+			'label' => __( 'Post Author Style 1', 'grigora-blocks' ),
 		)
 	);
 
