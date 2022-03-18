@@ -529,11 +529,6 @@
 			"postTypes": [ "post","page" ]
 		},
 		{
-			"name": "header-featured-image-template",
-			"title": "Featured image in header",
-			"postTypes": [ "post","page" ]
-		},
-		{
 			"name": "no-sidebar-page-template",
 			"title": "No Sidebar Page",
 			"postTypes": [ "page" ]
