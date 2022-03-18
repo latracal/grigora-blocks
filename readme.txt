@@ -12,6 +12,8 @@ Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly
 
 All the CSS is located in scss/ folder.
 
+Command to create a export zip: git archive --format zip --output /full/path/to/grigora-blocks.zip main
+
 == Installation ==
 1. Visit “Appearance > Themes > Add New”
 2. Search for “Grigora Blocks”
