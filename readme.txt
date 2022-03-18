@@ -2,8 +2,8 @@
 Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
-Requires PHP: 7.2
-Version: 2.00.007
+Requires PHP: 7.4
+Version: 2.01.000
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -31,17 +31,18 @@ Tags Icon in Tags Style 3: Bootstrap Icons library (bi-tag). MIT License ( https
 List Icon in List Style 3: Icon is created by the team and permits anyone to use it. GPLv2 License ( license.txt in same directory)
 3 Icons in Seperator Stlye 1: Public Codepen. Pen Link: https://codepen.io/anthony-liddle/pen/eYpRavv  Mit License. ( https://blog.codepen.io/documentation/licensing/ )
 
-= Webfonts Loader =
-Grigora Block uses Webfonts Loader provided by the WPTT Team to host google fonts locally.
-Licensed under MIT ( https://github.com/WPTT/webfont-loader/blob/master/LICENSE )
-
 = Screenshot Licenses =
-Screenshot image is snapshot of actual website created using Grigora Wordpress Theme.
-The site icon is generated from Logoipsum Placeholder Logos. License: https://logoipsum.com/license/
-Text and heading is Lorem Ipsum and images are generated using Lorem Picsum.
-The image specifically shown in the screenshot is uploaded on negativespaces.co.
-Licensed under CC0 ( https://negativespace.co/food-raspberries-berry/ )
+Screenshot image is snapshot of actual website created using Grigora Block.
 
+== Site Icon ==
+The site icon is taken from bootstrap icon pack and added a linear gradient over it. 
+Bootstrap Icons library (bi-boombox-fill). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
+
+== Raspberry thumbnail ==
+The image specifically shown in the screenshot is uploaded on negativespaces.co ( https://negativespace.co/food-raspberries-berry/ ).
+CC0 License ( https://creativecommons.org/share-your-work/public-domain/cc0/ )
+
+== Theme Base ==
 Grigora Block is derived from Full site editing starter theme by Carolina Nymark
 https://fullsiteediting.com
 License: GNU General Public License v2 or later

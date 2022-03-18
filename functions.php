@@ -15,7 +15,7 @@
  */
 define( 'GRIGORA_DEBUG', false );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
-
+define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 
 /**
  * Add theme support for block styles and editor style.
@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'grigora_styles' );
 require_once get_theme_file_path( 'inc/filters.php' );
 
 // Webfonts.
-require_once get_theme_file_path( 'inc/fonts.php' );
+// require_once get_theme_file_path( 'inc/fonts.php' );
 
 // Block variation example.
 require_once get_theme_file_path( 'inc/register-block-variations.php' );
