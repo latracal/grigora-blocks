@@ -1,4 +1,4 @@
-=== grigora ===
+=== grigora-blocks ===
 Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
