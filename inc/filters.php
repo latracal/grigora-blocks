@@ -2,7 +2,7 @@
 /**
  * Filters
  *
- * @package grigora
+ * @package grigora-blocks
  * @since 1.0.0
  */
 
