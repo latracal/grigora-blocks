@@ -398,16 +398,6 @@ function grigora_register_block_styles() {
 			'name'  => 'grigora-post-author-style-1',
 			'label' => __( 'Post Author Style 1', 'grigora-blocks' ),
 		)
-	);
-
-	register_block_pattern(
-		'core/hero',
-		array(
-			'title'       => __( 'Hero', 'grigora' ),
-			'description' => _x( 'Hero Section', 'Block pattern description', 'grigora' ),
-			'content'     => "<div class=\"hero\"></div>",
-		)
-	);
-
+	);	
 }
 add_action( 'init', 'grigora_register_block_styles' );
