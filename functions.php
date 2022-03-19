@@ -72,10 +72,6 @@ function grigora_styles() {
 	);
 	wp_register_script('grigora_main_js', get_theme_file_uri('js/main.js'), [], $ver, true);
 	wp_enqueue_script('grigora_main_js');
-	if(current_user_can('manage_options')){
-		wp_register_script('grigora_editor_js', get_theme_file_uri('js/editor.js'), [], $ver, true);
-		wp_enqueue_script('grigora_editor_js');
-	}
 }
 
 
