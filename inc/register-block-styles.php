@@ -400,5 +400,14 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_pattern(
+		'core/hero',
+		array(
+			'title'       => __( 'Hero', 'grigora' ),
+			'description' => _x( 'Hero Section', 'Block pattern description', 'grigora' ),
+			'content'     => "<div class=\"hero\"></div>",
+		)
+	);
+
 }
 add_action( 'init', 'grigora_register_block_styles' );
