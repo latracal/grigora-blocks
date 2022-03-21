@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"10%","right":"10%","bottom":"10%","left":"10%"}}},"gradient":"luminous-dusk"} -->
-	<div class="wp-block-group alignfull has-luminous-dusk-gradient-background has-background" style="padding-top:10%;padding-right:10%;padding-bottom:10%;padding-left:10%"><!-- wp:columns -->
+	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"10%","bottom":"5%","left":"10%"}}},"gradient":"luminous-dusk"} -->
+	<div class="wp-block-group alignfull has-luminous-dusk-gradient-background has-background" style="padding-top:5%;padding-right:10%;padding-bottom:5%;padding-left:10%"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textColor":"background"} -->
 	<h2 class="has-background-color has-text-color">Grigora Theme</h2>
@@ -38,8 +38,8 @@ return array(
 	<!-- /wp:column -->
 
 	<!-- wp:column -->
-	<div class="wp-block-column"><!-- wp:image {"id":2306,"sizeSlug":"full","linkDestination":"none"} -->
-	<figure class="wp-block-image size-full"><img src="http://localhost/latracal/wp-content/uploads/2022/03/herobanner.webp" alt="" class="wp-image-2306"/></figure>
+	<div class="wp-block-column"><!-- wp:image {"sizeSlug":"large"} -->
+	<figure class="wp-block-image size-large"><img src="https://wpgrigora.com/wp-content/uploads/landing/herobanner.webp" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:column --></div>
 	<!-- /wp:columns --></div>
