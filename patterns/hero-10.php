@@ -32,8 +32,8 @@ return array(
 	<!-- /wp:column -->
 
 	<!-- wp:column -->
-	<div class="wp-block-column"><!-- wp:heading {"level":4} -->
-	<h4>+1 123 456 78 90</h4>
+	<div class="wp-block-column"><!-- wp:heading {"level":4,"textColor":"background"} -->
+	<h4 class="has-background-color has-text-color">+1 123 456 78 90</h4>
 	<!-- /wp:heading --></div>
 	<!-- /wp:column --></div>
 	<!-- /wp:columns -->
