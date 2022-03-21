@@ -61,6 +61,9 @@ function grigora_register_block_patterns() {
 		'hero-1',
 		'hero-2',
 		'hero-3',
+		'hero-4',
+		'hero-5',
+		'hero-6',
 		'search',
 	);
 
