@@ -11,10 +11,10 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}},"className":"work"} -->
-	<div class="wp-block-group alignfull background_1" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><!-- wp:columns -->
-	<div class="wp-block-columns"><!-- wp:column {"width":"30%"} -->
-	<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"textColor":"background"} -->
+	<!-- wp:cover {"overlayColor":"primary","isDark":false,"style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
+	<div class="wp-block-cover is-light" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><span aria-hidden="true" class="has-primary-background-color has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center"} -->
+	<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"30%"} -->
+	<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:30%"><!-- wp:heading {"textColor":"background"} -->
 	<h2 class="has-background-color has-text-color">Heading / Title</h2>
 	<!-- /wp:heading -->
 
@@ -33,10 +33,10 @@ return array(
 	<!-- /wp:paragraph --></div>
 	<!-- /wp:column -->
 
-	<!-- wp:column {"width":"70%"} -->
-	<div class="wp-block-column" style="flex-basis:70%"></div>
+	<!-- wp:column {"verticalAlignment":"center","width":"70%"} -->
+	<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%"></div>
 	<!-- /wp:column --></div>
-	<!-- /wp:columns --></div>
-	<!-- /wp:group -->
+	<!-- /wp:columns --></div></div>
+	<!-- /wp:cover -->
 	',	
 );

@@ -51,6 +51,12 @@ pre {
 	margin-left: 0;
 }
 
+.wp-block-column{
+	h1,h2,h3,h4,h5,h6{
+		margin: 0;
+	}
+}
+
 /*
 Sticky button is experimental, only use it on the front for screens above 782px width.
 */
