@@ -14,6 +14,7 @@
 @import "blocks/list";
 @import "blocks/navigation";
 @import "blocks/post-author";
+@import "hero/hero1";
 
 html {
 	scroll-behavior: smooth;
@@ -48,12 +49,6 @@ pre {
 
 .wp-block-post-comments .comment-meta {
 	margin-left: 0;
-}
-
-.hero-2-block{
-	display: flex;
-	justify-content: center;
-	margin-bottom: 0;
 }
 
 /*

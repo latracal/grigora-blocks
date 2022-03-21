@@ -1,6 +1,6 @@
 <?php
 /**
- * 404 header block pattern
+ * Hero-1 header block pattern
  *
  * @package grigora-blocks
  * @since 1.0.0
@@ -44,6 +44,5 @@ return array(
 	<!-- /wp:column --></div>
 	<!-- /wp:columns --></div>
 	<!-- /wp:group -->
-	',
-	
+	',	
 );
