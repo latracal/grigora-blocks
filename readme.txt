@@ -49,3 +49,8 @@ Grigora Block is derived from Full site editing starter theme by Carolina Nymark
 https://fullsiteediting.com
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Asset Images ==
+Images from pxhere.com. CC0 Public Domain:
+https://pxhere.com/en/photo/833211 - Hero 10 featured image
+https://pxhere.com/en/photo/1014853 - Hero 10 cover
