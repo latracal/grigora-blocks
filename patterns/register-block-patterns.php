@@ -58,6 +58,7 @@ function grigora_register_block_patterns() {
 	$block_patterns = array(
 		'404',
 		'footer-links',
+		'hero',
 		'search',
 	);
 
