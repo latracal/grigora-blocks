@@ -60,6 +60,7 @@ function grigora_register_block_patterns() {
 		'footer-links',
 		'hero-1',
 		'hero-2',
+		'hero-3',
 		'search',
 	);
 
