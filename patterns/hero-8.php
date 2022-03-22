@@ -25,7 +25,7 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"background"} -->
-<p class="has-text-align-center has-background-color has-text-color">Look deep into nature, and you will<br>understand everything better.<a href="https://websitedemos.net/love-nature-02/#"></a></p>
+<p class="has-text-align-center has-background-color has-text-color">Look deep into nature, and you will<br>understand everything better.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
