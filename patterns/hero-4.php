@@ -7,7 +7,7 @@
  */
 
 return array(
-	'title'      => esc_html__( 'Hero-4', 'grigora-blocks' ),
+	'title'      => esc_html__( 'Parallax Centered', 'grigora-blocks' ),
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
