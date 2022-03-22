@@ -80,16 +80,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
 	padding: 0px;
 }
 
-.main-primary {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-}
-
-.grigora-sidebar {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-}
-
 @media screen and (max-width: 600px) {
 	.main-primary {
 		margin-top: 1.5rem;
@@ -155,4 +145,8 @@ figure {
 .grigora-comment-box {
 	padding: 3%;
 	padding-bottom: 4%;
+}
+
+.grigora-archive-query ul li:last-child hr:last-child {
+	display: none;
 }
