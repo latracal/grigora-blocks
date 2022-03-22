@@ -7,12 +7,12 @@
  */
 
 return array(
-	'title'      => esc_html__( 'Hero-11', 'grigora-blocks' ),
-	'categories' => array( 'text' ),
+	'title'      => esc_html__( 'Dark Color Highlight', 'grigora-blocks' ),
+	'categories' => array( 'hero' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"dimRatio":20,"overlayColor":"foreground","contentPosition":"center center","className":"grigora-hero","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
-	<div class="wp-block-cover grigora-hero" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><span aria-hidden="true" class="has-foreground-background-color has-background-dim-20 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
+	<!-- wp:cover {"overlayColor":"black","contentPosition":"center center","align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
+	<div class="wp-block-cover alignfull grigora-hero" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><span aria-hidden="true" class="has-black-background-color has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column -->
 	<div class="wp-block-column"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top"} -->

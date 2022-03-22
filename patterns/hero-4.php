@@ -8,7 +8,7 @@
 
 return array(
 	'title'      => esc_html__( 'Parallax Centered', 'grigora-blocks' ),
-	'categories' => array( 'text' ),
+	'categories' => array( 'hero' ),
 	'inserter'   => true,
 	'content'    => '
 	<!-- wp:cover {"url":"https://c.pxhere.com/images/56/19/a3bf4da416a6d64c493b9d3b5d17-1656606.jpg!d","id":2306,"hasParallax":true,"dimRatio":30,"isDark":false,"align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->

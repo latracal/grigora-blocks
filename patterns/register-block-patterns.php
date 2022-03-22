@@ -45,28 +45,26 @@ function grigora_privacy() {
 function grigora_register_block_patterns() {
 
 	/**
-	 * Register an example block pattern category.
+	 * Register an block pattern category.
 	 *
 	 * @since 1.0.0
 	 */
+
 	register_block_pattern_category(
-		'images',
-		array( 'label' => esc_html__( 'Images', 'grigora-blocks' ) )
+		'hero',
+		array( 'label' => __( 'Grigora Heros', 'grigora-blocks' ) )
 	);
 
 	// Array of block pattern names.
 	$block_patterns = array(
 		'404',
 		'footer-links',
-		'hero-1',
 		'hero-2',
 		'hero-3',
 		'hero-4',
 		'hero-5',
-		'hero-6',
 		'hero-7',
-		'hero-8',		
-		'hero-9',
+		'hero-8',
 		'hero-10',
 		'hero-11',
 		'search',

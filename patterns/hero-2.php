@@ -1,14 +1,14 @@
 <?php
 /**
- * Hero-2 header block pattern
+ * Gradient Card block pattern
  *
  * @package grigora-blocks
  * @since 1.0.0
  */
 
 return array(
-	'title'      => esc_html__( 'Hero-2', 'grigora-blocks' ),
-	'categories' => array( 'text' ),
+	'title'      => esc_html__( 'Gradient Card', 'grigora-blocks' ),
+	'categories' => array( 'hero' ),
 	'inserter'   => true,
 	'content'    => '
 	<!-- wp:cover {"customGradient":"linear-gradient(135deg,rgb(0,166,252) 0%,rgb(241,0,255) 95%)","isDark":false,"align":"full","className":"grigora-hero"} -->

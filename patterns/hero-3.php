@@ -8,7 +8,7 @@
 
 return array(
 	'title'      => esc_html__( 'Parallax Card', 'grigora-blocks' ),
-	'categories' => array( 'text' ),
+	'categories' => array( 'hero' ),
 	'inserter'   => true,
 	'content'    => '
 	<!-- wp:cover {"url":"https://c.pxhere.com/images/56/19/a3bf4da416a6d64c493b9d3b5d17-1656606.jpg!d","hasParallax":true,"dimRatio":20,"overlayColor":"black","isDark":false,"align":"full","className":"grigora-hero"} -->
