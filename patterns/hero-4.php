@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"overlayColor":"primary","isDark":false,"style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
-<div class="wp-block-cover is-light" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><span aria-hidden="true" class="has-primary-background-color has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","className":"hero-block-2"} -->
+	<!-- wp:cover {"url":"https://c.pxhere.com/images/56/19/a3bf4da416a6d64c493b9d3b5d17-1656606.jpg!d","id":2306,"hasParallax":true,"dimRatio":50,"isDark":false,"style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
+<div class="wp-block-cover is-light has-parallax" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%;background-image:url(https://c.pxhere.com/images/56/19/a3bf4da416a6d64c493b9d3b5d17-1656606.jpg!d)"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","className":"hero-block-2"} -->
 <div class="wp-block-columns are-vertically-aligned-center hero-block-2"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%"><!-- wp:heading {"textAlign":"center","textColor":"background"} -->
 <h2 class="has-text-align-center has-background-color has-text-color">Heading / Title</h2>
