@@ -19,7 +19,7 @@
         "../../scss/blocks/_list.scss",
         "../../scss/blocks/_navigation.scss",
         "../../scss/blocks/_post-author.scss",
-        "../../scss/hero/_hero1.scss"
+        "../../scss/hero/_hero.scss"
     ],
     "names": [],
     "file": "grigora-editor.min.css"
