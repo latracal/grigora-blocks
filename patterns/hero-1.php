@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"10%","bottom":"5%","left":"10%"}}},"gradient":"luminous-dusk"} -->
-	<div class="wp-block-group alignfull has-luminous-dusk-gradient-background has-background" style="padding-top:5%;padding-right:10%;padding-bottom:5%;padding-left:10%"><!-- wp:columns -->
+	<!-- wp:cover {"gradient":"luminous-dusk","isDark":false,"align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"5%","right":"8%","bottom":"5%","left":"8%"}}}} -->
+	<div class="wp-block-cover alignfull is-light grigora-hero" style="padding-top:5%;padding-right:8%;padding-bottom:5%;padding-left:8%"><span aria-hidden="true" class="has-background-dim-100 wp-block-cover__gradient-background has-luminous-dusk-gradient-background has-background-dim has-background-gradient has-luminous-dusk-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textColor":"background"} -->
 	<h2 class="has-background-color has-text-color">Grigora Theme</h2>
@@ -42,7 +42,7 @@ return array(
 	<figure class="wp-block-image size-large"><img src="https://wpgrigora.com/wp-content/uploads/landing/herobanner.webp" alt=""/></figure>
 	<!-- /wp:image --></div>
 	<!-- /wp:column --></div>
-	<!-- /wp:columns --></div>
-	<!-- /wp:group -->
+	<!-- /wp:columns --></div></div>
+	<!-- /wp:cover -->
 	',	
 );

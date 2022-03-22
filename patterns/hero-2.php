@@ -11,10 +11,10 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}},"color":{"gradient":"linear-gradient(135deg,rgb(0,166,252) 0%,rgb(241,0,255) 95%)"}}} -->
-	<div class="wp-block-group alignfull has-background" style="background:linear-gradient(135deg,rgb(0,166,252) 0%,rgb(241,0,255) 95%);padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:columns {"className":"hero-block-2"} -->
+	<!-- wp:cover {"customGradient":"linear-gradient(135deg,rgb(0,166,252) 0%,rgb(241,0,255) 95%)","isDark":false,"align":"full","className":"grigora-hero"} -->
+	<div class="wp-block-cover alignfull is-light grigora-hero"><span aria-hidden="true" class="has-background-dim-100 wp-block-cover__gradient-background has-background-dim has-background-gradient" style="background:linear-gradient(135deg,rgb(0,166,252) 0%,rgb(241,0,255) 95%)"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"className":"hero-block-2"} -->
 	<div class="wp-block-columns hero-block-2"><!-- wp:column {"width":"30%","style":{"spacing":{"padding":{"bottom":"30px","top":"30px"}}},"backgroundColor":"background","className":"is-style-grigora-shadow"} -->
-	<div class="wp-block-column is-style-grigora-shadow has-background-background-color has-background" style="padding-bottom:30px;padding-top:30px;flex-basis:30%"><!-- wp:heading {"textAlign":"center"} -->
+	<div class="wp-block-column is-style-grigora-shadow has-background-background-color has-background" style="padding-top:30px;padding-bottom:30px;flex-basis:30%"><!-- wp:heading {"textAlign":"center"} -->
 	<h2 class="has-text-align-center">Heading / Title</h2>
 	<!-- /wp:heading -->
 
@@ -28,7 +28,7 @@ return array(
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons --></div>
 	<!-- /wp:column --></div>
-	<!-- /wp:columns --></div>
-	<!-- /wp:group -->
+	<!-- /wp:columns --></div></div>
+	<!-- /wp:cover -->
 	',	
 );

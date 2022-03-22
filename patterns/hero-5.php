@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"url":"https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d","dimRatio":20,"overlayColor":"black","isDark":false,"align":"full"} -->
-	<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="has-black-background-color has-background-dim-20 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
+	<!-- wp:cover {"url":"https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d","dimRatio":20,"overlayColor":"black","isDark":false,"align":"full","className":"grigora-hero"} -->
+	<div class="wp-block-cover alignfull is-light grigora-hero"><span aria-hidden="true" class="has-black-background-color has-background-dim-20 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"100%"} -->
 	<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"width":""} -->
@@ -35,8 +35,8 @@ return array(
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons -->
-	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"luminous-vivid-amber","textColor":"foreground","width":100,"style":{"spacing":{"padding":{"top":"5px","right":"5px","bottom":"5px","left":"5px"}}},"className":"is-style-grigora-flat-button","fontSize":"medium"} -->
-	<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-grigora-flat-button has-medium-font-size"><a class="wp-block-button__link has-foreground-color has-luminous-vivid-amber-background-color has-text-color has-background" style="padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px">Request A Quote</a></div>
+	<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"luminous-vivid-amber","textColor":"foreground","width":50,"style":{"spacing":{"padding":{"top":"5px","right":"5px","bottom":"5px","left":"5px"}}},"className":"is-style-grigora-flat-button","fontSize":"medium"} -->
+	<div class="wp-block-button has-custom-width wp-block-button__width-50 has-custom-font-size is-style-grigora-flat-button has-medium-font-size"><a class="wp-block-button__link has-foreground-color has-luminous-vivid-amber-background-color has-text-color has-background" style="padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:5px">Request A Quote</a></div>
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons --></div>
 	<!-- /wp:column --></div>

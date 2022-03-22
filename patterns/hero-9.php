@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'text' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"8%","left":"8%","top":"8%","bottom":"8%"}}},"className":"background_5"} -->
-	<div class="wp-block-group alignfull background_5" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><!-- wp:columns {"verticalAlignment":"top"} -->
+	<!-- wp:cover {"overlayColor":"primary","isDark":false,"className":"grigora-hero","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}}} -->
+	<div class="wp-block-cover is-light grigora-hero" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><span aria-hidden="true" class="has-primary-background-color has-background-dim-100 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"100%"} -->
 	<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><!-- wp:heading {"textAlign":"center","textColor":"background","fontSize":"extra-small"} -->
 	<h2 class="has-text-align-center has-background-color has-text-color has-extra-small-font-size">we all love</h2>
@@ -32,7 +32,7 @@ return array(
 	<!-- /wp:button --></div>
 	<!-- /wp:buttons --></div>
 	<!-- /wp:column --></div>
-	<!-- /wp:columns --></div>
-	<!-- /wp:group -->
+	<!-- /wp:columns --></div></div>
+	<!-- /wp:cover -->
 	',	
 );
