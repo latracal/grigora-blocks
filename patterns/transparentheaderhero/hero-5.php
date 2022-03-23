@@ -7,7 +7,7 @@
  */
 
 return array(
-	'title'      => esc_html__( 'Request A Quote', 'grigora-blocks' ),
+	'title'      => esc_html__( 'Request A Quote Transparent Header', 'grigora-blocks' ),
 	'categories' => array( 'transparent-header-hero' ),
 	'inserter'   => true,
 	'content'    => '
