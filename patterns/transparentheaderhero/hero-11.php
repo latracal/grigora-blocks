@@ -27,8 +27,8 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"vivid-green-cyan","width":25,"style":{"border":{"radius":"49px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-25"><a class="wp-block-button__link has-vivid-green-cyan-background-color has-background" style="border-radius:49px">GET A FREE GUIDE</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"vivid-green-cyan","style":{"border":{"radius":"49px"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-vivid-green-cyan-background-color has-background" style="border-radius:49px">GET A FREE GUIDE</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
