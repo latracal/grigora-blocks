@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.01.001
+Version: 2.01.002
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -19,6 +19,7 @@ Command to create a export zip: git archive --format zip --output grigora-blocks
 2. Search for “Grigora Blocks”
 3. Install and Activate
 
+
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +28,18 @@ License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 
 Grigora Blocks, Copyright 2019-2022 Latracal Solutions Private Limited.
 Grigora Blocks is licensed under the GNU General Public License v2 or later.
+
+== Changelog ==
+
+All changes will be noted here
+
+== v2.01.002 ==
+1. Css fix for main body classes
+2. Hero patterns added
+3. Transparent Header Hero patterns added
+4. Fieldset form css added
+5. Transparent header template part
+
 
 = SVGs used in Grigora Blocks  =
 Tags Icon in Tags Style 3: Bootstrap Icons library (bi-tag). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
