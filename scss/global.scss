@@ -67,6 +67,34 @@ pre {
 	align-items: flex-start;
 }
 
+fieldset{
+	input, select, textarea {
+		padding: 0.5rem;
+		font-size: 100%;
+		border: 1px solid #aaaaaa;
+		width: -webkit-fill-available;
+	}
+
+	input.radio, input.checkbox {
+		width: auto;
+	}
+
+	.button{
+		color: #fff;
+		border: none;
+		padding: 0.5rem 5rem;
+		margin: 0 auto;
+		background-color: #3fdb4f !important;
+		transition: 0.3s all ease-out;
+
+		&:hover{
+			filter: brightness(0.8);
+		}
+	}
+}
+
+
+
 /*
 Sticky button is experimental, only use it on the front for screens above 782px width.
 */
