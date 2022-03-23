@@ -57,6 +57,12 @@ pre {
 	}
 }
 
+.grigora_absolute{
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
 /*
 Sticky button is experimental, only use it on the front for screens above 782px width.
 */
