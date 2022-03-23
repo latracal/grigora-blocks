@@ -52,8 +52,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Asset Images ==
 Images from pxhere.com. CC0 Public Domain:
-https://pxhere.com/en/photo/557162 - Hero 10 featured image
-https://pxhere.com/en/photo/1014853 - Hero 10 Cover
-https://pxhere.com/en/photo/1656606 - Hero 3 Cover
-https://pxhere.com/en/photo/893290 - Hero 5 Background
-https://pxhere.com/en/photo/591898 - Hero 6 Background
+https://pxhere.com/en/photo/1656606 - Parallax Card + Centered Hero Cover
+https://pxhere.com/en/photo/893290 - Request a Quote Hero Background
+https://pxhere.com/en/photo/591898 - Color Hue Hero Background Cover
+https://pxhere.com/en/photo/1014853 - Color Hue Hero Person Portrait
+
