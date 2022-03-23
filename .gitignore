@@ -9,7 +9,8 @@ composer.json
 composer.lock
 composer.phar
 .babelrc
-
+global.css
+global.css.map
 node_modules
 
 ## Uncomment line below if you prefer to
