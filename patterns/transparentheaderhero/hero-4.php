@@ -7,7 +7,7 @@
  */
 
 return array(
-	'title'      => esc_html__( 'Parallax Centered', 'grigora-blocks' ),
+	'title'      => esc_html__( 'Parallax Centered Transparent Header', 'grigora-blocks' ),
 	'categories' => array( 'transparent-header-hero' ),
 	'inserter'   => true,
 	'content'    => '
