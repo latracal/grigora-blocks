@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'transparent-header-hero' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"url":"https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d","dimRatio":75,"overlayColor":"black","align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
-	<div class="wp-block-cover alignfull grigora-hero" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><span aria-hidden="true" class="has-black-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://c.pxhere.com/photos/13/97/worker_construction_building_carpenter_male_job_build_helmet-893290.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
+	<!-- wp:cover {"url":"https://wpgrigora.com/blocks/wp-content/assets/images/hero/quote.jpg","dimRatio":75,"overlayColor":"black","align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+	<div class="wp-block-cover alignfull grigora-hero" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><span aria-hidden="true" class="has-black-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://wpgrigora.com/blocks/wp-content/assets/images/hero/quote.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"100%"} -->
 	<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><!-- wp:template-part {"slug":"transparent-header","theme":"grigora-blocks"} /-->
 	

@@ -50,10 +50,12 @@ https://fullsiteediting.com
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-== Asset Images ==
+== External Images used in Hero patterns ==
 Images from pxhere.com. CC0 Public Domain:
 https://pxhere.com/en/photo/1656606 - Parallax Card + Centered Hero Cover
 https://pxhere.com/en/photo/893290 - Request a Quote Hero Background
 https://pxhere.com/en/photo/591898 - Color Hue Hero Background Cover
-https://pxhere.com/en/photo/1014853 - Color Hue Hero Person Portrait
+https://pxhere.com/en/photo/1014853 - Person Showcase Hero Background
+https://pxhere.com/en/photo/557162 - Person Showcase Hero Portrait
+
 
