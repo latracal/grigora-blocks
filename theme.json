@@ -504,6 +504,11 @@
 			"area": "header"
 		},
 		{
+			"name": "transparent-header",
+			"title": "Transparent Header",
+			"area": "header"
+		},
+		{
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"

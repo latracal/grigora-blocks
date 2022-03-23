@@ -55,17 +55,29 @@ function grigora_register_block_patterns() {
 		array( 'label' => __( 'Grigora Heros', 'grigora-blocks' ) )
 	);
 
+	register_block_pattern_category(
+		'transparent-header-hero',
+		array( 'label' => __( 'Grigora Transparent Header Heros', 'grigora-blocks' ) )
+	);
+
 	// Array of block pattern names.
 	$block_patterns = array(
 		'404',
 		'footer-links',
-		'hero-2',
-		'hero-3',
-		'hero-4',
-		'hero-5',
-		'hero-7',
-		'hero-10',
-		'hero-11',
+		'hero/hero-2',
+		'hero/hero-3',
+		'hero/hero-4',
+		'hero/hero-5',
+		'hero/hero-7',
+		'hero/hero-10',
+		'hero/hero-11',
+		'transparentheaderhero/hero-2',
+		'transparentheaderhero/hero-3',
+		'transparentheaderhero/hero-4',
+		'transparentheaderhero/hero-5',
+		'transparentheaderhero/hero-7',
+		'transparentheaderhero/hero-10',
+		'transparentheaderhero/hero-11',
 		'search',
 	);
 

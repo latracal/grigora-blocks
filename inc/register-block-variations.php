@@ -7,8 +7,7 @@
  */
 
 /**
- * This is an example of how to register a block variation.
- * Type /full or use the block inserter to insert a full width group block.
+ * Block Variations enqueue
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/
  *
