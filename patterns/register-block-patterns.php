@@ -87,7 +87,7 @@ function grigora_register_block_patterns() {
 		'testimonials/testimonial-1',
 		'testimonials/testimonial-2',
 		'testimonials/testimonial-3',
-
+		'testimonials/testimonial-4',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
