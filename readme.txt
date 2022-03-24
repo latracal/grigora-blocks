@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.01.003
+Version: 2.01.004
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -32,6 +32,9 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.01.004 ==
+1. Testimonial Patterns
 
 == v2.01.002 ==
 1. Css fix for main body classes
@@ -76,8 +79,8 @@ Images from pxhere.com. CC0 Public Domain:
 https://pxhere.com/en/photo/145352 - Testimonial 1 Cover 1
 https://pxhere.com/en/photo/64946 - Testimonial 1 Cover 2
 https://pxhere.com/en/photo/836 - Testimonial 1 Cover 3
-https://pxhere.com/en/photo/750013 - Testimonial 2 Face 1
-https://pxhere.com/en/photo/625568 - Testimonial 2 Face 2
-https://pxhere.com/en/photo/635897 - Testimonial 2 Face 3
+https://pxhere.com/en/photo/750013 - Testimonial 3 Face 1
+https://pxhere.com/en/photo/625568 - Testimonial 3 Face 2
+https://pxhere.com/en/photo/635897 - Testimonial 3 Face 3
 
 
