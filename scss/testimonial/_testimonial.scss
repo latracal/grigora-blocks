@@ -58,7 +58,6 @@
             text-align: center;
             font-style: italic;
             line-height: 1.2;
-            font-weight: 500;
         }
 
         cite {
@@ -68,17 +67,19 @@
         }
 
         &::before{
-            color: #d2652d !important;
-            font-size: 5rem;
-            top: -35px;
-            line-height: 0;    
+            text-align: center;
+            transform: translateX(-50%);
+            background-color: #fff;
+            border-radius: 50%;
             box-shadow: 0 0 10px #00000040;
-            background-color: #c24444;
-            width: 60px;
-            height: 60px;
+            color: #d2652d;
+            font-size: 5rem;
+            font-style: normal;
+            top: -80px;
             left: 50%;
-            transform: translateX(-50%);   
-            border-radius: 50%;     
+            height: 60px;
+            position: absolute;
+            width: 60px; 
         }
     }
 
@@ -92,5 +93,9 @@
 
     .bt-5{
         border-top: 5px solid #d2652d;
+    }
+
+    h2,h3{
+        margin: 0;
     }
 }
