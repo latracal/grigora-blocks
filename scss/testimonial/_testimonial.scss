@@ -1,4 +1,8 @@
 .grigora-testimonial {
+    @media (max-width:768px){
+        margin-bottom: 1rem;
+    }
+
     .wp-block-quote{
         display: flex;
         flex-direction: column;
