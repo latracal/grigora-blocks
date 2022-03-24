@@ -11,16 +11,16 @@ return array(
 	'categories' => array( 'testimonial' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}},"className":"grigora-testimonial-5"} -->
-<div class="wp-block-columns alignfull grigora-testimonial-5" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column -->
+	<!-- wp:columns {"style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}},"className":"grigora-testimonial-5"} -->
+<div class="wp-block-columns grigora-testimonial-5" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:quote {"className":"is-style-default"} -->
 <blockquote class="wp-block-quote is-style-default"><p><em>Calvin: You know sometimes when I\'m talking, my words can\'t keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</em></p></blockquote>
 <!-- /wp:quote -->
 
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="" width="122" height="122"/></figure>
+<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/09/d3/light_music_crowd_concert_festival-145352.jpg!d" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -42,9 +42,9 @@ return array(
 <!-- /wp:quote -->
 
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="" width="122" height="122"/></figure>
+<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/2a/bd/tattoo_woman_bottle_drinking_mineral_water-64946.jpg!d" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -66,9 +66,9 @@ return array(
 <!-- /wp:quote -->
 
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large is-resized"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="" width="122" height="122"/></figure>
+<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/7f/1e/hitchhiker_traveler_forest_person_explorer-836.jpg!d" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
