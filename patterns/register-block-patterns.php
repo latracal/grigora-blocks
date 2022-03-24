@@ -85,7 +85,9 @@ function grigora_register_block_patterns() {
 		'transparentheaderhero/hero-11',
 		'search',
 		'testimonials/testimonial-1',
-		'testimonials/testimonial-2'
+		'testimonials/testimonial-2',
+		'testimonials/testimonial-3',
+
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {

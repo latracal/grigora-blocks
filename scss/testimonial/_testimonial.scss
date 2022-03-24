@@ -99,3 +99,79 @@
         margin: 0;
     }
 }
+
+.grigora-testimonial-3 {
+    h5{
+        margin: 0 0 0 1rem;
+    }
+
+    .wp-block-quote.is-style-grigora-quote-quotation-marks {
+        background: none;
+        padding: 0;
+
+        &::before{
+            margin-right: 5px;
+        }
+
+        &::after{
+            top: 90px;
+            margin-left: 0;
+        }
+
+        p{
+            margin-left: 0;
+        }
+    }
+
+    .ml-0{
+        margin-left: 0 !important;
+    }
+
+    .mb-05 {
+        margin-bottom: .5rem;
+    }
+
+    .wp-block-image{
+        margin: 0;
+    }
+    
+}
+
+.grigora-testimonial-4 {
+    .background-image {
+        background-image: linear-gradient(-25deg, #00000033 0%, #ffffff1a 100%);
+    }
+
+
+    h2, h4{
+         margin: 0;
+    }
+
+    h4{
+        color: #a6a6a6 !important;
+    }
+
+    img{
+        border-radius: 50% !important;
+    }
+
+   .wp-block-quote{
+       padding: 1rem;
+       margin: 1rem 0 0 0;
+       background-color: #fff;
+       border-radius: 5px;
+
+       p{
+           color: #000;
+           margin-top: 2rem;
+           margin-bottom: 2rem;
+           margin-left: 2rem;
+       }
+
+       &::before{
+           top: 7px;
+           color: #000 !important;
+           opacity: .25;
+       }
+   }
+}
