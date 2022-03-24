@@ -81,6 +81,7 @@ fieldset{
 		margin: 0 auto;
 		background-color: #3fdb4f !important;
 		transition: 0.3s all ease-out;
+		width: auto;
 
 		&:hover{
 			filter: brightness(0.8);
