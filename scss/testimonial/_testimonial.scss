@@ -2,9 +2,7 @@
     @media (max-width:768px){
         margin-bottom: 1rem;
     }
-
     
-
     .wp-block-quote{
         display: flex;
         flex-direction: column;
@@ -100,46 +98,13 @@
     }
 }
 
-.grigora-testimonial-3 {
-    h5{
-        margin: 0 0 0 1rem;
-    }
-
-    .wp-block-quote.is-style-grigora-quote-quotation-marks {
-        background: none;
-        padding: 0;
-
-        &::before{
-            margin-right: 5px;
-        }
-
-        &::after{
-            top: 90px;
-            margin-left: 0;
-        }
-
-        p{
-            margin-left: 0;
-        }
-    }
-
-    .ml-0{
-        margin-left: 0 !important;
-    }
-
-    .mb-05 {
-        margin-bottom: .5rem;
-    }
-
-    .wp-block-image{
-        margin: 0;
-    }
-    
-}
-
 .grigora-testimonial-4 {
     .background-image {
         background-image: linear-gradient(-25deg, #00000033 0%, #ffffff1a 100%);
+
+        @media (max-width:768px){
+            margin-bottom: 1rem;
+        }
     }
 
 
@@ -184,6 +149,10 @@
   
     h5{
          margin: 0;
+
+         @media(max-width:768px){
+            text-align: center;
+        }
     }
 
     img{
@@ -191,6 +160,10 @@
         width: 122px;
         height: 122px;
         object-fit: cover;
+    }
+
+    .img-center{
+        text-align: center;
     }
 
    .wp-block-quote{
