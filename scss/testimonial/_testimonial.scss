@@ -107,6 +107,9 @@
         }
     }
 
+    figure {
+        border-radius: inherit;
+    }
 
     h2, h4{
          margin: 0;
@@ -150,14 +153,6 @@
          @media(max-width:768px){
             text-align: center;
         }
-    }
-
-    img{       
-        object-fit: cover;
-    }
-
-    .img-center{
-        text-align: center;
     }
 
    .wp-block-quote{

@@ -8,7 +8,7 @@
 
 return array(
 	'title'      => esc_html__( 'Testimonial-2', 'grigora-blocks' ),
-	'categories' => array( 'testimonial' ),
+	'categories' => array( 'testimonials' ),
 	'inserter'   => true,
 	'content'    => '
 	<!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}}} -->

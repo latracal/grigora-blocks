@@ -71,4 +71,13 @@ https://pxhere.com/en/photo/591898 - Color Hue Hero Background Cover
 https://pxhere.com/en/photo/1014853 - Person Showcase Hero Background
 https://pxhere.com/en/photo/557162 - Person Showcase Hero Portrait
 
+== External Images used in Testimonial patterns ==
+Images from pxhere.com. CC0 Public Domain:
+https://pxhere.com/en/photo/145352 - Testimonial 1 Cover 1
+https://pxhere.com/en/photo/64946 - Testimonial 1 Cover 2
+https://pxhere.com/en/photo/836 - Testimonial 1 Cover 3
+https://pxhere.com/en/photo/750013 - Testimonial 2 Face 1
+https://pxhere.com/en/photo/625568 - Testimonial 2 Face 2
+https://pxhere.com/en/photo/635897 - Testimonial 2 Face 3
+
 
