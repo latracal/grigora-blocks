@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'testimonial' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:columns {"style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}},"className":"grigora-testimonial-4"} -->
-<div class="wp-block-columns grigora-testimonial-4" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column {"style":{"spacing":{"padding":{"top":"2%","right":"2%","bottom":"2%","left":"2%"}},"color":{"background":"#2c3447"}},"className":"background-image"} -->
+	<!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}},"className":"grigora-testimonial-4"} -->
+<div class="wp-block-columns alignfull grigora-testimonial-4" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column {"style":{"spacing":{"padding":{"top":"2%","right":"2%","bottom":"2%","left":"2%"}},"color":{"background":"#2c3447"}},"className":"background-image"} -->
 <div class="wp-block-column background-image has-background" style="background-color:#2c3447;padding-top:2%;padding-right:2%;padding-bottom:2%;padding-left:2%"><!-- wp:image {"align":"center","sizeSlug":"large"} -->
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt=""/></figure></div>
 <!-- /wp:image -->
