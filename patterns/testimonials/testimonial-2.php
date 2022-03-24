@@ -12,28 +12,38 @@ return array(
 	'inserter'   => true,
 	'content'    => '
 	<!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"5%","right":"5%","bottom":"5%","left":"5%"}}}} -->
-	<div class="wp-block-columns alignfull" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column -->
-	<div class="wp-block-column"><!-- wp:cover {"url":"https://c.pxhere.com/photos/09/d3/light_music_crowd_concert_festival-145352.jpg!d","id":2491,"dimRatio":50,"className":"grigora-testimonial","style":{"spacing":{"padding":{"top":"3rem","right":"3rem","bottom":"3rem","left":"3rem"}}}} -->
-	<div class="wp-block-cover grigora-testimonial" style="padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2491" alt="" src="https://c.pxhere.com/photos/09/d3/light_music_crowd_concert_festival-145352.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:quote {"className":"is-style-default","style":{"typography":{"fontSize":"1.5rem"}}} -->
-	<blockquote class="wp-block-quote is-style-default" style="font-size:1.5rem"><p>Which is worse, that everyone has his price, or that the price is always so low.</p><cite>SUE SHEI</cite></blockquote>
-	<!-- /wp:quote --></div></div>
-	<!-- /wp:cover --></div>
+	<div class="wp-block-columns alignfull" style="padding-top:5%;padding-right:5%;padding-bottom:5%;padding-left:5%"><!-- wp:column {"backgroundColor":"background","className":"grigora-testimonial-2 is-style-default"} -->
+	<div class="wp-block-column grigora-testimonial-2 is-style-default has-background-background-color has-background"><!-- wp:columns {"className":"p-3 mb-0 bt-5"} -->
+	<div class="wp-block-columns p-3 mb-0 bt-5"><!-- wp:column {"verticalAlignment":"top"} -->
+	<div class="wp-block-column is-vertically-aligned-top"><!-- wp:quote -->
+	<blockquote class="wp-block-quote"><p>If you do the job badly enough, sometimes you don\'t get asked to do it again.</p><cite>Wisteria Ravenclaw</cite></blockquote>
+	<!-- /wp:quote --></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
 	<!-- /wp:column -->
 
 	<!-- wp:column -->
-	<div class="wp-block-column"><!-- wp:cover {"url":"https://c.pxhere.com/photos/2a/bd/tattoo_woman_bottle_drinking_mineral_water-64946.jpg!d","id":2491,"dimRatio":50,"className":"grigora-testimonial","style":{"spacing":{"padding":{"top":"3rem","right":"3rem","bottom":"3rem","left":"3rem"}}}} -->
-	<div class="wp-block-cover grigora-testimonial" style="padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2491" alt="" src="https://c.pxhere.com/photos/2a/bd/tattoo_woman_bottle_drinking_mineral_water-64946.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:quote {"className":"is-style-default","style":{"typography":{"fontSize":"1.5rem"}}} -->
-	<blockquote class="wp-block-quote is-style-default" style="font-size:1.5rem"><p><em>\'m killing time while I wait for life to shower me with meaning and happiness.</em></p><cite>WILL BARROW</cite></blockquote>
-	<!-- /wp:quote --></div></div>
-	<!-- /wp:cover --></div>
+	<div class="wp-block-column"><!-- wp:columns -->
+	<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+	<div class="wp-block-column" style="flex-basis:100%"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+	<div class="wp-block-columns" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:column {"width":"100%"} -->
+	<div class="wp-block-column" style="flex-basis:100%"></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
 	<!-- /wp:column -->
 
 	<!-- wp:column -->
-	<div class="wp-block-column"><!-- wp:cover {"url":"https://c.pxhere.com/photos/7f/1e/hitchhiker_traveler_forest_person_explorer-836.jpg!d","id":2491,"dimRatio":50,"className":"grigora-testimonial","style":{"spacing":{"padding":{"top":"3rem","right":"3rem","bottom":"3rem","left":"3rem"}}}} -->
-	<div class="wp-block-cover grigora-testimonial" style="padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2491" alt="" src="https://c.pxhere.com/photos/7f/1e/hitchhiker_traveler_forest_person_explorer-836.jpg!d" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:quote {"className":"is-style-default","style":{"typography":{"fontSize":"1.5rem"}}} -->
-	<blockquote class="wp-block-quote is-style-default" style="font-size:1.5rem"><p><em>The only skills I have the patience to learn are those that have no real application in life.</em></p><cite>INDIGO VIOLET</cite></blockquote>
-	<!-- /wp:quote --></div></div>
-	<!-- /wp:cover --></div>
+	<div class="wp-block-column"><!-- wp:columns -->
+	<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+	<div class="wp-block-column" style="flex-basis:100%"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+	<div class="wp-block-columns" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px"><!-- wp:column {"width":"100%"} -->
+	<div class="wp-block-column" style="flex-basis:100%"></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns --></div>
 	<!-- /wp:column --></div>
 	<!-- /wp:columns -->
 	',	
