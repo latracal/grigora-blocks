@@ -60,6 +60,11 @@ function grigora_register_block_patterns() {
 		array( 'label' => __( 'Grigora Transparent Header Heros', 'grigora-blocks' ) )
 	);
 
+	register_block_pattern_category(
+		'testimonials',
+		array( 'label' => __( 'Grigora Testimonials', 'grigora-blocks' ) )
+	);
+
 	// Array of block pattern names.
 	$block_patterns = array(
 		'404',
@@ -79,6 +84,7 @@ function grigora_register_block_patterns() {
 		'transparentheaderhero/hero-10',
 		'transparentheaderhero/hero-11',
 		'search',
+		'testimonials/testimonial-1'
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {

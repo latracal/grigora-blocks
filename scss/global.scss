@@ -15,6 +15,7 @@
 @import "blocks/navigation";
 @import "blocks/post-author";
 @import "hero/hero";
+@import "testimonial/testimonial";
 
 html {
 	scroll-behavior: smooth;
@@ -88,8 +89,6 @@ fieldset{
 		}
 	}
 }
-
-
 
 /*
 Sticky button is experimental, only use it on the front for screens above 782px width.

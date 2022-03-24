@@ -1,0 +1,32 @@
+.grigora-testimonial {
+    .wp-block-quote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+        p, cite {
+            margin-left: 0;
+        }
+
+        p{
+            text-align: center;
+            font-style: italic;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+
+        cite {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        &::before{
+            color: #fff !important;
+            font-size: 7rem;
+            line-height: 0;
+            opacity: .5;
+        }
+    }
+}
