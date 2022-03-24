@@ -19,8 +19,8 @@ return array(
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
-<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/09/d3/light_music_crowd_concert_festival-145352.jpg!d" alt=""/></figure>
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large","style":{"border":{"radius":"50%"}}} -->
+<figure class="wp-block-image size-large is-resized" style="border-radius:50%"><img src="https://c.pxhere.com/photos/09/d3/light_music_crowd_concert_festival-145352.jpg!d" alt="" width="122" height="122"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -43,8 +43,8 @@ return array(
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
-<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/2a/bd/tattoo_woman_bottle_drinking_mineral_water-64946.jpg!d" alt=""/></figure>
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large","style":{"border":{"radius":"50%"}}} -->
+<figure class="wp-block-image size-large is-resized" style="border-radius:50%"><img src="https://c.pxhere.com/photos/2a/bd/tattoo_woman_bottle_drinking_mineral_water-64946.jpg!d" alt="" width="122" height="122"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -67,8 +67,8 @@ return array(
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"33.33%","className":"img-center"} -->
-<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://c.pxhere.com/photos/7f/1e/hitchhiker_traveler_forest_person_explorer-836.jpg!d" alt=""/></figure>
+<div class="wp-block-column is-vertically-aligned-top img-center" style="flex-basis:33.33%"><!-- wp:image {"width":122,"height":122,"sizeSlug":"large","style":{"border":{"radius":"50%"}}} -->
+<figure class="wp-block-image size-large is-resized" style="border-radius:50%"><img src="https://c.pxhere.com/photos/7f/1e/hitchhiker_traveler_forest_person_explorer-836.jpg!d" alt="" width="122" height="122"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
