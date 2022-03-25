@@ -544,6 +544,11 @@
 			"postTypes": [ "page" ]
 		},
 		{
+			"name": "no-sidebar-widewidth-n-back-template",
+			"title": "No Sidebar No Background - Wide Width",
+			"postTypes": [ "page", "post" ]
+		},
+		{
 			"name": "no-sidebar-fullwidth-page-template",
 			"title": "No Sidebar Page - Full Width",
 			"postTypes": [ "page" ]
