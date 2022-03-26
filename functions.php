@@ -15,7 +15,7 @@
  */
 define( 'GRIGORA_DEBUG', false );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
-define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
+define( 'GRIGORA_HOME', 'https://wpgrigora.com/blocks/');
 
 /**
  * Add theme support for block styles and editor style.

@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'hero' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"url":"https://wpgrigora.com/blocks/wp-content/assets/images/hero/quote.jpg","dimRatio":75,"overlayColor":"black","align":"full","className":"grigora-hero"} -->
-	<div class="wp-block-cover alignfull grigora-hero"><span aria-hidden="true" class="has-black-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="https://wpgrigora.com/blocks/wp-content/assets/images/hero/quote.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
+	<!-- wp:cover {"url":"'. esc_url( get_theme_file_uri( "assets/images/hero/quote.jpg" ) ) .'","dimRatio":75,"overlayColor":"black","align":"full","className":"grigora-hero"} -->
+	<div class="wp-block-cover alignfull grigora-hero"><span aria-hidden="true" class="has-black-background-color has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background" alt="" src="'. esc_url( get_theme_file_uri( "assets/images/hero/quote.jpg" ) ) .'" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"top"} -->
 	<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"verticalAlignment":"top","width":"100%"} -->
 	<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><!-- wp:columns -->
 	<div class="wp-block-columns"><!-- wp:column {"width":""} -->

@@ -11,8 +11,8 @@ return array(
 	'categories' => array( 'transparent-header-hero' ),
 	'inserter'   => true,
 	'content'    => '
-	<!-- wp:cover {"url":"https://wpgrigora.com/blocks/wp-content/assets/images/hero/parallaxcardbackground.jpg","id":2306,"hasParallax":true,"dimRatio":30,"isDark":false,"align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"0%","right":"0%","bottom":"0%","left":"0%"}}}} -->
-	<div class="wp-block-cover alignfull is-light has-parallax grigora-hero" style="padding-top:0%;padding-right:0%;padding-bottom:0%;padding-left:0%;background-image:url(https://wpgrigora.com/blocks/wp-content/assets/images/hero/parallaxcardbackground.jpg)"><span aria-hidden="true" class="has-background-dim-30 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"transparent-header","theme":"grigora-blocks"} /-->
+	<!-- wp:cover {"url":"'. esc_url( get_theme_file_uri( "assets/images/hero/parallaxcardbackground.jpg" ) ) .'","id":2306,"hasParallax":true,"dimRatio":30,"isDark":false,"align":"full","className":"grigora-hero","style":{"spacing":{"padding":{"top":"0%","right":"0%","bottom":"0%","left":"0%"}}}} -->
+	<div class="wp-block-cover alignfull is-light has-parallax grigora-hero" style="padding-top:0%;padding-right:0%;padding-bottom:0%;padding-left:0%;background-image:url('. esc_url( get_theme_file_uri( "assets/images/hero/parallaxcardbackground.jpg" ) ) .')"><span aria-hidden="true" class="has-background-dim-30 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:template-part {"slug":"transparent-header","theme":"grigora-blocks"} /-->
 
 	<!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"padding":{"top":"8%","right":"8%","bottom":"8%","left":"8%"}}},"className":"hero-block-2"} -->
 	<div class="wp-block-columns are-vertically-aligned-center hero-block-2" style="padding-top:8%;padding-right:8%;padding-bottom:8%;padding-left:8%"><!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
