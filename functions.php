@@ -55,6 +55,9 @@ function grigora_setup() {
 }
 add_action( 'after_setup_theme', 'grigora_setup' );
 
+include( get_theme_file_path( '/customizer/google-fonts.php' ) );
+include( get_theme_file_path( '/customizer/panels.php' ) );
+
 /**
  * Enqueue the CSS files.
  *
