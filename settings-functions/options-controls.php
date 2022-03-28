@@ -43,7 +43,7 @@ function custom_do_settings_sections( $page ) {
     }
  
     foreach ( (array) $wp_settings_sections[ $page ] as $section ) {
-        echo "<div class='{$section['id']} customizer ". (is_grigora_pro_active() ? '' : 'disabled') ."' id='{$section['id']}'>";
+        echo "<div class='{$section['id']} customizer ". (is_grigora_pro_active() ? '' : '') ."' id='{$section['id']}'>";
         if ( $section['title'] ) {
             echo "<h2>{$section['title']}</h2>\n";
         }
@@ -122,7 +122,7 @@ function grigora_options_page() {
                 onclick="controlName(event, 'grigora_importexport_section')"><?php echo esc_html( __( "Import & Export", "grigora" )); ?></button>
         </div>
         <div class="tab-content">
-            <form action="options.php" method="post" class=" <?php echo (is_grigora_pro_active() ? '' : 'disabled') ?>">
+            <form action="options.php" method="post" class=" <?php echo (is_grigora_pro_active() ? '' : '') ?>">
                 <?php
                         settings_fields("grigora_settings");
                         custom_do_settings_sections("grigora-options");
@@ -130,7 +130,7 @@ function grigora_options_page() {
                     ?>
             </form>
             <form enctype="multipart/form-data" action="<?php echo get_admin_url( null, 'admin-post.php' ) ?>"
-                method="post" class="IETab <?php echo (is_grigora_pro_active() ? '' : 'disabled') ?>">
+                method="post" class="IETab <?php echo (is_grigora_pro_active() ? '' : '') ?>">
                 <div class="grigora_importexport_section customizer " id="grigora_importexport_section">
                     <h2><?php echo esc_html( __( "Import & Export", "grigora" )); ?></h2>
                     <input type="hidden" name="action" value="grigora_import">
