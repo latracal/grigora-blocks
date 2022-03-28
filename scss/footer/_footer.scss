@@ -1,0 +1,36 @@
+.grg_footer-1{
+    h2{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h5{
+        margin-bottom: 0;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    .wp-block-button__link{
+        box-shadow: none;
+    }
+
+    .wp-block-button__link{
+        border-width: 0;
+        border-style: none;
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{
+        flex-basis: auto;
+    }
+
+    .column-2{
+        column-count: 2;
+    }
+}
