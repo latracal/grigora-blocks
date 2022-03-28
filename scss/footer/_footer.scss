@@ -35,3 +35,58 @@
         column-count: 2;
     }
 }
+
+.mb-0{
+    margin-bottom: 0;
+}
+
+.grg_footer_3{
+    p,li,a {
+        color: #ffffff80;
+    }
+
+    time{
+        color: #27ae60;
+    }
+
+    li{ 
+        a{
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .li-style{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        gap: .2rem;
+
+        a{           
+            display: block;
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: .2rem 0.5rem;
+            border-radius: 5px;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .wp-block-tag-cloud{ 
+        a {
+            font-size: 1rem !important;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        } 
+    }
+
+}
