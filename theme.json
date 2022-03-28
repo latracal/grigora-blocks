@@ -539,6 +539,16 @@
 			"area": "footer"
 		},
 		{
+			"name": "footer-6",
+			"title": "Footer-6",
+			"area": "footer"
+		},
+		{
+			"name": "footer-7",
+			"title": "Footer-7",
+			"area": "footer"
+		},
+		{
 			"name": "sidebar",
 			"title": "Sidebar",
 			"area": "sidebar"
