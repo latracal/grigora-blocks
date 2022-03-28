@@ -16,7 +16,6 @@
 define( 'GRIGORA_DEBUG', false );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/blocks/');
-define( 'grg_PRO_URL', 'https://wpgrigora.com/pro/' );
 
 /**
  * Add theme support for block styles and editor style.
@@ -55,10 +54,6 @@ function grigora_setup() {
 
 }
 add_action( 'after_setup_theme', 'grigora_setup' );
-
-include( get_theme_file_path( '/settings-functions/options-controls.php' ) );
-include( get_theme_file_path( '/customizer/google-fonts.php' ) );
-include( get_theme_file_path( '/customizer/panels.php' ) );
 
 /**
  * Enqueue the CSS files.
