@@ -1,6 +1,10 @@
 .shape-1{
     position: relative;
 
+    @media (max-width:768px){
+        padding: 30% !important;
+    }
+
     &::after{
         content: '';
         display: block;
