@@ -439,5 +439,22 @@ function grigora_register_block_styles() {
 			'label' => __( 'Shape Divider 5', 'grigora-blocks' ),
 		)
 	);	
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shape-divider-6',
+			'label' => __( 'Shape Divider 6', 'grigora-blocks' ),
+		)
+	);	
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shape-divider-7',
+			'label' => __( 'Shape Divider 7', 'grigora-blocks' ),
+		)
+	);	
 }
+
 add_action( 'init', 'grigora_register_block_styles' );
