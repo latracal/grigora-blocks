@@ -399,5 +399,21 @@ function grigora_register_block_styles() {
 			'label' => __( 'Post Author Style 1', 'grigora-blocks' ),
 		)
 	);	
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shape-divider-1',
+			'label' => __( 'Shape Divider 1', 'grigora-blocks' ),
+		)
+	);	
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shape-divider-2',
+			'label' => __( 'Shape Divider 2', 'grigora-blocks' ),
+		)
+	);	
 }
 add_action( 'init', 'grigora_register_block_styles' );
