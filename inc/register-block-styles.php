@@ -415,5 +415,13 @@ function grigora_register_block_styles() {
 			'label' => __( 'Shape Divider 2', 'grigora-blocks' ),
 		)
 	);	
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shape-divider-3',
+			'label' => __( 'Shape Divider 3', 'grigora-blocks' ),
+		)
+	);	
 }
 add_action( 'init', 'grigora_register_block_styles' );
