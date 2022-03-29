@@ -89,6 +89,7 @@ function grigora_register_block_patterns() {
 		'testimonials/testimonial-3',
 		'testimonials/testimonial-4',
 		'shape-divider/shape-1',
+		'shape-divider/shape-2',
 	);
 
 	foreach ( $block_patterns as $block_pattern ) {
