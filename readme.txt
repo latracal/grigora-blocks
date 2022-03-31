@@ -67,9 +67,12 @@ Screenshot image is snapshot of actual website created using Grigora Block.
 The site icon is taken from bootstrap icon pack and added a linear gradient over it. 
 Bootstrap Icons library (bi-boombox-fill). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
 
-== Raspberry thumbnail ==
-The image specifically shown in the screenshot is uploaded on negativespaces.co ( https://negativespace.co/food-raspberries-berry/ ).
-CC0 License ( https://creativecommons.org/share-your-work/public-domain/cc0/ )
+== Screenshot images ==
+Images from pxhere.com. CC0 Public Domain:
+https://pxhere.com/en/photo/1656606 - Cover Image
+https://pxhere.com/en/photo/145352 - Testimonial 1 Cover 1
+https://pxhere.com/en/photo/64946 - Testimonial 1 Cover 2
+https://pxhere.com/en/photo/836 - Testimonial 1 Cover 3
 
 == Theme Base ==
 Grigora Block is derived from Full site editing starter theme by Carolina Nymark
