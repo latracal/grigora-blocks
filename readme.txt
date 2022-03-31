@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.01.006
+Version: 2.01.007
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -32,6 +32,11 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.01.007 ==
+1. Changed Screenshot Image
+2. Added 7 More Footer Template Parts
+3. Theme URI Updated
 
 == v2.01.006 ==
 1. Remote pattern images to local assets/images/ folder. ( https://themes.trac.wordpress.org/ticket/115430 )
