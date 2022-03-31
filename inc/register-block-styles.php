@@ -400,69 +400,6 @@ function grigora_register_block_styles() {
 		)
 	);	
 
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-1',
-			'label' => __( 'Shape Divider 1', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-2',
-			'label' => __( 'Shape Divider 2', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-3',
-			'label' => __( 'Shape Divider 3', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-4',
-			'label' => __( 'Shape Divider 4', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-5',
-			'label' => __( 'Shape Divider 5', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-6',
-			'label' => __( 'Shape Divider 6', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-7',
-			'label' => __( 'Shape Divider 7', 'grigora-blocks' ),
-		)
-	);	
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'grigora-shape-divider-8',
-			'label' => __( 'Shape Divider 8', 'grigora-blocks' ),
-		)
-	);	
 }
 
 add_action( 'init', 'grigora_register_block_styles' );
