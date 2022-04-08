@@ -89,5 +89,8 @@ require_once get_theme_file_path( 'inc/register-block-variations.php' );
 // Block style examples.
 require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
+// Custom Settings
+require_once get_theme_file_path( 'inc/init.php' );
+
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'patterns/register-block-patterns.php' );
