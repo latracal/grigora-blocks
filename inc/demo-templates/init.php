@@ -56,8 +56,24 @@ if(!function_exists("render_templates_html")){
             echo $template_meta['name'];
             echo '</div>';
             echo '<div class="demo-overlay">';
-            echo '<a href="#">View Demo</a>';
+            echo '<a href="'.$template_meta['demo_url'].'">View Demo</a>';
             echo '</div>';
+            echo '</div>';
+            echo '<div class="demo_modal">';
+            echo '<div class="modal_header">';
+            echo '<div class="modal_template_name">';
+            echo $template_meta['name'];
+            echo '</div>';
+            echo '<div class="modal_screen_size">';
+            echo 'a';
+            echo 'a';
+            echo 'a';
+            echo '</div>';
+            echo '<div class="modal_install_btn">';
+            echo '<a href="#" class="btn-install">Install</a>';
+            echo '</div>';
+            echo '</div>';
+            echo '<img src="'.get_theme_file_uri('assets/images/demo-templates/'.$template_meta['screenshot']).'" alt="'.$template_meta['name'].'" width="300" height="300">';
             echo '</div>';
         }
     
