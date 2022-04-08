@@ -84,13 +84,13 @@
 
         .demo_modal{
             display: none;
-            // position: fixed;
-            width: 100%;
-            // top:50%;
-            // left: 0;
-            // transform: translateY(-50%);
-            // padding: 10%;
+            left: 50%;
+            top: 50%;
+            width: 70%;
             z-index: 99999;
+            position: fixed;
+            transform: translate(-40%, -50%);
+            box-shadow: 1px 1px 10px 1px #0000003b;
             
             .modal_header {
                 display: flex;
