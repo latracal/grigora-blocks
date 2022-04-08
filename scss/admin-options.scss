@@ -119,6 +119,12 @@
                     background-color: #4D3BB7;
                 }
             }
+
+            img{
+                width: 100%;
+                max-height: 600px;
+                object-fit: cover;
+            }
         }
 
         .open-modal {
