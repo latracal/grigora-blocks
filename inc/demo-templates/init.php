@@ -17,15 +17,15 @@ if(!function_exists("grigora_templates_page")){
         echo '<div class="admin-container">';
         settings_errors();
         ?>
-    
-        <div class="grigora-settings">
-            <div class="tab-content">
-                <?php
+
+<div class="grigora-settings">
+    <div class="tab-content">
+        <?php
                     render_templates_html("grigora-templates");
                 ?>
-            </div>
-        </div>
-    <?php
+    </div>
+</div>
+<?php
     }
 }
 
@@ -44,7 +44,7 @@ if(!function_exists("render_templates_html")){
         foreach ($json as $template => $template_meta) {
             echo '<div class="grigora-templates-single">';
             echo '<div class="grigora-screenshot">';
-            echo '<img src="'.$template_meta['screenshot'].'" alt="'.$template_meta['name'].'" width="600" height="600">';
+            echo '<img src="../../assets/images/demo-templates/'.$template_meta['screenshot'].'" alt="'.$template_meta['name'].'" width="600" height="600">';
             echo '</div>';
             echo '<div class="grigora-template-name">';
             echo $template_meta['name'];
