@@ -46,6 +46,22 @@ if(!function_exists("render_templates_html")){
         echo '</select>';
         echo '</div>';
         echo '<div class="grigora-templates">';
+        echo '<div class="demo_modal">';
+        echo '<div class="modal_header">';
+        echo '<div class="modal_template_name">';
+        echo 'Blog Pro';
+        echo '</div>';
+        echo '<div class="modal_screen_size">';
+        echo '<button><i class="fa-regular fa-desktop"></i></button>';
+        echo '<button><i class="fa-regular fa-tablet"></i></button>';
+        echo '<button><i class="fa-regular fa-mobile-notch"></i></button>';
+        echo '</div>';
+        echo '<div class="modal_install_btn">';
+        echo '<a href="#" class="btn-install">Install<i class="fa-solid fa-down-to-bracket"></i></a>';
+        echo '</div>';
+        echo '</div>';
+        echo '<img src="http://localhost/latracal/wp-content/themes/grigora-blocks/assets/images/demo-templates/blog_pro.png" alt="">';
+        echo '</div>';
     
         foreach ($json as $template => $template_meta) {
             echo '<div class="grigora-templates-single">';
@@ -56,25 +72,9 @@ if(!function_exists("render_templates_html")){
             echo $template_meta['name'];
             echo '</div>';
             echo '<div class="demo-overlay">';
-            echo '<a href="'.$template_meta['demo_url'].'">View Demo</a>';
+            echo '<button class="view-btn">View Demo</button>';
             echo '</div>';
-            echo '</div>';
-            echo '<div class="demo_modal">';
-            echo '<div class="modal_header">';
-            echo '<div class="modal_template_name">';
-            echo $template_meta['name'];
-            echo '</div>';
-            echo '<div class="modal_screen_size">';
-            echo 'a';
-            echo 'a';
-            echo 'a';
-            echo '</div>';
-            echo '<div class="modal_install_btn">';
-            echo '<a href="#" class="btn-install">Install</a>';
-            echo '</div>';
-            echo '</div>';
-            echo '<img src="'.get_theme_file_uri('assets/images/demo-templates/'.$template_meta['screenshot']).'" alt="'.$template_meta['name'].'" width="300" height="300">';
-            echo '</div>';
+            echo '</div>';            
         }
     
         echo '</div>';
