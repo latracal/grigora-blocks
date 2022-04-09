@@ -1,4 +1,16 @@
 {
+    "default":{
+        "id":1,
+        "slug": "default",
+        "name": "Default",
+        "requirements": [],
+        "screenshot": "blog_pro.png",
+        "local_image": true,
+        "demo_url": "https://wpgrigora.com/",
+        "category": ["Blog"],
+        "description": "Default template for bloggers.",
+        "pro_required": false
+    },
     "blog_pro":{
         "id":1001,
         "slug": "blog_pro",
