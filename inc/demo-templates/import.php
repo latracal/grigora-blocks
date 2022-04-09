@@ -53,6 +53,7 @@ if(!function_exists("write_file_to_contents")){
                 return false;
             }
         }
+        // print_r($contents);
         if(!get_filesystem()->put_contents( $html_folder.$filename, $contents) ) {
             return false;
         }
@@ -72,25 +73,26 @@ add_action( 'admin_post_grigora_template_import', 'grigora_template_import' );
 
 if(!function_exists("grigora_template_import")){
     function grigora_template_import() {
-        if( isset( $_POST["_wpnonce"]) && $_POST["_wpnonce"] && $_POST["template"] ) {
-            if ( ! wp_verify_nonce( $_POST["_wpnonce"], 'grigora_template_import' ) ) {
+        if( isset( $_POST["_grigora_template_import"]) && isset($_POST["_grigora_template_import"]) && isset($_POST["template"]) ) {
+            if ( ! wp_verify_nonce( $_POST["_grigora_template_import"], 'grigora_template_import' ) ) {
                 wp_die( __( 'The link you followed has expired.', 'grigora-blocks' ) ); 
             } else {
                 $template = $_POST["template"];
                 $json = file_get_contents( get_theme_file_path( 'inc/demo-templates/templates-meta/meta.json' ) );
                 $json = json_decode($json, true);
                 if(array_key_exists($template, $json)){
-                    $existing_files = get_filesystem().dirlist(get_theme_dir_full()."templates/");
-                    $new_files = get_filesystem().dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
+                    $existing_files = get_filesystem()->dirlist(get_theme_dir_full()."templates/");
+                    $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
                     foreach($existing_files as $existing_file){
                         if(!in_array($existing_file, $new_files)){
-                            get_filesystem()->delete( get_theme_dir_full() . "templates/" . $existing_file);
+                            get_filesystem()->delete( get_theme_dir_full() . "templates/" . $existing_file["name"]);
                         }
                     }
-                    foreach($new_files as $new_file){
-                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $new_file);
-                        write_file_to_contents($new_file, $contents, 1);
+                    foreach($new_files as $index => $new_file){
+                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $new_file["name"]);
+                        write_file_to_contents($new_file["name"], $contents, 1);
                     }
+                    wp_redirect(admin_url('admin.php?page=grigora-templates'));
                 }   
                 else{
                     wp_die( __( 'Incorrect template slug.', 'grigora-blocks' ) ); 
@@ -99,5 +101,6 @@ if(!function_exists("grigora_template_import")){
             wp_redirect(admin_url('admin.php?page=grigora-templates'));
         }
         wp_redirect(admin_url('admin.php?page=grigora-templates'));
+        // wp_die( __( 'Missing form fields.', 'grigora-blocks' ) ); 
     }
 }
