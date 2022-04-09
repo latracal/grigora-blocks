@@ -183,6 +183,10 @@
         width: 100%;
         height: 94vh;
         transition: all .2s linear;
+
+        @media(max-width: 1366px){
+            height: 92.5vh;
+        }
     }
 }
 
