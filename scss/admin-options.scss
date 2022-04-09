@@ -74,6 +74,17 @@
                     font-size: 1.5rem;
                     font-weight: 600;
                 }
+
+                .view-btn {
+                    background: transparent;
+                    font-size: 1.5rem;
+                    color: #fff;
+                    border: none;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
 
             &:hover > .demo-overlay{          
