@@ -177,10 +177,11 @@
     display: flex;
     background-color: #fff;
     margin: auto;
+    height: 100%;
 
     iframe {
         width: 100%;
-        height: 95vh;
+        height: 94vh;
         transition: all .2s linear;
     }
 }
