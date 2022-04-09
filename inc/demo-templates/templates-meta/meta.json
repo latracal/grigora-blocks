@@ -6,7 +6,7 @@
         "requirements": [],
         "screenshot": "blog_pro.png",
         "local_image": true,
-        "demo_url": "",
+        "demo_url": "https://demo.wpgrigora.com/",
         "category": ["Blog"],
         "description": "Prebuilt template for bloggers.",
         "pro_required": false

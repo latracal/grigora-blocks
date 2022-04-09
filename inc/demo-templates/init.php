@@ -60,7 +60,9 @@ if(!function_exists("render_templates_html")){
         echo '<a href="#" class="btn-install">Install<i class="fa-solid fa-down-to-bracket"></i></a>';
         echo '</div>';
         echo '</div>';
-        echo '<img src="http://localhost/latracal/wp-content/themes/grigora-blocks/assets/images/demo-templates/blog_pro.png" alt="">';
+        echo '<div class="modal-iframe-div">';
+        echo '<iframe src="#" title="Title" class="modal-iframe"></iframe>';
+        echo '</div>';
         echo '</div>';
     
         foreach ($json as $template => $template_meta) {
@@ -71,8 +73,18 @@ if(!function_exists("render_templates_html")){
             echo '<div class="grigora-template-name">';
             echo $template_meta['name'];
             echo '</div>';
-            echo '<div class="demo-overlay">';
-            echo '<button class="view-btn">View Demo</button>';
+            echo '<div class="demo-overlay"
+                data-name="'.$template_meta['name'].'" 
+                data-slug="'.$template_meta['slug'].'" 
+                data-demo_url="'.$template_meta['demo_url'].'" 
+                data-description="'.$template_meta['description'].'" 
+                >';
+            echo '<button class="view-btn"  
+            data-name="'.$template_meta['name'].'" 
+            data-slug="'.$template_meta['slug'].'" 
+            data-demo_url="'.$template_meta['demo_url'].'" 
+            data-description="'.$template_meta['description'].'" 
+            >View Demo</button>';
             echo '</div>';
             echo '</div>';            
         }
