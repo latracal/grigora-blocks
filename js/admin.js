@@ -38,25 +38,31 @@ const mobileView = document.querySelector(".bi-phone");
 const iframe = document.querySelector(".modal-iframe");
 
 desktopView.addEventListener("click", function () {
-	if (iframe.classList.contains("tablet mobile")) {
-		iframe.classList.remove("tablet mobile");
-	} else {
-		iframe.classList.add("desktop");
+	if (iframe.classList.contains("tablet")) {
+		iframe.classList.remove("tablet");
 	}
+  if (iframe.classList.contains("mobile")) {
+		iframe.classList.remove("mobile");
+	}
+  iframe.classList.add("desktop");
 });
 
 tabletView.addEventListener("click", function () {
-	if (iframe.classList.contains("desktop mobile")) {
-		iframe.classList.remove("desktop mobile");
-	} else {
-		iframe.classList.add("tablet");
+	if (iframe.classList.contains("desktop")) {
+		iframe.classList.remove("desktop");
 	}
+  if (iframe.classList.contains("mobile")) {
+		iframe.classList.remove("mobile");
+	}
+  iframe.classList.add("tablet");
 });
 
 mobileView.addEventListener("click", function () {
-	if (iframe.classList.contains("desktop tablet")) {
-		iframe.classList.remove("desktop tablet");
-	} else {
-		iframe.classList.add("mobile");
+	if (iframe.classList.contains("desktop")) {
+		iframe.classList.remove("desktop");
 	}
+  if (iframe.classList.contains("tablet")) {
+		iframe.classList.remove("tablet");
+	}
+  iframe.classList.add("mobile");
 });
