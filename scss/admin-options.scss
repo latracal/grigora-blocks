@@ -118,17 +118,23 @@
                 .modal_screen_size {
                     display: flex;
                     gap: 1rem;
-                }
+                }                
 
-                .btn-install {
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    padding: .5rem 1rem;
-                    border-radius: 5px;
-                    width: 25%;
-                    background-color: #4D3BB7;
+                .modal_install_btn{
+                    .btn-install {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        padding: .5rem 1rem;
+                        border-radius: 5px;
+                        width: 25%;
+                        background-color: #4D3BB7;
+
+                        svg{
+                            margin-left: .5rem;
+                        }
+                    }
                 }
             }
 
@@ -142,5 +148,12 @@
         .open-modal {
             display: block;
         }
+    }
+}
+
+.modal-iframe-div{
+    iframe {
+        width: 100%;
+        height: 100vh;
     }
 }
