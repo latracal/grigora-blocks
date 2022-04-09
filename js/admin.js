@@ -1,4 +1,5 @@
 const modalBtns = document.getElementsByClassName("demo-overlay");
+const modalClose = document.getElementsByClassName("close");
 const modal = document.querySelector(".demo_modal");
 
 var toggleModal = function (event) {
@@ -22,6 +23,18 @@ Array.from(modalBtns).forEach(function (element) {
 	element.addEventListener("click", toggleModal);
 });
 
+var toggleModalClose = function (event) {
+	if (modal.classList.contains("open-modal")) {
+		modal.classList.remove("open-modal");
+	}
+	var target = event.target;
+	modal.classList.remove("open-modal");
+};
+
+Array.from(modalClose).forEach(function (element) {
+	element.addEventListener("click", toggleModalClose);
+});
+
 var svg = document.querySelector(".modal_screen_size");
 var icon = svg.getElementsByClassName("bi");
 for (var i = 0; i < icon.length; i++) {
@@ -41,28 +54,28 @@ desktopView.addEventListener("click", function () {
 	if (iframe.classList.contains("tablet")) {
 		iframe.classList.remove("tablet");
 	}
-  if (iframe.classList.contains("mobile")) {
+	if (iframe.classList.contains("mobile")) {
 		iframe.classList.remove("mobile");
 	}
-  iframe.classList.add("desktop");
+	iframe.classList.add("desktop");
 });
 
 tabletView.addEventListener("click", function () {
 	if (iframe.classList.contains("desktop")) {
 		iframe.classList.remove("desktop");
 	}
-  if (iframe.classList.contains("mobile")) {
+	if (iframe.classList.contains("mobile")) {
 		iframe.classList.remove("mobile");
 	}
-  iframe.classList.add("tablet");
+	iframe.classList.add("tablet");
 });
 
 mobileView.addEventListener("click", function () {
 	if (iframe.classList.contains("desktop")) {
 		iframe.classList.remove("desktop");
 	}
-  if (iframe.classList.contains("tablet")) {
+	if (iframe.classList.contains("tablet")) {
 		iframe.classList.remove("tablet");
 	}
-  iframe.classList.add("mobile");
+	iframe.classList.add("mobile");
 });

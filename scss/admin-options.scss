@@ -44,7 +44,7 @@
                 }
             }
 
-            .grigora-template-name{
+            .grigora-template-name{               
                 font-size: 1rem;
                 font-weight: 600;
                 text-align: center;
@@ -112,8 +112,18 @@
                 border-bottom: 1px solid currentColor;
 
                 .modal_template_name{
+                    display: flex;
+                    align-items: center;
                     font-size: 1rem;
                     font-weight: 600;
+
+                    svg {
+                        margin-right: .5rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 .modal_screen_size {
