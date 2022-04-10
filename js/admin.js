@@ -14,6 +14,8 @@ var toggleModal = function (event) {
 	var iframe = modal.querySelector(".modal-iframe");
 	iframe.setAttribute("src", demo_url);
 	iframe.setAttribute("title", name);
+  var formtemplate = modal.querySelector(".form-template");
+  formtemplate.value = slug;
 	modal.classList.add("open-modal");
 };
 
