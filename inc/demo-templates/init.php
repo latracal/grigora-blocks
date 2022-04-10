@@ -81,7 +81,7 @@ if(!function_exists("render_templates_html")){
         <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
       </svg>';
         echo '</div>';
-        echo '<form action="' . site_url("/wp-admin/admin-post.php") . '" method="post">';
+        echo '<form action="' . home_url("/wp-admin/admin-post.php") . '" method="post">';
         echo '<input type="hidden" name="action" value="grigora_template_import">';
         echo '<input type="hidden" name="template" class="form-template" value="blog_pro">';
         wp_nonce_field( 'grigora_template_import', '_grigora_template_import' );
