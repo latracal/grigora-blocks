@@ -92,6 +92,17 @@ if(!function_exists("grigora_template_import")){
                         $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $new_file["name"]);
                         write_file_to_contents($new_file["name"], $contents, 1);
                     }
+                    $existing_files = get_filesystem()->dirlist(get_theme_dir_full()."parts/");
+                    $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/" );
+                    foreach($existing_files as $existing_file){
+                        if(!in_array($existing_file, $new_files)){
+                            get_filesystem()->delete( get_theme_dir_full() . "parts/" . $existing_file["name"]);
+                        }
+                    }
+                    foreach($new_files as $index => $new_file){
+                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/". $new_file["name"]);
+                        write_file_to_contents($new_file["name"], $contents, 0);
+                    }
                     wp_redirect(admin_url('admin.php?page=grigora-templates'));
                 }   
                 else{
