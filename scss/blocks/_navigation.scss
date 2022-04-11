@@ -70,3 +70,13 @@
         }
     }
 }
+
+
+.is-style-custom-link-button span{
+    background-color: #41CD52;
+    color: white;
+    padding: 8px 20px 8px 20px !important;
+    border-radius: 100px;
+    -webkit-box-shadow: var(--wp--custom--button-shadow);
+    box-shadow: var(--wp--custom--button-shadow);
+}
