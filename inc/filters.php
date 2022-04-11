@@ -3,13 +3,13 @@
  * Filters
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */
 
 /**
  * Show '(No title)' if a post has no title.
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 add_filter(
 	'the_title',
@@ -25,7 +25,7 @@ add_filter(
 /**
  * Replace the default [...] excerpt more with an elipsis.
  *
- * @since 1.0.0
+ * @since 2.0.0
 */
 add_filter(
 	'excerpt_more',

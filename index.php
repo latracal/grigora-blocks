@@ -6,5 +6,5 @@
  * @link https://core.trac.wordpress.org/ticket/54272
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */

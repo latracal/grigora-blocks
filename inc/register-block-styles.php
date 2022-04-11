@@ -3,13 +3,13 @@
  * Block styles.
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */
 
 /**
  * Register block styles
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return void
  */

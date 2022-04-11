@@ -3,7 +3,7 @@
  * Block Variations
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */
 
 /**
@@ -11,7 +11,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return void
  */
