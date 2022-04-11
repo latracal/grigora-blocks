@@ -114,7 +114,6 @@ if(!function_exists("write_file_to_contents")){
                 return false;
             }
         }
-        // print_r($contents);
         if(!get_filesystem()->put_contents( $html_folder.$filename, $contents) ) {
             return false;
         }
@@ -171,7 +170,6 @@ if(!function_exists("grigora_template_import")){
                                 'post_type'			=> 'wp_template',
                                 'tax_input'			=> $terms,
                             );
-                            print_r($insert_post_args);
                             $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
                             if ( $new_post_id ) {
                                 grigora_templates_slug_fix( $new_post_id, $slug );
