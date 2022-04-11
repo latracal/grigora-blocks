@@ -4,7 +4,7 @@ require_once get_theme_file_path( 'inc/demo-templates/import.php' );
 
 if ( ! function_exists( 'gbp_options_menu' ) ) { 
     function gbp_options_menu() {
-        add_theme_page( 'grigora-templates', __('Grigora Demo Templates', 'grigora-blocks-pro'), 'manage_options', 'grigora-templates', 'grigora_templates_page' );
+        add_theme_page( 'grigora-templates', __('Grigora Demo Templates', 'grigora-blocks'), 'manage_options', 'grigora-templates', 'grigora_templates_page' );
     }
 }
 
@@ -12,7 +12,7 @@ if(!function_exists("grigora_templates_page")){
     function grigora_templates_page() {
 
         if ( !current_user_can( 'manage_options' ) ) {
-            wp_die( __( 'You do not have sufficient permissions to access this page.' , 'grigora-blocks-pro') );
+            wp_die( __( 'You do not have sufficient permissions to access this page.' , 'grigora-blocks') );
         }
         echo '<div class="admin-container">';
         settings_errors();
@@ -38,11 +38,22 @@ if(!function_exists("render_templates_html")){
 
         $json = file_get_contents( get_theme_file_path( 'inc/demo-templates/templates-meta/meta.json' ));
         $json = json_decode($json, true);
-        echo '<h1>'.esc_html( __( "Import Demo Templates", "grigora-blocks-pro" )).'</h1>';
+        $unique_categories = array();
+        foreach ($json as $template => $template_meta) {
+            foreach($template_meta['category'] as $category){
+                if(!in_array($category, $unique_categories)){
+                    array_push($unique_categories, $category);
+                }
+            }
+        }
+        echo '<h1>'.esc_html( __( "Import Demo Templates", "grigora-blocks" )).'</h1>';
         echo '<div class="template-search">';
-        echo '<input type="search" name="search" placeholder="Search...">';
-        echo '<select>';
+        echo '<input type="search" name="search" id="grigora-templates-input" placeholder="Search...">';
+        echo '<select id="grigora-templates-select">';
         echo '<option value="All">All</option>';
+        foreach ($unique_categories as $category) {
+            echo '<option value="'.$category.'">'.$category.'</option>';
+        }
         echo '</select>';
         echo '</div>';
         echo '<div class="grigora-templates">';
@@ -70,20 +81,28 @@ if(!function_exists("render_templates_html")){
         <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
       </svg>';
         echo '</div>';
+        echo '<form action="' . home_url("/wp-admin/admin-post.php") . '" method="post">';
+        echo '<input type="hidden" name="action" value="grigora_template_import">';
+        echo '<input type="hidden" name="template" class="form-template" value="blog_pro">';
+        wp_nonce_field( 'grigora_template_import', '_grigora_template_import' );
         echo '<div class="modal_install_btn">';
-        echo '<a href="#" class="btn-install">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-      </svg></a>';
+        echo '<button type="submit" value="Submit" class="btn-install">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+          </svg></button>';
         echo '</div>';
+        echo '</form>';
         echo '</div>';
         echo '<div class="modal-iframe-div">';
-        echo '<iframe src="#" title="Title" class="modal-iframe"></iframe>';
+        echo '<iframe src="" title="Title" class="modal-iframe"></iframe>';
         echo '</div>';
         echo '</div>';       
     
         foreach ($json as $template => $template_meta) {
-            echo '<div class="grigora-templates-single">';
+            echo '<div class="grigora-templates-single"
+            data-name="'.$template_meta['name'].'" 
+            data-category=\''.json_encode($template_meta['category']).'\' 
+            >';
             echo '<div class="grigora-screenshot">';
             echo '<img src="'.get_theme_file_uri('assets/images/demo-templates/'.$template_meta['screenshot']).'" alt="'.$template_meta['name'].'" width="300" height="300">';
             echo '</div>';

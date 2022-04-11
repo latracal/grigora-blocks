@@ -14,8 +14,106 @@
  * @since 1.0.0
  */
 define( 'GRIGORA_DEBUG', true );
+define( 'GRIGORA_SLUG', get_option('stylesheet'));
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/blocks/');
+define( 
+	'GRIGORA_KNOWN_TEMPLATES', 
+	array(
+		'templates' => 
+		array( 
+			'404' => array(
+				'name' => '404'
+			),
+			'archive' => array(
+				'name' => 'Archive'
+			),
+			'blank' => array(
+				'name' => 'Blank'
+			),
+			'index' => array(
+				'name' => 'Index'
+			),
+			'no-sidebar-fullwidth-page-template' => array(
+				'name' => 'No Sidebar Page - Full Width'
+			),
+			'no-sidebar-page-template' => array(
+				'name' => 'No Sidebar Page'
+			),
+			'no-sidebar-post-template' => array(
+				'name' => 'No Sidebar Post'
+			),
+			'no-sidebar-widewidth-page-template' => array(
+				'name' => 'No Sidebar Page - Wide Width'
+			),
+			'no-sidebar-widewidth-n-back-template' => array(
+				'name' => 'No Sidebar No Background - Wide Width'
+			),
+			'no-sidebar-widewidth-post-template' => array(
+				'name' => 'No Sidebar Post - Wide Width'
+			),
+			'no-title-template' => array(
+				'name' => 'No title'
+			),
+			'page' => array(
+				'name' => 'Page'
+			),
+			'search' => array(
+				'name' => 'Search'
+			),
+			'single' => array(
+				'name' => 'Single'
+			)
+		),
+		'parts' => 
+		array(
+			'header' => array(
+				'title' => 'Header',
+				'area' => 'header'
+			),
+			'transparent-header' => array(
+				'title' => 'Transparent Header',
+				'area' => 'header'
+			),
+			'sidebar' => array(
+				'title' => 'Sidebar',
+				'area' => 'sidebar'
+			),
+			'footer' => array(
+				'title' => 'Footer',
+				'area' => 'footer'
+			),
+			'footer-1' => array(
+				'title' => 'Footer-1',
+				'area' => 'footer'
+			),
+			'footer-2' => array(
+				'title' => 'Footer-2',
+				'area' => 'footer'
+			),
+			'footer-3' => array(
+				'title' => 'Footer-3',
+				'area' => 'footer'
+			),
+			'footer-4' => array(
+				'title' => 'Footer-4',
+				'area' => 'footer'
+			),
+			'footer-5' => array(
+				'title' => 'Footer-5',
+				'area' => 'footer'
+			),
+			'footer-6' => array(
+				'title' => 'Footer-6',
+				'area' => 'footer'
+			),
+			'footer-7' => array(
+				'title' => 'Footer-7',
+				'area' => 'footer'
+			)
+		)
+	)
+);
 
 /**
  * Add theme support for block styles and editor style.
