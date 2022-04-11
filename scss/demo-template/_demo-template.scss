@@ -73,3 +73,38 @@
         }
     }
 }
+
+.demo-1-single-page {
+
+    .wp-block-post-author{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .wp-block-post-author__avatar{
+            margin-right: 0;
+        }
+    }
+
+    .wp-block-post-author__byline, .wp-block-post-author__bio{
+        display: none;
+    }
+
+    .wp-block-post-author__name{
+        text-transform: capitalize;
+    }
+
+    .wp-block-post-date{
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+
+    .wp-block-post-title{
+        text-align: center;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+}
