@@ -98,30 +98,6 @@ if(!function_exists("get_theme_dir_full")){
     }
 }
 
-if(!function_exists("write_file_to_contents")){
-    function write_file_to_contents($filename, $contents, $template){
-        if ( ! defined( 'FS_CHMOD_DIR' ) ) {
-            define( 'FS_CHMOD_DIR', ( 0755 & ~ umask() ) );
-        }
-        if($template){
-            $html_folder = get_theme_dir_full() . "templates/";
-        }
-        else{
-            $html_folder = get_theme_dir_full() . "parts/";
-        }
-        if ( ! file_exists( $html_folder ) ) {
-            if(!get_filesystem()->mkdir( $html_folder, FS_CHMOD_DIR )){
-                return false;
-            }
-        }
-        if(!get_filesystem()->put_contents( $html_folder.$filename, $contents) ) {
-            return false;
-        }
-        return true;
-    }
-}
-
-
 add_action( 'admin_post_grigora_template_import', 'grigora_template_import' );
 
 /**
@@ -138,130 +114,117 @@ if(!function_exists("grigora_template_import")){
                 wp_die( __( 'The link you followed has expired.', 'grigora-blocks' ) ); 
             } else {
                 $template = $_POST["template"];
-                $json = file_get_contents( get_theme_file_path( 'inc/demo-templates/templates-meta/meta.json' ) );
-                $json = json_decode($json, true);
-                if(array_key_exists($template, $json)){
-
-                    $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
-                    foreach($new_files as $index => $new_file){
-                        $name = $new_file['name'];
-                        $slug = str_replace(".html", "",$name);
-                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $name);
-                        
-                        // construct terms for the post template
-                        $terms = array();
-                        $terms['wp_theme'] = GRIGORA_SLUG;
-
-                        $post_exist = grigora_template_post_exists( $slug, 'wp_template', GRIGORA_SLUG );
-                        if ( $post_exist['post_id'] && $post_exist['action'] === 'update' ) {
-                            $update_post_args = array(
-                                'ID' => $post_exist['post_id'],
-                                'post_content' => $contents,
-                            );
-                            $update_post_id = wp_update_post( wp_slash( $update_post_args ), true );
-                        } elseif ( $post_exist['action'] === 'insert' ) {
-                            $insert_post_args = array(
-                                'post_title'		=> GRIGORA_KNOWN_TEMPLATES['templates'][$slug]['name'],
-                                'post_content'		=> $contents,
-                                'comment_status'	=> 'closed',
-                                'ping_status'		=> 'closed',
-                                'post_name'			=> $slug,
-                                'post_status'		=> 'publish',
-                                'post_type'			=> 'wp_template',
-                                'tax_input'			=> $terms,
-                            );
-                            $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
-                            if ( $new_post_id ) {
-                                grigora_templates_slug_fix( $new_post_id, $slug );
-                            }
+                $toclear = array();
+                if(strtolower($template) == "default"){
+                    $args = array(
+                        'numberposts' => -1,
+                        'orderby' => 'post_type',
+                        'post_status' => 'publish',
+                        'post_type' => array( 'wp_template', 'wp_template_part' ),
+                    );
+                    $export_posts = get_posts( $args );
+                    foreach($export_posts as $post){
+                        $taxonomies = get_object_taxonomies( $post->post_type );
+                        if ( empty( $taxonomies ) ) {
+                            continue;
                         }
-
-
-                    $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/" );
-                    foreach($new_files as $index => $new_file){
-                        $name = $new_file['name'];
-                        $slug = str_replace(".html", "",$name);
-                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/". $name);
-                        
-                        // construct terms for the post template parts
-                        $terms = array();
-                        $terms['wp_theme'] = GRIGORA_SLUG;
-                        $terms['wp_template_part_area'] = GRIGORA_KNOWN_TEMPLATES['parts'][$slug]['area'];
-
-                        $post_exist = grigora_template_post_exists( $slug, 'wp_template_part', GRIGORA_SLUG );
-                        if ( $post_exist['post_id'] && $post_exist['action'] === 'update' ) {
-                            $update_post_args = array(
-                                'ID' => $post_exist['post_id'],
-                                'post_content' => $contents,
-                            );
-                            $update_post_id = wp_update_post( wp_slash( $update_post_args ), true );
-                        } elseif ( $post_exist['action'] === 'insert' ) {
-                            $insert_post_args = array(
-                                'post_title'		=> GRIGORA_KNOWN_TEMPLATES['parts'][$slug]['title'],
-                                'post_content'		=> $contents,
-                                'comment_status'	=> 'closed',
-                                'ping_status'		=> 'closed',
-                                'post_name'			=> $slug,
-                                'post_status'		=> 'publish',
-                                'post_type'			=> 'wp_template_part',
-                                'tax_input'			=> $terms,
-                            );
-                            
-                            $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
-                            if ( $new_post_id ) {
-                                grigora_templates_slug_fix( $new_post_id, $slug );
+                        $terms = wp_get_object_terms( $post->ID, $taxonomies );
+                        foreach ( (array) $terms as $term ) {
+                            if($term->slug == GRIGORA_SLUG && !in_array($post->ID, $toclear)){
+                                array_push($toclear, $post->ID);
                             }
                         }
                     }
-
+                    foreach($toclear as $id){
+                        wp_delete_post($id);
+                    }
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    // $existing_files = get_filesystem()->dirlist(get_theme_dir_full()."templates/");
-                    // $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
-                    // foreach($existing_files as $existing_file){
-                    //     if(!in_array($existing_file, $new_files)){
-                    //         get_filesystem()->delete( get_theme_dir_full() . "templates/" . $existing_file["name"]);
-                    //     }
-                    // }
-                    // foreach($new_files as $index => $new_file){
-                    //     $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $new_file["name"]);
-                    //     write_file_to_contents($new_file["name"], $contents, 1);
-                    // }
-                    // $existing_files = get_filesystem()->dirlist(get_theme_dir_full()."parts/");
-                    // $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/" );
-                    // foreach($existing_files as $existing_file){
-                    //     if(!in_array($existing_file, $new_files)){
-                    //         get_filesystem()->delete( get_theme_dir_full() . "parts/" . $existing_file["name"]);
-                    //     }
-                    // }
-                    // foreach($new_files as $index => $new_file){
-                    //     $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/". $new_file["name"]);
-                    //     write_file_to_contents($new_file["name"], $contents, 0);
-                    // }
-                    wp_redirect(admin_url('admin.php?page=grigora-templates'));
-                }   
                 else{
-                    wp_die( __( 'Incorrect template slug.', 'grigora-blocks' ) ); 
+                    $json = file_get_contents( get_theme_file_path( 'inc/demo-templates/templates-meta/meta.json' ) );
+                    $json = json_decode($json, true);
+                    if(array_key_exists($template, $json)){
+    
+                        $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
+                        foreach($new_files as $index => $new_file){
+                            $name = $new_file['name'];
+                            $slug = str_replace(".html", "",$name);
+                            $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $name);
+                            
+                            // construct terms for the post template
+                            $terms = array();
+                            $terms['wp_theme'] = GRIGORA_SLUG;
+    
+                            $post_exist = grigora_template_post_exists( $slug, 'wp_template', GRIGORA_SLUG );
+                            if ( $post_exist['post_id'] && $post_exist['action'] === 'update' ) {
+                                $update_post_args = array(
+                                    'ID' => $post_exist['post_id'],
+                                    'post_content' => $contents,
+                                );
+                                $update_post_id = wp_update_post( wp_slash( $update_post_args ), true );
+                            } elseif ( $post_exist['action'] === 'insert' ) {
+                                $insert_post_args = array(
+                                    'post_title'		=> GRIGORA_KNOWN_TEMPLATES['templates'][$slug]['name'],
+                                    'post_content'		=> $contents,
+                                    'comment_status'	=> 'closed',
+                                    'ping_status'		=> 'closed',
+                                    'post_name'			=> $slug,
+                                    'post_status'		=> 'publish',
+                                    'post_type'			=> 'wp_template',
+                                    'tax_input'			=> $terms,
+                                );
+                                $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
+                                if ( $new_post_id ) {
+                                    grigora_templates_slug_fix( $new_post_id, $slug );
+                                }
+                            }
+    
+    
+                        $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/" );
+                        foreach($new_files as $index => $new_file){
+                            $name = $new_file['name'];
+                            $slug = str_replace(".html", "",$name);
+                            $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/". $name);
+                            
+                            // construct terms for the post template parts
+                            $terms = array();
+                            $terms['wp_theme'] = GRIGORA_SLUG;
+                            $terms['wp_template_part_area'] = GRIGORA_KNOWN_TEMPLATES['parts'][$slug]['area'];
+    
+                            $post_exist = grigora_template_post_exists( $slug, 'wp_template_part', GRIGORA_SLUG );
+                            if ( $post_exist['post_id'] && $post_exist['action'] === 'update' ) {
+                                $update_post_args = array(
+                                    'ID' => $post_exist['post_id'],
+                                    'post_content' => $contents,
+                                );
+                                $update_post_id = wp_update_post( wp_slash( $update_post_args ), true );
+                            } elseif ( $post_exist['action'] === 'insert' ) {
+                                $insert_post_args = array(
+                                    'post_title'		=> GRIGORA_KNOWN_TEMPLATES['parts'][$slug]['title'],
+                                    'post_content'		=> $contents,
+                                    'comment_status'	=> 'closed',
+                                    'ping_status'		=> 'closed',
+                                    'post_name'			=> $slug,
+                                    'post_status'		=> 'publish',
+                                    'post_type'			=> 'wp_template_part',
+                                    'tax_input'			=> $terms,
+                                );
+                                
+                                $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
+                                if ( $new_post_id ) {
+                                    grigora_templates_slug_fix( $new_post_id, $slug );
+                                }
+                            }
+                        }
+                    }
+                    wp_redirect(admin_url('admin.php?page=grigora-templates'));
+                    }
+                    else{
+                        wp_die( __( 'Incorrect template slug.', 'grigora-blocks' ) ); 
+                    }
                 }
             }
             wp_redirect(admin_url('admin.php?page=grigora-templates'));
         }
-        // wp_redirect(admin_url('admin.php?page=grigora-templates'));
-        wp_die( __( 'Missing form fields.', 'grigora-blocks' ) ); 
+        wp_redirect(admin_url('admin.php?page=grigora-templates'));
     }
 }

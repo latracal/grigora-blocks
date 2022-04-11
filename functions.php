@@ -5,18 +5,23 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */
 
 /**
  * The theme version.
  *
- * @since 1.0.0
+ * @since 2.02.001
  */
 define( 'GRIGORA_DEBUG', true );
 define( 'GRIGORA_SLUG', get_option('stylesheet'));
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
-define( 'GRIGORA_HOME', 'https://wpgrigora.com/blocks/');
+/**
+ * The theme known templates.
+ *
+ * @since 2.0.10
+ */
+define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 define( 
 	'GRIGORA_KNOWN_TEMPLATES', 
 	array(
@@ -118,7 +123,7 @@ define(
 /**
  * Add theme support for block styles and editor style.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return void
  */
@@ -156,7 +161,7 @@ add_action( 'after_setup_theme', 'grigora_setup' );
 /**
  * Enqueue the CSS files.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return void
  */

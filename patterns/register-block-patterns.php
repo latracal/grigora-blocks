@@ -3,14 +3,14 @@
  * Block patterns
  *
  * @package grigora-blocks
- * @since 1.0.0
+ * @since 2.0.0
  */
 
 /**
  * Display the search term in the heading on the search page.
  * Todo: Remove when the query title block is updated to work for the search page.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return string Search page title
  */
@@ -25,7 +25,7 @@ function grigora_search_title() {
 /**
  * Display a link to the privacy policy page, if one is published.
 
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return string Link to the privacy policy page, if one is published.
  */
@@ -38,7 +38,7 @@ function grigora_privacy() {
 /**
  * Registers block patterns and block pattern categories.
  *
- * @since 1.0.0
+ * @since 2.0.0
  *
  * @return void
  */
@@ -47,7 +47,7 @@ function grigora_register_block_patterns() {
 	/**
 	 * Register an block pattern category.
 	 *
-	 * @since 1.0.0
+	 * @since 2.0.0
 	 */
 
 	register_block_pattern_category(
