@@ -135,3 +135,17 @@ ul.is-style-grigora-no-marker-list li ul {
 		}
 	}
 }
+
+.is-style-no-marker-no-underline-hovereffect{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.is-style-no-marker-no-underline-hovereffect a{
+	text-decoration: none;
+}
+
+.is-style-no-marker-no-underline-hovereffect a:hover{
+	color: var(--wp--preset--color--button)
+}
