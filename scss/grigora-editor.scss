@@ -2,6 +2,8 @@
 @import "blocks/column";
 @import "blocks/file";
 @import "blocks/heading";
+@import "blocks/helpers";
+@import "blocks/group";
 @import "blocks/latest-comments";
 @import "blocks/latest-posts";
 @import "blocks/post-title";
@@ -9,11 +11,11 @@
 @import "blocks/list";
 @import "blocks/search";
 @import "blocks/separator";
-@import "blocks/site-title";
 @import "blocks/tag";
 @import "blocks/pagination";
 @import "blocks/list";
 @import "blocks/navigation";
+@import "blocks/navigation-editor";
 @import "blocks/post-author";
 @import "hero/hero";
 @import "testimonial/testimonial";

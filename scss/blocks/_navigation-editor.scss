@@ -1,0 +1,8 @@
+.is-style-custom-link-button div{
+    background-color: var(--wp--preset--color--button);
+    color: var(--wp--preset--color--buttontext);
+    padding: 8px 20px 8px 20px !important;
+    border-radius: 100px;
+    -webkit-box-shadow: var(--wp--custom--button-shadow);
+    box-shadow: var(--wp--custom--button-shadow);
+}

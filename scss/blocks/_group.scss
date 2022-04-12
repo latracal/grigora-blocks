@@ -1,0 +1,8 @@
+.is-style-hover-shadow{
+    transition: .3s ease-in-out;
+}
+
+.is-style-hover-shadow:hover {
+    -webkit-box-shadow: var(--wp--custom--button-shadow);
+    box-shadow: var(--wp--custom--button-shadow);
+}

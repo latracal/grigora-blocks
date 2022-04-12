@@ -415,6 +415,14 @@ function grigora_register_block_styles() {
 			'label' => __( 'No Underline', 'grigora-blocks' ),
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'hover-shadow',
+			'label' => __( 'Hover Shadow', 'grigora-blocks' ),
+		)
+	);
 }
 
 add_action( 'init', 'grigora_register_block_styles' );

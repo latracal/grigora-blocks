@@ -79,4 +79,9 @@
     border-radius: 100px;
     -webkit-box-shadow: var(--wp--custom--button-shadow);
     box-shadow: var(--wp--custom--button-shadow);
+    transition: all 0.3s ease 0s;
+}
+
+.is-style-custom-link-button span:hover{
+    filter: brightness(94%) !important;
 }
