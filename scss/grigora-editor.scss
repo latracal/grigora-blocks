@@ -29,6 +29,11 @@ textarea {
 select {
 	padding: 3px;
 }
+
+.w-auto {
+	width: auto !important;
+}
+
 button:not(.components-button):not(.wp-block-navigation *),
 input[type="color"],
 input[type="date"],
