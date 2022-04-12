@@ -150,8 +150,12 @@
                         font-weight: 600;
                         padding: .5rem 1rem;
                         border-radius: 5px;
-                        width: 25%;
+                        border: none;
                         background-color: #4D3BB7;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
 
                         svg{
                             margin-left: .5rem;
