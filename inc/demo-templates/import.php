@@ -120,7 +120,7 @@ if(!function_exists("grigora_template_import")){
                         'numberposts' => -1,
                         'orderby' => 'post_type',
                         'post_status' => 'publish',
-                        'post_type' => array( 'wp_template', 'wp_template_part' ),
+                        'post_type' => array( 'wp_template', 'wp_template_part', 'wp_global_styles' ),
                     );
                     $export_posts = get_posts( $args );
                     foreach($export_posts as $post){
@@ -143,7 +143,8 @@ if(!function_exists("grigora_template_import")){
                     $json = file_get_contents( get_theme_file_path( 'inc/demo-templates/templates-meta/meta.json' ) );
                     $json = json_decode($json, true);
                     if(array_key_exists($template, $json)){
-    
+                        
+                        // importing templates
                         $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/" );
                         foreach($new_files as $index => $new_file){
                             $name = $new_file['name'];
@@ -178,7 +179,7 @@ if(!function_exists("grigora_template_import")){
                                 }
                             }
     
-    
+                        // importing template parts
                         $new_files = get_filesystem()->dirlist(get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/" );
                         foreach($new_files as $index => $new_file){
                             $name = $new_file['name'];
@@ -213,6 +214,40 @@ if(!function_exists("grigora_template_import")){
                                 if ( $new_post_id ) {
                                     grigora_templates_slug_fix( $new_post_id, $slug );
                                 }
+                            }
+                        }
+
+                        // importing styles
+                        $name = "wp-global-styles-".GRIGORA_SLUG;
+                        $slug = "wp-global-styles-".GRIGORA_SLUG;
+                        $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/style.json");
+                        
+                        // construct terms for the post template parts
+                        $terms = array();
+                        $terms['wp_theme'] = GRIGORA_SLUG;
+
+                        $post_exist = grigora_template_post_exists( $slug, 'wp_template_part', GRIGORA_SLUG );
+                        if ( $post_exist['post_id'] && $post_exist['action'] === 'update' ) {
+                            $update_post_args = array(
+                                'ID' => $post_exist['post_id'],
+                                'post_content' => $contents,
+                            );
+                            $update_post_id = wp_update_post( wp_slash( $update_post_args ), true );
+                        } elseif ( $post_exist['action'] === 'insert' ) {
+                            $insert_post_args = array(
+                                'post_title'		=> 'Custom Styles',
+                                'post_content'		=> $contents,
+                                'comment_status'	=> 'closed',
+                                'ping_status'		=> 'closed',
+                                'post_name'			=> $slug,
+                                'post_status'		=> 'publish',
+                                'post_type'			=> 'wp_global_styles',
+                                'tax_input'			=> $terms,
+                            );
+                            
+                            $new_post_id = wp_insert_post( wp_slash( $insert_post_args ), true );
+                            if ( $new_post_id ) {
+                                grigora_templates_slug_fix( $new_post_id, $slug );
                             }
                         }
                     }

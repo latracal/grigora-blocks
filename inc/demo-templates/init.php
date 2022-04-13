@@ -96,9 +96,11 @@ if(!function_exists("render_templates_html")){
         echo '<div class="background">';      
         echo '<p>Please go through the following points before installing a demo: </p>';
         echo '<ol>
-        <li>New Demo install will remove all your current template related changes in your website.
+        <li>
+        New Demo install will remove all your current template related changes.
         </li>
-        <li>It will reset all the global styles for your website.</li>
+        <li>
+        It will reset all the global styles for your website.</li>
         </ol>';
         echo '<p>Are you sure?</p>';
         echo '<div class="confirm-btn">';
