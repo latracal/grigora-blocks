@@ -138,10 +138,10 @@ var toggleConModalClose = function (event) {
 	if (conModal.classList.contains("open")) {
 		conModal.classList.remove("open");
 	}
-	var target = event.target;
-	conModal.classList.remove("open");
+	else{
+		conModal.classList.add("open");
+	}
 };
 
-Array.from(closeBtn).forEach(function (element) {
-	element.addEventListener("click", toggleConModalClose);
-});
+conBtn.addEventListener("click", toggleConModalClose);
+closeBtn.addEventListener("click", toggleConModalClose);
