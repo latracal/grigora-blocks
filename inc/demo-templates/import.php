@@ -150,7 +150,7 @@ if(!function_exists("grigora_template_import")){
                             $name = $new_file['name'];
                             $slug = str_replace(".html", "",$name);
                             $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/templates". "/". $name);
-                            
+                            $contents = str_replace("{grigorathemepath}", get_template_directory_uri()."/assets" ,$contents);
                             // construct terms for the post template
                             $terms = array();
                             $terms['wp_theme'] = GRIGORA_SLUG;
@@ -185,6 +185,7 @@ if(!function_exists("grigora_template_import")){
                             $name = $new_file['name'];
                             $slug = str_replace(".html", "",$name);
                             $contents = get_filesystem()->get_contents( get_theme_dir_full()."inc/demo-templates/templates/". $template. "/parts". "/". $name);
+                            $contents = str_replace("{grigorathemepath}", get_template_directory_uri()."/assets" ,$contents);
                             
                             // construct terms for the post template parts
                             $terms = array();

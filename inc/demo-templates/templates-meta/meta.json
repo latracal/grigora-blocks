@@ -23,15 +23,15 @@
         "description": "Prebuilt template for bloggers.",
         "pro_required": false
     },
-    "barter":{
+    "dose":{
         "id":1002,
-        "slug": "barter",
-        "name": "Barter",
+        "slug": "dose",
+        "name": "Dose",
         "requirements": [],
         "screenshot": "blog_pro.png",
         "local_image": true,
-        "demo_url": "https://demo.wpgrigora.com/default/",
-        "category": ["Blog"],
+        "demo_url": "https://demo.wpgrigora.com/dose/",
+        "category": ["Product"],
         "description": "For online products.",
         "pro_required": false
     }
