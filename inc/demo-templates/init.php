@@ -92,21 +92,26 @@ if(!function_exists("render_templates_html")){
           </svg></p>';
         echo '</div>';
         echo '<div class="confirm-modal">';
+        echo '<div class="confirm-modal-content">';
+        echo '<div class="background">';      
         echo '<p>Please go through the following points before installing a demo - </p>';
         echo '<p>New Demo install will remove all your current template related changes in your website.</p>';
         echo '<p>It will reset all the global styles for your website.</p>';
         echo '<p>Are you sure?</p>';
         echo '<div class="confirm-btn">';
         echo '<p class="close-btn">Cancel</p>';
-        echo '<button type="submit" value="Submit">Yes</button>';
+        echo '<button type="submit" value="Submit" class="c-btn">Yes</button>';
         echo '</div>';
         echo '</div>';
+        echo '</div>';
+        echo '</div>';   
         echo '</form>';
         echo '</div>';
         echo '<div class="modal-iframe-div">';
         echo '<iframe src="" title="Title" class="modal-iframe"></iframe>';
         echo '</div>';
-        echo '</div>';       
+        echo '</div>';     
+          
     
         foreach ($json as $template => $template_meta) {
             echo '<div class="grigora-templates-single"
