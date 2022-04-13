@@ -209,9 +209,9 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 25%;
-    transform: translateX(-50%);
-    background-color: #fff;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f1;
     z-index: 100000;
 
     p{
@@ -222,22 +222,28 @@
     .confirm-btn {
         display: flex;
         border-top: 1px solid #22222242;
-    }
 
-    button, p {
-        border: none;
-        width: 100%;
-        padding: 1rem;
-        background-color: transparent;
-
-        &:hover {
-            cursor: pointer;
+        button, p {
+            font-size: 1rem;
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            background-color: transparent;
+    
+            &:hover {
+                cursor: pointer;
+            }
         }
-    }
 
+        p{
+            border-right: 1px solid #22222242;
+            margin: 0;
+        }
+    
+    }
+   
     p {
-        margin: 0;
-        border-right: 1px solid #22222242;
+        word-break: break-all;            
     }
 }
 
