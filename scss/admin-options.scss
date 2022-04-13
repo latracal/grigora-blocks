@@ -198,6 +198,10 @@
         height: 868px;
         transition: all .3s linear;
 
+        @media (max-width:1366px){
+            height: 650px;
+        }
+
     }
 }
 
