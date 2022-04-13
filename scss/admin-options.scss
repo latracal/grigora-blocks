@@ -200,6 +200,47 @@
     }
 }
 
+.open {
+    display: block !important;
+}
+
+.confirm-modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 100000;
+
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .confirm-btn {
+        display: flex;
+        border-top: 1px solid #22222242;
+    }
+
+    button, p {
+        border: none;
+        width: 100%;
+        padding: 1rem;
+        background-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin: 0;
+        border-right: 1px solid #22222242;
+    }
+}
+
 .desktop{
     margin-left: auto;
     margin-right: auto;
