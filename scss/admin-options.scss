@@ -26,16 +26,21 @@
         }
     }
 
+    .coming-soon {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
     .grigora-templates{
         position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding-right: 1rem;
-        gap: 1rem;
+        gap: 1rem;      
 
         .grigora-templates-single{
-            position: relative;
+            position: relative;           
 
             .grigora-screenshot{
                 img{

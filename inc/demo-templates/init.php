@@ -143,8 +143,10 @@ if(!function_exists("render_templates_html")){
             >View Demo</button>';
             echo '</div>';
             echo '</div>';            
-        }
+        }        
     
         echo '</div>';
+        
+        echo '<p class="coming-soon">More Templates Coming Soon :)</p>';
     }
 }
