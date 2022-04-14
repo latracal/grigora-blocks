@@ -45,5 +45,15 @@ https://fullsiteediting.com
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+== Demo Template Assets ==
+arrow-right-short-1.png: Bootstrap Icons library (bi-arrow-right-short). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
+dosehero-min.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195166
+dosehero2.jpg: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195170
+dosecover-min.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195158
+default.png: Screenshot of website for default template.
+blog_pro.png: Screenshot of website for blog_pro template.
+dose.png: Screenshot of website for dose template. Image used is desehero-min.png.
+
+
 Note: The CSS files are loaded from dist/css/ folder.
 */
