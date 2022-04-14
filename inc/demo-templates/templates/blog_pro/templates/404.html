@@ -1,23 +1,19 @@
-<!-- wp:template-part {"slug":"transparent-header","theme":"grigora-blocks"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header","layout":{"inherit":true},"theme":"grigora-blocks"} /-->
 
 <!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"calc(var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dv-spacing, 1.25rem) *3)","bottom":"calc(var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dv-spacing, 1.25rem) *2)"}}},"layout":{"inherit":true}} -->
-<main class="wp-block-group alignfull" style="padding-top:calc(var(--wp--custom--v-spacing, 1.25rem) *3);padding-bottom:calc(var(--wp--custom--v-spacing, 1.25rem) *2)"><!-- wp:heading {"textAlign":"center","className":"is-style-default","fontSize":"x-large"} -->
-<h2 class="has-text-align-center is-style-default has-x-large-font-size">Page Not Found</h2>
-<!-- /wp:heading -->
+<main
+	class="wp-block-group alignfull"
+	style="
+		padding-top: calc(var(--wp--custom--v-spacing, 1.25rem) * 3);
+		padding-bottom: calc(var(--wp--custom--v-spacing, 1.25rem) * 2);
+	"
+>
+	<!-- wp:pattern {"slug":"grigora/404"} /-->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">The page you requested does not exist or has moved. Maybe try a search?</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search …","buttonText":"Search"} /-->
-
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></main>
+	<!-- wp:spacer {"height":40} -->
+	<div style="height: 40px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+</main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"grigora-blocks","tagName":"footer","align":"full","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","style":{"spacing":{"padding":{"top":"2.5em"}}},"className":"site-footer","layout":{"inherit":true}} /-->
