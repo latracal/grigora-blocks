@@ -48,9 +48,9 @@ if(!function_exists("render_templates_html")){
         }
         echo '<h1>'.esc_html( __( "Import Demo Templates", "grigora-blocks" )).'</h1>';
         echo '<div class="template-search">';
-        echo '<input type="search" name="search" id="grigora-templates-input" placeholder="Search...">';
+        echo '<input type="search" name="search" id="grigora-templates-input" placeholder="'.esc_html( __( "Search...", "grigora-blocks" )).'">';
         echo '<select id="grigora-templates-select">';
-        echo '<option value="All">All</option>';
+        echo '<option value="All">'.esc_html( __( "All", "grigora-blocks" )).'</option>';
         foreach ($unique_categories as $category) {
             echo '<option value="'.$category.'">'.$category.'</option>';
         }
@@ -64,7 +64,7 @@ if(!function_exists("render_templates_html")){
         <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
         <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
         </svg>';
-        echo 'Blog Pro';
+        echo '<div class="template-name">'.esc_html( __( "Default", "grigora-blocks" )).'</div>';
         echo '</div>';
         echo '<div class="modal_screen_size">';
         echo '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-display active" viewBox="0 0 16 16">
@@ -94,18 +94,18 @@ if(!function_exists("render_templates_html")){
         echo '<div class="confirm-modal">';
         echo '<div class="confirm-modal-content">';
         echo '<div class="background">';      
-        echo '<p>Please go through the following points before installing a demo: </p>';
+        echo '<p>'.esc_html( __( "Please go through the following points before installing a demo: ", "grigora-blocks" )).'</p>';
         echo '<ol>
         <li>
-        New Demo install will remove all your current template related changes.
+        '.esc_html( __( "New Demo install will remove all your current template related changes.", "grigora-blocks" )).'
         </li>
         <li>
-        It will reset all the global styles for your website.</li>
+        '.esc_html( __( "It will reset all the global styles for your website.", "grigora-blocks" )).'</li>
         </ol>';
-        echo '<p>Are you sure?</p>';
+        echo '<p>'.esc_html( __( "Are you sure?", "grigora-blocks" )).'</p>';
         echo '<div class="confirm-btn">';
-        echo '<p class="close-btn">Cancel</p>';
-        echo '<button type="submit" value="Submit" class="c-btn">Yes</button>';
+        echo '<p class="close-btn">'.esc_html( __( "Cancel", "grigora-blocks" )).'</p>';
+        echo '<button type="submit" value="Submit" class="c-btn">'.esc_html( __( "Yes", "grigora-blocks" )).'</button>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
@@ -147,8 +147,7 @@ if(!function_exists("render_templates_html")){
     
         echo '</div>';
         
-        echo '<p class="coming-soon">More Templates Coming Soon <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 256 256" xml:space="preserve">
-        <desc>Created with Fabric.js 1.7.22</desc>
+        echo '<p class="coming-soon">'.esc_html( __( "More Templates Coming Soon ", "grigora-blocks" )).'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 256 256" xml:space="preserve">
         <defs>
         </defs>
         <g transform="translate(128 128) scale(0.72 0.72)" style="">
