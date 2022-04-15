@@ -8,7 +8,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
 
-Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 98 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
+Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 54 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
 
 All the CSS is located in scss/ folder.
 
@@ -34,7 +34,12 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 All changes will be noted here
 
 == v2.02.001 ==
-1. 
+1. Added Demo Templates Page - Appearance > Grigora Demo Templates 
+2. 2 Demo Templates added named Hiskoa and Dose.
+3. Added Comic Sans MS as a font.
+4. 2 Patterns added: grigora/builtwithgrigora and grigora/copyrighttext
+5. 6 Block Styles added - Navigation Link as Button, Site Title No Underline, Group Hover Shadow, List No Marker No Underline + Hover Effect, Heading No Text Decoration, Align Left Seperator
+6. Fixed the forced 30px padding for sidebar. Now the sidebar group has padding assigned to its settings.
 
 == v2.01.007 ==
 1. Changed Screenshot Image
