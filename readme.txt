@@ -33,6 +33,9 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 
 All changes will be noted here
 
+== v2.02.001 ==
+1. 
+
 == v2.01.007 ==
 1. Changed Screenshot Image
 2. Added 7 More Footer Template Parts
