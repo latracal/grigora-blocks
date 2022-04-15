@@ -69,6 +69,7 @@ function grigora_register_block_patterns() {
 	$block_patterns = array(
 		'404',
 		'footer-links',
+		'builtwithgrigora',
 		'hero/hero-2',
 		'hero/hero-3',
 		'hero/hero-4',

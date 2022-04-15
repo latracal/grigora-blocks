@@ -1,37 +1,43 @@
 {
-    "default":{
-        "id":1,
+    "default": {
+        "id": 1,
         "slug": "default",
         "name": "Default",
         "requirements": [],
         "screenshot": "default.png",
         "local_image": true,
         "demo_url": "https://demo.wpgrigora.com/default/",
-        "category": ["Blog"],
+        "category": [
+            "Blog"
+        ],
         "description": "Default template for bloggers.",
         "pro_required": false
     },
-    "blog_pro":{
-        "id":1001,
-        "slug": "blog_pro",
-        "name": "Blog Pro",
+    "hisoka": {
+        "id": 1001,
+        "slug": "hisoka",
+        "name": "Hisoka",
         "requirements": [],
         "screenshot": "blog_pro.png",
         "local_image": true,
-        "demo_url": "https://demo.wpgrigora.com/default/",
-        "category": ["Blog"],
-        "description": "Prebuilt template for bloggers.",
+        "demo_url": "https://demo.wpgrigora.com/hisoka/",
+        "category": [
+            "Portfolio"
+        ],
+        "description": "Personal Portfolio template.",
         "pro_required": false
     },
-    "dose":{
-        "id":1002,
+    "dose": {
+        "id": 1002,
         "slug": "dose",
         "name": "Dose",
         "requirements": [],
         "screenshot": "dose.png",
         "local_image": true,
         "demo_url": "https://demo.wpgrigora.com/dose/",
-        "category": ["Product"],
+        "category": [
+            "Product"
+        ],
         "description": "For online products.",
         "pro_required": false
     }

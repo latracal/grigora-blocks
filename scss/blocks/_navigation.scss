@@ -1,65 +1,65 @@
-.is-style-grigora-navigation-style-1{
-    .wp-block-navigation:not([style*=text-decoration]) a:focus{
+.is-style-grigora-navigation-style-1 {
+    .wp-block-navigation:not([style*=text-decoration]) a:focus {
         color: #fff;
     }
 
-    .wp-block-navigation__container{
+    .wp-block-navigation__container {
         justify-content: center;
 
-        li{ 
+        li {
             padding: .5rem 1rem;
             transition: all .2s;
             border-radius: 4px;
-            
-            a{
-                &:hover{
+
+            a {
+                &:hover {
                     color: #fff;
                 }
             }
 
-            &:hover{
+            &:hover {
                 background-color: #EC4138;
 
-                a{
+                a {
                     color: #fff;
                 }
 
-                svg{
+                svg {
                     stroke: #fff;
                     transform: rotate(180deg);
                 }
             }
 
-            .wp-block-navigation__submenu-container{
-                li{
+            .wp-block-navigation__submenu-container {
+                li {
                     border-radius: 0;
 
-                    a{
+                    a {
                         color: currentColor;
 
-                        &:hover{
+                        &:hover {
                             color: #fff;
                         }
                     }
 
-                    &:hover{
-                        a{
+                    &:hover {
+                        a {
                             color: #fff;
-                        }                      
+                        }
                     }
 
-                    svg{                         
+                    svg {
                         transform: rotate(270deg);
                     }
 
-                    .wp-block-navigation__submenu-container{
-                        li{
+                    .wp-block-navigation__submenu-container {
+                        li {
                             border-radius: 0;
-        
-                            a{
+
+                            a {
                                 color: currentColor;
-        
-                                &:hover{
+
+                                &:hover {
                                     color: #fff;
                                 }
                             }
@@ -72,9 +72,9 @@
 }
 
 
-.is-style-custom-link-button span{
-    background-color: #41CD52;
-    color: white;
+.is-style-custom-link-button span {
+    background-color: var(--wp--preset--color--button);
+    color: var(--wp--preset--color--buttontext);
     padding: 8px 20px 8px 20px !important;
     border-radius: 100px;
     -webkit-box-shadow: var(--wp--custom--button-shadow);
@@ -82,6 +82,6 @@
     transition: all 0.3s ease 0s;
 }
 
-.is-style-custom-link-button span:hover{
+.is-style-custom-link-button span:hover {
     filter: brightness(94%) !important;
 }

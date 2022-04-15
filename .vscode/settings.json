@@ -1,33 +1,33 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.formatOnSave": true,
-    "window.zoomLevel": 0,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.requirements.JDK11Warning": false,
-    "java.semanticHighlighting.enabled": true,
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "react-native-tools.logLevel": null,
-    "javascript.validate.enable": false,
-    "workbench.editorAssociations": {
-      "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "liveServer.settings.donotShowInfoMsg": true,
-      "liveServer.settings.donotVerifyTags": true,
-      "liveSassCompile.settings.formats": [
-          {
-              "extensionName": ".min.css",
-              "format": "compressed",
-              "savePath": "/dist/css"
-          }
-      ],
-    "js-minifier-with-closure.outputPaths": [
-      {
-          "context": "file",
-          "path": "./../dist/js/",
-          "filename": "${filename}${suffix}.js"
-      }
+  "editor.formatOnSave": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.requirements.JDK11Warning": false,
+  "java.semanticHighlighting.enabled": true,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "react-native-tools.logLevel": null,
+  "javascript.validate.enable": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".min.css",
+      "format": "compressed",
+      "savePath": "/dist/css"
+    }
+  ],
+  "js-minifier-with-closure.outputPaths": [
+    {
+      "context": "file",
+      "path": "./../dist/js/",
+      "filename": "${filename}${suffix}.js"
+    }
   ]
-  }
-  
+}
