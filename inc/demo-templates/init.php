@@ -83,7 +83,7 @@ if(!function_exists("render_templates_html")){
         echo '</div>';
         echo '<form action="' . home_url("/wp-admin/admin-post.php") . '" method="post">';
         echo '<input type="hidden" name="action" value="grigora_template_import">';
-        echo '<input type="hidden" name="template" class="form-template" value="blog_pro">';
+        echo '<input type="hidden" name="template" class="form-template" value="default">';
         wp_nonce_field( 'grigora_template_import', '_grigora_template_import' );
         echo '<div class="modal_install_btn">';
         echo '<p class="btn-install">Install<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
