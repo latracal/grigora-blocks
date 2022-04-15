@@ -105,6 +105,10 @@ if(!function_exists("render_templates_html")){
         <li>
         '.esc_html( __( "The demo templates text is non translated. Do not expect it to translate to your Wordpress Site Language.", "grigora-blocks" )).'
         </li>
+        <li>
+        '.esc_html( __( "Demo Templates will install their palette of color styles. It can take up to a few seconds to reflect these colors on the website.", "grigora-blocks")) . "<br />" . 
+        esc_html( __( "Ensure you don't have a caching plugin active while installing demo templates; otherwise, color changes may not be reflected.", "grigora-blocks" )).'
+        </li>
         </ol>';
         echo '<p>'.esc_html( __( "Are you sure?", "grigora-blocks" )).'</p>';
         echo '<div class="confirm-btn">';
