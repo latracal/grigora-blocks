@@ -34,17 +34,15 @@
 	height: 30px;
 	width: 100% !important;
 	opacity: 1;
-	background: -webkit-gradient(
-		radial,
-		50% 0,
-		10,
-		50% 0,
-		40,
-		from(#369a7e),
-		color-stop(0.49, #369a7e),
-		color-stop(0.51, #fff),
-		to(white)
-	);
+	background: -webkit-gradient(radial,
+			50% 0,
+			10,
+			50% 0,
+			40,
+			from(#369a7e),
+			color-stop(0.49, #369a7e),
+			color-stop(0.51, #fff),
+			to(white));
 	-webkit-background-size: 49px 100%;
 	border-bottom: none;
 }
@@ -61,23 +59,23 @@
 	height: 30px;
 	width: 100% !important;
 	opacity: 1;
-	background: -webkit-gradient(
-		radial,
-		50% 100%,
-		10,
-		50% 100%,
-		40,
-		from(#369a7e),
-		color-stop(0.49, #369a7e),
-		color-stop(0.51, #fff),
-		to(white)
-	);
+	background: -webkit-gradient(radial,
+			50% 100%,
+			10,
+			50% 100%,
+			40,
+			from(#369a7e),
+			color-stop(0.49, #369a7e),
+			color-stop(0.51, #fff),
+			to(white));
 	-webkit-background-size: 49px 100%;
 	border-bottom: none;
 }
+
 .is-style-grigora-separator-3.has-background {
 	height: 30px !important;
 }
+
 .is-style-grigora-separator-4 {
 	width: 100% !important;
 	height: 100px;
@@ -90,6 +88,7 @@
 .is-style-grigora-separator-4.has-background {
 	height: 100px !important;
 }
+
 .is-style-grigora-separator-4 {
 	margin-top: 0px;
 }
@@ -101,6 +100,7 @@
 	background: linear-gradient(to right bottom, #fff 49%, #823a9c 50%);
 	border-bottom: none;
 }
+
 .is-style-grigora-separator-5.has-background {
 	height: 100px !important;
 }
@@ -126,13 +126,11 @@
 	}
 
 	&:before {
-		background: linear-gradient(
-			90deg,
-			#10111f 0%,
-			#10111f 50%,
-			transparent 50%,
-			transparent 100%
-		);
+		background: linear-gradient(90deg,
+				#10111f 0%,
+				#10111f 50%,
+				transparent 50%,
+				transparent 100%);
 		background-size: 15px;
 		background-position: center;
 		z-index: 1;
@@ -140,19 +138,17 @@
 
 	&:after {
 		transition: opacity 0.3s ease, animation 0.3s ease;
-		background: linear-gradient(
-			to right,
-			#62efab 5%,
-			#f2ea7d 15%,
-			#f2ea7d 25%,
-			#ff8797 35%,
-			#ff8797 45%,
-			#e1a4f4 55%,
-			#e1a4f4 65%,
-			#82fff4 75%,
-			#82fff4 85%,
-			#62efab 95%
-		);
+		background: linear-gradient(to right,
+				#62efab 5%,
+				#f2ea7d 15%,
+				#f2ea7d 25%,
+				#ff8797 35%,
+				#ff8797 45%,
+				#e1a4f4 55%,
+				#e1a4f4 65%,
+				#82fff4 75%,
+				#82fff4 85%,
+				#62efab 95%);
 		background-size: 200%;
 		background-position: 0%;
 		animation: bar 15s linear infinite;
@@ -162,8 +158,13 @@
 		0% {
 			background-position: 0%;
 		}
+
 		100% {
 			background-position: 200%;
 		}
 	}
+}
+
+.is-style-separator-align-left {
+	margin-left: 0px;
 }

@@ -431,6 +431,22 @@ function grigora_register_block_styles() {
 			'label' => __( 'No Marker No Underline + Hover Effect', 'grigora-blocks' ),
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'no-text-decoration',
+			'label' => __( 'No text decoration', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'separator-align-left',
+			'label' => __( 'Align Left', 'grigora-blocks' ),
+		)
+	);
 }
 
 add_action( 'init', 'grigora_register_block_styles' );
