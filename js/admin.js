@@ -12,6 +12,8 @@ var toggleModal = function (event) {
 	var demo_url = target.getAttribute("data-demo_url");
 	var description = target.getAttribute("data-description");
 	var iframe = modal.querySelector(".modal-iframe");
+	var templatename = modal.querySelector(".template-name");
+	templatename.innerHTML = name;
 	iframe.setAttribute("src", demo_url);
 	iframe.setAttribute("title", name);
 	var formtemplate = modal.querySelector(".form-template");

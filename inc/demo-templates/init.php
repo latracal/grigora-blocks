@@ -100,7 +100,11 @@ if(!function_exists("render_templates_html")){
         '.esc_html( __( "New Demo install will remove all your current template related changes.", "grigora-blocks" )).'
         </li>
         <li>
-        '.esc_html( __( "It will reset all the global styles for your website.", "grigora-blocks" )).'</li>
+        '.esc_html( __( "It will reset all the global styles for your website.", "grigora-blocks" )).'
+        </li>
+        <li>
+        '.esc_html( __( "The demo templates text is non translated. Do not expect it to translate to your Wordpress Site Language.", "grigora-blocks" )).'
+        </li>
         </ol>';
         echo '<p>'.esc_html( __( "Are you sure?", "grigora-blocks" )).'</p>';
         echo '<div class="confirm-btn">';
