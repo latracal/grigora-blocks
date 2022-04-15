@@ -118,35 +118,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
 	padding: 0px;
 }
 
-@media screen and (max-width: 600px) {
-	.main-primary {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.grigora-sidebar {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-}
-
-.wp-block-column:first-child .grigora-sidebar {
-	padding-right: 30px;
-}
-
-.wp-block-column:last-child .grigora-sidebar {
-	padding-left: 30px;
-}
-
-@media screen and (max-width: 768px) {
-	.wp-block-column:first-child .grigora-sidebar {
-		padding-right: 0px;
-	}
-
-	.wp-block-column:last-child .grigora-sidebar {
-		padding-left: 0px;
-	}
-}
 
 h2 a {
 	text-decoration: none;
