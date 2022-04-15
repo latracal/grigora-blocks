@@ -19,16 +19,9 @@ var toggleModal = function (event) {
 	var formtemplate = modal.querySelector(".form-template");
 	formtemplate.value = slug;
 	modal.classList.add("open-modal");
-
 	var modalHeader = document.querySelector(".modal_header").clientHeight;
 	var h = window.innerHeight;
-
-	console.log(modalHeader);
-	console.log(h);
-
 	var iframeHeight = h - modalHeader;
-	console.log(iframeHeight);
-
 	document.querySelector(".modal-iframe").style.height = iframeHeight + "px";
 };
 
