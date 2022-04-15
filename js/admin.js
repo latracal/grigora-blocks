@@ -155,5 +155,9 @@ var toggleConModalClose = function (event) {
 	}
 };
 
-conBtn.addEventListener("click", toggleConModalClose);
-closeBtn.addEventListener("click", toggleConModalClose);
+if(conBtn){
+	conBtn.addEventListener("click", toggleConModalClose);
+}
+if(closeBtn){
+	closeBtn.addEventListener("click", toggleConModalClose);
+}
