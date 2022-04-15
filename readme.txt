@@ -97,4 +97,17 @@ https://pxhere.com/en/photo/750013 - Testimonial 3 Face 1
 https://pxhere.com/en/photo/625568 - Testimonial 3 Face 2
 https://pxhere.com/en/photo/635897 - Testimonial 3 Face 3
 
+== Demo Template Assets ==
+arrow-right-short-1.png: Bootstrap Icons library (bi-arrow-right-short). MIT License ( https://github.com/twbs/icons/blob/main/LICENSE.md )
+dosehero-min.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195166
+dosehero2.jpg: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195170
+dosecover-min.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/1195158
+hisokacover.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/704194
+hisokacover2.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/764432
+logoipsum*.png: Logos are fake brands and licensed under free Fair Use license https://logoipsum.com/license/
+hisokasolo.png: Image from pxhere.com. CC0 Public Domain. https://pxhere.com/en/photo/867530
+default.png: Screenshot of website for default template.
+hisoka.png: Screenshot of website for hisoka template.
+dose.png: Screenshot of website for dose template. Image used is desehero-min.png.
+
 
