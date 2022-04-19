@@ -1,28 +1,14 @@
 const modalBtns = document.getElementsByClassName("demo-overlay");
-const modalClose = document.getElementsByClassName("close");
-const modal = document.querySelector(".demo_modal");
 
 var toggleModal = function (event) {
-	if (modal.classList.contains("open-modal")) {
-		return;
-	}
 	var target = event.target;
 	var name = target.getAttribute("data-name");
 	var slug = target.getAttribute("data-slug");
 	var demo_url = target.getAttribute("data-demo_url");
 	var description = target.getAttribute("data-description");
-	var iframe = modal.querySelector(".modal-iframe");
-	var templatename = modal.querySelector(".template-name");
-	templatename.innerHTML = name;
-	iframe.setAttribute("src", demo_url);
-	iframe.setAttribute("title", name);
-	var formtemplate = modal.querySelector(".form-template");
+	var formtemplate = document.querySelector(".form-template");
 	formtemplate.value = slug;
-	modal.classList.add("open-modal");
-	var modalHeader = document.querySelector(".modal_header").clientHeight;
-	var h = window.innerHeight;
-	var iframeHeight = h - modalHeader;
-	document.querySelector(".modal-iframe").style.height = iframeHeight + "px";
+	toggleConModalClose();
 };
 
 Array.from(modalBtns).forEach(function (element) {
@@ -37,10 +23,6 @@ var toggleModalClose = function (event) {
 	modal.classList.remove("open-modal");
 };
 
-Array.from(modalClose).forEach(function (element) {
-	element.addEventListener("click", toggleModalClose);
-});
-
 var svg = document.querySelector(".modal_screen_size");
 if (svg) {
 	var icon = svg.getElementsByClassName("bi");
@@ -53,47 +35,6 @@ if (svg) {
 			});
 		}
 	}
-}
-
-const desktopView = document.querySelector(".bi-display");
-const tabletView = document.querySelector(".bi-tablet-landscape");
-const mobileView = document.querySelector(".bi-phone");
-const iframe = document.querySelector(".modal-iframe");
-
-if (desktopView) {
-	desktopView.addEventListener("click", function () {
-		if (iframe.classList.contains("tablet")) {
-			iframe.classList.remove("tablet");
-		}
-		if (iframe.classList.contains("mobile")) {
-			iframe.classList.remove("mobile");
-		}
-		iframe.classList.add("desktop");
-	});
-}
-
-if (tabletView) {
-	tabletView.addEventListener("click", function () {
-		if (iframe.classList.contains("desktop")) {
-			iframe.classList.remove("desktop");
-		}
-		if (iframe.classList.contains("mobile")) {
-			iframe.classList.remove("mobile");
-		}
-		iframe.classList.add("tablet");
-	});
-}
-
-if (mobileView) {
-	mobileView.addEventListener("click", function () {
-		if (iframe.classList.contains("desktop")) {
-			iframe.classList.remove("desktop");
-		}
-		if (iframe.classList.contains("tablet")) {
-			iframe.classList.remove("tablet");
-		}
-		iframe.classList.add("mobile");
-	});
 }
 
 var sel = document.getElementById("grigora-templates-select");

@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.02.001
+Version: 2.02.002
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -32,6 +32,9 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.02.002 ==
+1. Removed the Demo Templates preview to comply with GDPR and privacy requirements.
 
 == v2.02.001 ==
 1. Added Demo Templates Page - Appearance > Grigora Demo Templates 
