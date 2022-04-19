@@ -35,6 +35,7 @@ All changes will be noted here
 
 == v2.03.001 ==
 1. Rollback from 2.02x version which was adding demo import.
+2. Fixed the forced 30px padding for sidebar. Now the sidebar group has padding assigned to its settings.
 
 == v2.01.007 ==
 1. Changed Screenshot Image
