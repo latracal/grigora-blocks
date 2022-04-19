@@ -4,6 +4,7 @@
 @import "blocks/separator";
 @import "blocks/tag";
 @import "blocks/file";
+@import "blocks/helpers";
 @import "blocks/latest-comments";
 @import "blocks/latest-posts";
 @import "blocks/post-title";
@@ -112,36 +113,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
 .main-body {
 	margin-top: 0px;
 	padding: 0px;
-}
-
-@media screen and (max-width: 600px) {
-	.main-primary {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.grigora-sidebar {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-	}
-}
-
-.wp-block-column:first-child .grigora-sidebar {
-	padding-right: 30px;
-}
-
-.wp-block-column:last-child .grigora-sidebar {
-	padding-left: 30px;
-}
-
-@media screen and (max-width: 768px) {
-	.wp-block-column:first-child .grigora-sidebar {
-		padding-right: 0px;
-	}
-
-	.wp-block-column:last-child .grigora-sidebar {
-		padding-left: 0px;
-	}
 }
 
 h2 a {
