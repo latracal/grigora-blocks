@@ -22,3 +22,4 @@ composer.phar export-ignore
 grigora-blocks.zip export-ignore
 global.css export-ignore
 global.css.map export-ignore
+.DS_Store export-ignore

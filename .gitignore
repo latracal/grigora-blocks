@@ -3,6 +3,7 @@ HTML/
 
 grigora-blocks.zip
 
+.DS_Store
 .vscode/
 .prettierignore
 composer.json
