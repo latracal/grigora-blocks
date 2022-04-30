@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.03.001
+Version: 2.03.002
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -32,6 +32,15 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.03.002 ==
+1. Added styles -
+1.1 core/navigation-link - Custom Link Button
+1.2 core/site-title - No Underline
+1.3 core/group - Hover Shadow
+1.4 core/list - No Marker No Underline + Hover Effect
+1.5 core/heading - No text decoration
+1.6 core/separator - Align Left
 
 == v2.03.001 ==
 1. Rollback from 2.02x version which was adding demo import.

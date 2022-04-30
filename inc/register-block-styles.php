@@ -400,6 +400,54 @@ function grigora_register_block_styles() {
 		)
 	);	
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/navigation-link',
+		array(
+			'name'  => 'custom-link-button',
+			'label' => __( 'Custom Link Button', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/site-title',
+		array(
+			'name'  => 'no-underline',
+			'label' => __( 'No Underline', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'hover-shadow',
+			'label' => __( 'Hover Shadow', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/list',
+		array(
+			'name'  => 'no-marker-no-underline-hovereffect',
+			'label' => __( 'No Marker No Underline + Hover Effect', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'no-text-decoration',
+			'label' => __( 'No text decoration', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'separator-align-left',
+			'label' => __( 'Align Left', 'grigora-blocks' ),
+		)
+	);
+
 }
 
 add_action( 'init', 'grigora_register_block_styles' );
