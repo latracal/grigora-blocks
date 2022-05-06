@@ -1,6 +1,10 @@
 <?php
 /**
  * Footer block pattern
+ * 
+ * Title: Footer links
+ * Slug: grigora/footer-links
+ * Categories: text
  *
  * @package grigora-blocks
  * @since 1.0.0

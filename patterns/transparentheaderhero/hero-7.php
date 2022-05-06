@@ -1,6 +1,10 @@
 <?php
 /**
  * Color Hue Hero header block pattern
+ * 
+ * Title: Color Hue Transparent Header Hero
+ * Slug: grigora/transparentheaderhero/hero-7
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

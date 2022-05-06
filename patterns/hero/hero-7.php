@@ -1,6 +1,10 @@
 <?php
 /**
  * Color Hue Hero header block pattern
+ * 
+ * Title: Color Hue Hero
+ * Slug: grigora/hero/hero-7
+ * Categories: hero
  *
  * @package grigora-blocks
  * @since 1.0.0

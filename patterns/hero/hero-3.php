@@ -2,6 +2,10 @@
 /**
  * Hero-3 header block pattern
  *
+ * Title: Parallax Card
+ * Slug: grigora/hero/hero-3
+ * Categories: hero
+ * 
  * @package grigora-blocks
  * @since 1.0.0
  */

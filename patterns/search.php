@@ -1,6 +1,10 @@
 <?php
 /**
  * Search page block pattern
+ * 
+ * Title: Search
+ * Slug: grigora/search
+ * Categories: text
  *
  * @package grigora-blocks
  * @since 1.0.0

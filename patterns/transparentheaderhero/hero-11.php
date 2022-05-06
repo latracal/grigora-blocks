@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-11 header block pattern
+ * 
+ * Title: Dark Color Highlight Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-11
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

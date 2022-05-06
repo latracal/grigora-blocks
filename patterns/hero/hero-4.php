@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-4 header block pattern
+ * 
+ * Title: Parallax Centered
+ * Slug: grigora/hero/hero-4
+ * Categories: hero
  *
  * @package grigora-blocks
  * @since 1.0.0

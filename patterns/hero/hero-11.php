@@ -2,6 +2,10 @@
 /**
  * Hero-11 header block pattern
  *
+ * Title: Dark Color Highlight
+ * Slug: grigora/hero/hero-11
+ * Categories: hero
+ * 
  * @package grigora-blocks
  * @since 1.0.0
  */

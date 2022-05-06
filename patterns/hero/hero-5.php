@@ -1,6 +1,10 @@
 <?php
 /**
  * Request A Quote block pattern
+ * 
+ * Title: Request A Quote
+ * Slug: grigora/hero/hero-5
+ * Categories: hero
  *
  * @package grigora-blocks
  * @since 1.0.0

@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-3 header block pattern
+ * 
+ * Title: Parallax Card Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-3
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

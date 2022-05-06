@@ -1,6 +1,10 @@
 <?php
 /**
  * Testimonial-2 block pattern
+ * 
+ * Title: Testimonial-2
+ * Slug: grigora/testimonials/testimonial-2
+ * Categories: testimonials
  *
  * @package grigora-blocks
  * @since 1.0.0

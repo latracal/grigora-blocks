@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-10 header block pattern
+ * 
+ * Title: Person Showcase Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-10
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

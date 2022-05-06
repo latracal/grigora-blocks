@@ -1,6 +1,10 @@
 <?php
 /**
  * Gradient Card block pattern
+ * 
+ * Title: Gradient Card Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-2
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

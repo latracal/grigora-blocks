@@ -1,6 +1,10 @@
 <?php
 /**
  * Request A Quote block pattern
+ * 
+ * Title: Request A Quote Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-5
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

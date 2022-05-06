@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-10 header block pattern
+ * 
+ * Title: Person Showcase
+ * Slug: grigora/hero/hero-10
+ * Categories: hero
  *
  * @package grigora-blocks
  * @since 1.0.0

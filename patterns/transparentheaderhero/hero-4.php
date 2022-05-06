@@ -1,6 +1,10 @@
 <?php
 /**
  * Hero-4 header block pattern
+ * 
+ * Title: Parallax Centered Transparent Header
+ * Slug: grigora/transparentheaderhero/hero-4
+ * Categories: transparent-header-hero
  *
  * @package grigora-blocks
  * @since 1.0.0

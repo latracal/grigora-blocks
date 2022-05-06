@@ -1,6 +1,10 @@
 <?php
 /**
  * Gradient Card block pattern
+ * 
+ * Title: Gradient Card
+ * Slug: grigora/hero/hero-2
+ * Categories: hero
  *
  * @package grigora-blocks
  * @since 1.0.0

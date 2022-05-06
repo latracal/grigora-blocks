@@ -1,6 +1,10 @@
 <?php
 /**
  * 404 header block pattern
+ * 
+ * Title: 404
+ * Slug: grigora/404
+ * Categories: text
  *
  * @package grigora-blocks
  * @since 1.0.0
