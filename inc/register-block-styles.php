@@ -448,6 +448,31 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/columns',
+		array(
+			'name'  => 'columns-no-gap',
+			'label' => __( 'No Gap', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/cover',
+		array(
+			'name'  => 'cover-image-zoom',
+			'label' => __( 'Image Zoom', 'grigora-blocks' ),
+		)
+	);
+
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/image',
+		array(
+			'name'  => 'image-image-zoom',
+			'label' => __( 'Image Zoom', 'grigora-blocks' ),
+		)
+	);
+
 }
 
 add_action( 'init', 'grigora_register_block_styles' );
