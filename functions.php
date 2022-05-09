@@ -91,17 +91,3 @@ require_once get_theme_file_path( 'inc/register-block-styles.php' );
 
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );
-
-// print_r(parse_blocks('<!-- wp:navigation {"isResponsive":true} -->
-// <!-- wp:navigation-link {"label":"Menu Item","url":"#","kind":"custom","isTopLevelLink":true} /-->
-// <!-- wp:navigation-submenu {"label":"Menu Dropdown","url":"#","kind":"custom","isTopLevelItem":true, "className": "is-style-mega-menu-left"} -->
-// 	<!-- wp:navigation-link {"label":"First item","url":"#","kind":"custom","isTopLevelLink":false} /-->
-// 	<!-- wp:navigation-link {"label":"Second item","url":"#","kind":"custom","isTopLevelLink":false} /-->
-// 	<!-- wp:navigation-link {"label":"Third item","url":"#","kind":"custom","isTopLevelLink":false} /-->
-// <!-- /wp:navigation-submenu -->
-// <!-- wp:navigation-link {"label":"Menu Item 3","url":"#","kind":"custom","isTopLevelLink":true} /-->
-// <!-- wp:search {"showLabel":false,"placeholder":"Search...","buttonPosition":"no-button","buttonUseIcon":true,"style":{"border":{"radius":"18px"}}} /-->
-// <!-- /wp:navigation -->'));
-
-
-// print_r(wp_nav_menu( $args );)
