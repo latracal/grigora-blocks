@@ -3,12 +3,12 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.03.002
+Version: 2.03.003
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
 
-Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 48 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
+Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 57 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
 
 All the CSS is located in scss/ folder.
 
@@ -32,6 +32,14 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.03.003 ==
+1. Added meta data to pattern files to follow new gutenburg guidelines.
+2. Shifted register-block-patterns.php from patterns/ to inc/
+3. Added styles -
+3.1 core/columns - No gap
+3.2 core/cover - Image Zoom
+3.3 core/image - Image Zoom
 
 == v2.03.002 ==
 1. Added styles -
