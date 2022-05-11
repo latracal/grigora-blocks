@@ -1,0 +1,31 @@
+.wp-block-post-featured-image {
+	margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dd,
+fieldset legend,
+blockquote,
+pre,
+hr,
+address,
+table {
+	margin-bottom: 1rem;
+}
+
+ul,
+ol {
+	margin: 0 0 1rem 3rem;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}

@@ -81,6 +81,10 @@ Tags Icon in Tags Style 3: Bootstrap Icons library (bi-tag). MIT License ( https
 List Icon in List Style 3: Icon is created by the team and permits anyone to use it. GPLv2 License ( license.txt in same directory)
 3 Icons in Seperator Stlye 1: Public Codepen. Pen Link: https://codepen.io/anthony-liddle/pen/eYpRavv  Mit License. ( https://blog.codepen.io/documentation/licensing/ )
 
+= Normalize CSS =
+Grigora Blocks uses Normalize CSS from https://github.com/tomusborne/generatepress/blob/master/sass/base/_reset-flex.scss.
+Licensed under GPLv2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+
 = Screenshot Licenses =
 Screenshot image is snapshot of actual website created using Grigora Block.
 

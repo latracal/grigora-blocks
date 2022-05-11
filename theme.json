@@ -89,7 +89,7 @@
 			],
 			"duotone": [
 				{
-					"colors": [ "button", "primary" ],
+					"colors": [ "#153956", "#5093d4" ],
 					"slug": "secondary-primary",
 					"name": "Secondary and primary"
 				},
