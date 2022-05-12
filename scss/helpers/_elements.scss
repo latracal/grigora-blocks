@@ -22,8 +22,8 @@ table {
 }
 
 // Lists
-ul,
-ol {
+ul:not(.wp-block-post-template),
+ol:not(.wp-block-post-template) {
 	margin: 0 0 1rem 3rem;
 }
 
