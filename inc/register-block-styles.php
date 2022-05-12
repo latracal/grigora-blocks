@@ -75,7 +75,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-1',
-			'label' => __( 'Button with exapanding background color', 'grigora-blocks' ),
+			'label' => __( 'Button with expanding background color', 'grigora-blocks' ),
 		)
 	);
 
@@ -449,6 +449,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'separator-align-right',
+			'label' => __( 'Align Right', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/columns',
 		array(
 			'name'  => 'columns-no-gap',
@@ -470,6 +478,14 @@ function grigora_register_block_styles() {
 		array(
 			'name'  => 'image-image-zoom',
 			'label' => __( 'Image Zoom', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/image',
+		array(
+			'name'  => 'image-border',
+			'label' => __( 'Image border', 'grigora-blocks' ),
 		)
 	);
 
