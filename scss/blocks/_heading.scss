@@ -32,16 +32,27 @@
 
 .is-style-grigora-heading-2 {
 	position: relative;
-	text-transform: capitalize;
 
 	&:before {
 		position: absolute;
-		left: 0;
 		bottom: 0;
 		width: 60px;
 		height: 2px;
 		content: "";
 		background-color: #c50000;
+	}
+
+	&.has-text-align-right{
+		&::before {
+			right: 0;
+		}
+	}
+
+	&.has-text-align-center{
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -70,11 +81,32 @@
 		max-width: 255px;
 		background-color: currentColor;
 	}
+
+	&.has-text-align-right{
+		&::before {
+			left: auto;
+			right: 0;
+		}
+		&::after {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&.has-text-align-center{
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
 
 .is-style-grigora-heading-4 {
 	position: relative;
-	text-align: center;
 
 	&:before {
 		position: absolute;
@@ -83,9 +115,21 @@
 		width: 60px;
 		height: 1px;
 		content: "";
-		left: 50%;
-		margin-left: -30px;
 		background-color: currentColor;
+	}
+
+	&.has-text-align-right{
+		&::before {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&.has-text-align-center{
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 
@@ -94,8 +138,8 @@
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
-	grid-template-rows: 16px 0;
 	grid-gap: 22px;
+	align-items: center;
 
 	&::after {
 		position: static !important;
@@ -109,8 +153,7 @@
 		content: " ";
 		display: block;
 		border-bottom: 2px solid #ccc;
-		top: 50% !important;
-		transform: translateY(50%);
+		transform: translateY(-40%);
 	}
 }
 
