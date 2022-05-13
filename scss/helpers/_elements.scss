@@ -22,8 +22,8 @@ table {
 }
 
 // Lists
-ul:not(.wp-block-post-template),
-ol:not(.wp-block-post-template) {
+ul:not(.wp-block-post-template, .wp-block-navigation__container),
+ol:not(.wp-block-post-template, .wp-block-navigation__container) {
 	margin: 0 0 1rem 3rem;
 }
 

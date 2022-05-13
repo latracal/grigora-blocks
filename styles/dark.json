@@ -1,0 +1,60 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#0D1117",
+					"name": "Background"
+				},
+				{
+					"slug": "canvas",
+					"color": "#000",
+					"name": "Canvas"
+				},
+				{
+					"slug": "foreground",
+					"color": "#ffffff",
+					"name": "Foreground"
+				},
+				{
+					"slug": "primary",
+					"color": "#58a6ff",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#8b949e",
+					"name": "Secondary"
+				},
+				{
+					"slug": "button",
+					"color": "#238636",
+					"name": "Button"
+				},
+				{
+					"slug": "buttontext",
+					"color": "#ffffff",
+					"name": "Button Text"
+				},
+				{
+					"slug": "transparent",
+					"color": "transparent",
+					"name": "Transparent"
+				}
+			]
+		},
+		"custom": {
+			"h-spacing": "2.375rem",
+			"v-spacing": "1.25rem",
+			"text-shadow": "0 2px 8px rgba(0, 0, 0, 0.9)",
+			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
+			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
+			"button-highlight": "0 0 0 #fff",
+			"button-border-color": "rgba(0, 0, 0, 0.05)",
+			"button-border-radius": "4px",
+			"button-padding": ".3rem 1rem"
+		}
+	}
+}
