@@ -36,7 +36,7 @@ function grigora_setup() {
 	// Enqueue editor styles and fonts.
 	add_editor_style(
 		array(
-			'./dist/css/grigora-editor.min.css'
+			'./assets/css/grigora-editor.min.css'
 		)
 	);
 
@@ -66,7 +66,7 @@ function grigora_styles() {
 	$ver = GRIGORA_DEBUG ? time() : GRIGORA_VERSION;
 	wp_enqueue_style(
 		'grigora-style',
-		get_theme_file_uri('dist/css/global.min.css'),
+		get_theme_file_uri('assets/css/global.min.css'),
 		[],
 		$ver
 	);
