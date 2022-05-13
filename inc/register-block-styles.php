@@ -425,6 +425,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'hover-elevate',
+			'label' => __( 'Hover Elevate', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/list',
 		array(
 			'name'  => 'no-marker-no-underline-hovereffect',
@@ -461,6 +469,14 @@ function grigora_register_block_styles() {
 		array(
 			'name'  => 'columns-no-gap',
 			'label' => __( 'No Gap', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'hover-elevate',
+			'label' => __( 'Hover Elevate', 'grigora-blocks' ),
 		)
 	);
 

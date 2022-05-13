@@ -1093,14 +1093,15 @@ ul.is-style-grigora-no-marker-list li ul {
   content: counter(li);
   counter-increment: li;
   position: absolute;
+  color: var(--wp--preset--color--buttontext);
   left: -1.3em;
   top: 50%;
   margin-top: -1.3em;
-  background: #87ceeb;
+  background: var(--wp--preset--color--button);
   height: 2em;
   width: 2em;
-  line-height: 2em;
-  border: 0.3em solid #fff;
+  line-height: 1.75em;
+  border: 0.15em solid var(--wp--preset--color--buttontext);
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
@@ -1136,7 +1137,8 @@ ul.is-style-grigora-no-marker-list li ul {
   left: -2.5em;
   top: 50%;
   margin-top: -1em;
-  background: #fa8072;
+  color: var(--wp--preset--color--buttontext);
+  background: var(--wp--preset--color--button);
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -1173,15 +1175,16 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-no-marker-no-underline-hovereffect {
   list-style: none;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
-
 .is-style-no-marker-no-underline-hovereffect a {
   text-decoration: none;
 }
-
 .is-style-no-marker-no-underline-hovereffect a:hover {
+  color: var(--wp--preset--color--button);
+}
+.is-style-no-marker-no-underline-hovereffect li:hover {
   color: var(--wp--preset--color--button);
 }
 
@@ -1481,14 +1484,15 @@ ul.is-style-grigora-no-marker-list li ul {
   content: counter(li);
   counter-increment: li;
   position: absolute;
+  color: var(--wp--preset--color--buttontext);
   left: -1.3em;
   top: 50%;
   margin-top: -1.3em;
-  background: #87ceeb;
+  background: var(--wp--preset--color--button);
   height: 2em;
   width: 2em;
-  line-height: 2em;
-  border: 0.3em solid #fff;
+  line-height: 1.75em;
+  border: 0.15em solid var(--wp--preset--color--buttontext);
   text-align: center;
   font-weight: bold;
   border-radius: 2em;
@@ -1524,7 +1528,8 @@ ul.is-style-grigora-no-marker-list li ul {
   left: -2.5em;
   top: 50%;
   margin-top: -1em;
-  background: #fa8072;
+  color: var(--wp--preset--color--buttontext);
+  background: var(--wp--preset--color--button);
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -1561,15 +1566,16 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-no-marker-no-underline-hovereffect {
   list-style: none;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
-
 .is-style-no-marker-no-underline-hovereffect a {
   text-decoration: none;
 }
-
 .is-style-no-marker-no-underline-hovereffect a:hover {
+  color: var(--wp--preset--color--button);
+}
+.is-style-no-marker-no-underline-hovereffect li:hover {
   color: var(--wp--preset--color--button);
 }
 
@@ -2039,6 +2045,14 @@ ul.is-style-grigora-no-marker-list li ul {
 
 .is-style-hover-shadow:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.is-style-hover-elevate {
+  transition: 0.3s ease-in-out;
+}
+.is-style-hover-elevate:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 textarea {
