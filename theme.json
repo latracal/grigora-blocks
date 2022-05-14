@@ -153,6 +153,11 @@
 					"name": "Large"
 				},
 				{
+					"slug": "lx-large",
+					"size": "2.25rem",
+					"name": "More Large"
+				},
+				{
 					"slug": "x-large",
 					"size": "2.75rem",
 					"name": "XL"
@@ -207,6 +212,11 @@
 							"name": "Large"
 						},
 						{
+							"slug": "lx-large",
+							"size": "2.25rem",
+							"name": "More Large"
+						},
+						{
 							"slug": "x-large",
 							"size": "2.75rem",
 							"name": "XL"
@@ -253,6 +263,11 @@
 							"slug": "large",
 							"size": "2rem",
 							"name": "Large"
+						},
+						{
+							"slug": "lx-large",
+							"size": "2.25rem",
+							"name": "More Large"
 						},
 						{
 							"slug": "x-large",
@@ -303,6 +318,11 @@
 							"name": "Large"
 						},
 						{
+							"slug": "lx-large",
+							"size": "2.25rem",
+							"name": "More Large"
+						},
+						{
 							"slug": "x-large",
 							"size": "2.75rem",
 							"name": "XL"
@@ -337,6 +357,11 @@
 							"slug": "large",
 							"size": "2rem",
 							"name": "Large"
+						},
+						{
+							"slug": "lx-large",
+							"size": "2.25rem",
+							"name": "More Large"
 						},
 						{
 							"slug": "x-large",
