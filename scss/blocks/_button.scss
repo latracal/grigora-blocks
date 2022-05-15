@@ -67,8 +67,8 @@
 .is-style-grigora-flat-outline .wp-block-button__link:focus,
 .is-style-grigora-flat-outline .wp-block-button__link:hover,
 .is-style-grigora-flat-outline .wp-block-button__link:visited {
-	color: currentColor;
-	background-color: transparent;
+	color: var(--wp--preset--color--buttontext);
+	background-color: var(--wp--preset--color--button);
 	border: 1px solid currentColor;
 	border-radius: 0;
 }
@@ -78,8 +78,8 @@
 .is-style-grigora-flat-shadow .wp-block-button__link:focus,
 .is-style-grigora-flat-shadow .wp-block-button__link:hover,
 .is-style-grigora-flat-shadow .wp-block-button__link:visited {
-	color: currentColor;
-	background-color: transparent;
+	color: var(--wp--preset--color--buttontext);
+	background-color: var(--wp--preset--color--button);
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -108,7 +108,7 @@
 		left: 0;
 		width: 0%;
 		height: 100%;
-		background-color: darken(rgba(0, 0, 0, 0.199), 15%);
+		background-color: darken(rgba(0, 0, 0, 0.2), 15%);
 		transition: all 0.3s;
 		border-radius: 10rem;
 		z-index: -1;
@@ -124,7 +124,7 @@
 .is-style-grigora-button-swipe-right .wp-block-button__link {
 	position: relative;
 	color: currentColor;
-	background-color: transparent;
+	background-color: var(--wp--preset--color--button);
 	border: 1px solid currentColor;
 	border-radius: 0;
 	z-index: 2;
@@ -137,7 +137,7 @@
 		left: 0;
 		width: 0;
 		height: 100%;
-		background: #ff003b;
+		background: rgba(0, 0, 0, 0.2);
 		transition: all 0.35s;
 		z-index: -1;
 	}
@@ -170,14 +170,14 @@
 		bottom: 0;
 		left: 0;
 		border-right: 50px solid transparent;
-		border-bottom: 80px solid #056d13;
+		border-bottom: 80px solid var(--wp--preset--color--button);
 		transform: translateX(-100%);
 		transition: 0.5s ease-in-out;
 		z-index: -1;
 	}
 
 	&:hover {
-		color: #fff;
+		color: var(--wp--preset--color--buttontext);
 		border: 1px solid #404040;
 
 		&:before {
@@ -196,7 +196,7 @@
 	z-index: 2;
 
 	&:hover {
-		color: #fff;
+		color: var(--wp--preset--color--buttontext);
 	}
 
 	&:before,
@@ -215,7 +215,7 @@
 		left: 0;
 		z-index: -1;
 		opacity: 0;
-		background: #5092d4;
+		background: var(--wp--preset--color--button);
 		transform: scale(0.1, 1);
 	}
 
@@ -249,38 +249,11 @@
 }
 
 .is-style-grigora-button-effect-4 .wp-block-button__link {
-	position: relative;
-	color: currentColor;
-	background-color: transparent;
-	border: 1px solid currentColor;
-	border-radius: 0;
-	z-index: 2;
+	transition: .3s;
 
-	&:before {
-		content: "";
-		transition: transform 0.15s, 0.15s border-radius 0.15s;
-		opacity: 0;
-		background: #ffffffb2;
-		transform: scale(0.1, 0.1);
-		border-radius: 50%;
-	}
-
-	&:hover:before {
-		content: "";
-		opacity: 1;
-		transform: scale(1, 1);
-		border-radius: 0;
-	}
-
-	&:after {
-		content: "";
-		transition: all 0.3s;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-	}
-
-	&:hover:after {
-		content: "";
-		opacity: 0;
+	&:hover{
+		box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+		transition: .3s;
 	}
 }
 

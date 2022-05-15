@@ -5,3 +5,12 @@
 .is-style-hover-shadow:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.is-style-hover-elevate{
+    transition: .3s ease-in-out;
+
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}

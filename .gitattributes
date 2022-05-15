@@ -20,6 +20,6 @@ composer.lock export-ignore
 composer.phar export-ignore
 .babelrc export-ignore
 grigora-blocks.zip export-ignore
-global.css export-ignore
-global.css.map export-ignore
 .DS_Store export-ignore
+gulpfile.js export-ignore
+package.json export-ignore

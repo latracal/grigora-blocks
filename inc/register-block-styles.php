@@ -75,7 +75,7 @@ function grigora_register_block_styles() {
 		'core/button',
 		array(
 			'name'  => 'grigora-button-effect-1',
-			'label' => __( 'Button with exapanding background color', 'grigora-blocks' ),
+			'label' => __( 'Button with expanding background color', 'grigora-blocks' ),
 		)
 	);
 
@@ -425,6 +425,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'hover-elevate',
+			'label' => __( 'Hover Elevate', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/list',
 		array(
 			'name'  => 'no-marker-no-underline-hovereffect',
@@ -441,6 +449,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/post-title',
+		array(
+			'name'  => 'no-text-decoration',
+			'label' => __( 'No text decoration', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/separator',
 		array(
 			'name'  => 'separator-align-left',
@@ -449,10 +465,26 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/separator',
+		array(
+			'name'  => 'separator-align-right',
+			'label' => __( 'Align Right', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/columns',
 		array(
 			'name'  => 'columns-no-gap',
 			'label' => __( 'No Gap', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'hover-elevate',
+			'label' => __( 'Hover Elevate', 'grigora-blocks' ),
 		)
 	);
 
@@ -470,6 +502,14 @@ function grigora_register_block_styles() {
 		array(
 			'name'  => 'image-image-zoom',
 			'label' => __( 'Image Zoom', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/image',
+		array(
+			'name'  => 'image-border',
+			'label' => __( 'Image border', 'grigora-blocks' ),
 		)
 	);
 

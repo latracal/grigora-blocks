@@ -1,3 +1,5 @@
+@import "helpers/normalize";
+@import "helpers/elements";
 @import "blocks/button";
 @import "blocks/column";
 @import "blocks/cover";
@@ -50,15 +52,6 @@ body {
 .wp-caption.alignleft {
 	margin-right: 1rem !important;
 }
-
-pre {
-	white-space: pre-wrap;
-}
-
-.wp-block-post-comments .comment-meta {
-	margin-left: 0;
-}
-
 
 .grigora_absolute{
 	position: absolute;
@@ -120,10 +113,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
 .main-body {
 	margin-top: 0px;
 	padding: 0px;
-}
-
-h2 a {
-	text-decoration: none;
 }
 
 .wp-block-post-excerpt__more-link {

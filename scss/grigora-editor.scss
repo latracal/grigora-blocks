@@ -1,3 +1,5 @@
+@import "helpers/normalize";
+@import "helpers/elements";
 @import "blocks/button";
 @import "blocks/column";
 @import "blocks/cover";
@@ -215,4 +217,25 @@ input[type="submit"]:visited {
 
 ul ul li .wp-block-navigation-submenu__toggle {
 	margin-right: 20px;
+}
+
+
+.is-style-grigora-heading-3 {
+
+	&:after {
+		content: "";
+		top: auto !important;
+	}
+	&.has-text-align-right{
+		&::after{
+			left: auto !important;
+		}
+	}
+
+	&.has-text-align-center{
+		&::after{
+			left: 50% !important;
+			right: auto !important;
+		}
+	}
 }

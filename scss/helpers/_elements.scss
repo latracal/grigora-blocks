@@ -1,0 +1,199 @@
+// Post featured image
+.wp-block-post-featured-image {
+	margin-bottom: 1rem;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dd,
+fieldset legend,
+blockquote,
+pre,
+hr,
+address,
+table {
+	margin-bottom: 1rem;
+}
+
+// Lists
+ul:not(.wp-block-post-template, .wp-block-navigation__container),
+ol:not(.wp-block-post-template, .wp-block-navigation__container) {
+	margin: 0 0 1rem 3rem;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+// Preformatted Block
+pre {
+	white-space: pre-wrap;
+	padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.03);
+	font-family: inherit;
+	font-size: inherit;
+	line-height: normal;
+	overflow: auto;
+	max-width: 100%;
+}
+
+
+// Block quote
+blockquote, .wp-block-quote {
+	border-left: 0;
+	position: relative;
+	border: none;
+	padding-left: 0;
+	quotes: initial;
+
+	p, cite {
+	   margin-left: 4rem;
+	}
+
+	cite {
+		color: var(--wp--preset--color--primary);
+	}
+
+	&:before {
+		content: "\201C";
+		position: absolute;
+		font-size: 4rem;
+		line-height: 1;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 700;
+		color: var(--wp--preset--color--primary);
+	}
+
+	&.has-text-align-right p::before {
+		content: "\201C";
+		position: absolute;
+		font-size: 4rem;
+		line-height: 1;
+		font-family: "Times New Roman", Times, serif;
+		font-weight: 700;
+		color: var(--wp--preset--color--primary);
+	}
+
+	&.has-text-align-center::before {
+		content: " ";
+	}
+
+	&.has-text-align-right::before {
+		content: " ";
+	}
+
+	&.has-text-align-right {
+		border: none;
+	}
+
+
+	&.has-text-align-right p::before {
+		margin-left: -4rem;
+	}
+}
+
+.wp-block-post-comments .commentlist .comment {
+	blockquote, .wp-block-quote{
+		p {
+			margin-left: 4rem !important;
+		}
+	}
+} 
+
+// table
+.wp-block-table, table {
+	border-collapse: collapse;
+	width: 100%;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 1.5em;
+
+	td,
+	th {
+	border: 1px solid rgba(0, 0, 0, 0.25);;
+	}
+
+	th,
+	td {
+	padding: 0.75rem;
+	}
+}
+
+// separator
+hr, .wp-block-separator {
+	border: none;
+    border-bottom: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .4;
+	margin-top: 2rem;
+}
+
+// fieldset
+fieldset {
+	padding: 0;
+	border: 0;
+	min-width: inherit;
+
+	legend {
+		padding: 0;
+		margin-bottom: 1.5em;
+	}
+}
+
+// headings
+h1{
+	font-size: 2.625rem;
+}
+
+h2{
+	font-size: 2.25rem;
+}
+
+h3{
+	font-size: 1.75rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+h5{
+	font-size: 1.25rem;
+}
+
+h6{
+	font-size: 1.125rem;
+}
+
+// Description List
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+// italics
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+// IMAGE
+img {
+	height: auto;
+	max-width: 100%;
+}
