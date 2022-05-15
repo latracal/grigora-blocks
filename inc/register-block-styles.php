@@ -449,6 +449,14 @@ function grigora_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/post-title',
+		array(
+			'name'  => 'no-text-decoration',
+			'label' => __( 'No text decoration', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/separator',
 		array(
 			'name'  => 'separator-align-left',

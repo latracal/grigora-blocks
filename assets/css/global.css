@@ -2148,10 +2148,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
   padding: 0px;
 }
 
-h2 a {
-  text-decoration: none;
-}
-
 .wp-block-post-excerpt__more-link {
   display: block;
   background-color: var(--wp--preset--color--button);
