@@ -39,7 +39,7 @@ Addition: lx-large font size added (2.25 rem)
 Addition: No text decoration style for post-title
 Addition: Seperator right align style
 Addition: Image border style
-Addition: Column & Group hover effect stlye
+Addition: Column & Group hover effect style
 Addition: Style variation added (dark.json)
 Addition (For devs): Removed VScode extension dependency. Used gulp automation for scss parsing and minification. Compiled css can be found in assets/css/ folder.
 Bug fix: ul inside post content was not indented. Solution: Change the inherit post content to false
@@ -50,8 +50,8 @@ Improvement: Increase the space between archive post meta and excerpt
 Improvement: Fix the empty space after post content
 Improvement: Set default font size for headings
 Improvement: Fix footer color
-Improvement: 4% to 2% top and bottom padding on archives, index and search pages
-Improvement (SEO): Single post heading to h1
+Improvement: 4% to 2% top and bottom padding on sidebar - archives, index and search pages
+Improvement (SEO): Single post heading to h1 - page, post
 
 == v2.03.003 ==
 1. Added meta data to pattern files to follow new gutenburg guidelines.
