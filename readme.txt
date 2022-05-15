@@ -8,7 +8,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
 
-Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 57 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
+Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 62 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
 
 All the CSS is located in scss/ folder.
 
