@@ -34,7 +34,24 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 All changes will be noted here
 
 == v2.04.001 ==
-
+Major Update: CSS is now normalized and individual CSS is added to elements. ( scss/helpers/ )
+Addition: lx-large font size added (2.25 rem)
+Addition: No text decoration style for post-title
+Addition: Seperator right align style
+Addition: Image border style
+Addition: Column & Group hover effect stlye
+Addition: Style variation added (dark.json)
+Addition (For devs): Removed VScode extension dependency. Used gulp automation for scss parsing and minification. Compiled css can be found in assets/css/ folder.
+Bug fix: ul inside post content was not indented. Solution: Change the inherit post content to false
+Bug fix: Comment avatar indentation fix
+Bug fix: Check broken styles in editor window
+Improvement: Make featured image clickable in archives page
+Improvement: Increase the space between archive post meta and excerpt
+Improvement: Fix the empty space after post content
+Improvement: Set default font size for headings
+Improvement: Fix footer color
+Improvement: 4% to 2% top and bottom padding on archives, index and search pages
+Improvement (SEO): Single post heading to h1
 
 == v2.03.003 ==
 1. Added meta data to pattern files to follow new gutenburg guidelines.
