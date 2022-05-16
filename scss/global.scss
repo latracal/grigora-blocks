@@ -41,8 +41,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
-	margin-right: 1rem;
+.wp-block-navigation-submenu .wp-block-navigation__submenu-icon {
+	margin-right: 0.25em;
 }
 
 .wp-block-cover.has-background-dim.alignleft {
@@ -150,4 +150,13 @@ figure {
 
 .grigora-archive-query ul li:last-child hr:last-child {
 	display: none;
+}
+
+
+.wp-block-post-comments{
+	.trackback, .pingback {
+		.comment-meta{
+			margin-left: 0em;
+		}
+	}
 }

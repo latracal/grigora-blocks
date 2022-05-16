@@ -27,8 +27,8 @@ ol:not(.wp-block-post-template, .wp-block-navigation__container) {
 	margin: 0 0 1rem 3rem;
 }
 
-li > ul,
-li > ol {
+li > ul:not(.wp-block-post-template, .wp-block-navigation__container),
+li > ol:not(.wp-block-post-template, .wp-block-navigation__container) {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }

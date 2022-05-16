@@ -104,8 +104,8 @@ ol:not(.wp-block-post-template, .wp-block-navigation__container) {
   margin: 0 0 1rem 3rem;
 }
 
-li > ul,
-li > ol {
+li > ul:not(.wp-block-post-template, .wp-block-navigation__container),
+li > ol:not(.wp-block-post-template, .wp-block-navigation__container) {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -2084,8 +2084,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
-  margin-right: 1rem;
+.wp-block-navigation-submenu .wp-block-navigation__submenu-icon {
+  margin-right: 0.25em;
 }
 
 .wp-block-cover.has-background-dim.alignleft {
@@ -2183,4 +2183,8 @@ figure {
 
 .grigora-archive-query ul li:last-child hr:last-child {
   display: none;
+}
+
+.wp-block-post-comments .trackback .comment-meta, .wp-block-post-comments .pingback .comment-meta {
+  margin-left: 0em;
 }
