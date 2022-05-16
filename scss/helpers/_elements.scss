@@ -22,13 +22,13 @@ table {
 }
 
 // Lists
-ul:not(.wp-block-post-template, .wp-block-navigation__container),
-ol:not(.wp-block-post-template, .wp-block-navigation__container) {
+ul:not(.wp-block-post-template, .wp-block-navigation__container, .select2-results__options),
+ol:not(.wp-block-post-template, .wp-block-navigation__container, .select2-results__options) {
 	margin: 0 0 1rem 3rem;
 }
 
-li > ul:not(.wp-block-post-template, .wp-block-navigation__container),
-li > ol:not(.wp-block-post-template, .wp-block-navigation__container) {
+li > ul:not(.wp-block-post-template, .wp-block-navigation__container, .select2-results__options),
+li > ol:not(.wp-block-post-template, .wp-block-navigation__container, .select2-results__options) {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -196,4 +196,36 @@ i {
 img {
 	height: auto;
 	max-width: 100%;
+}
+
+// forms
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: var(--wp--preset--color--button);
+	color: var(--wp--preset--color--buttontext);
+	border: 1px solid transparent;
+	cursor: pointer;
+	-webkit-appearance: button;
+	padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+	border: 1px solid var(--wp--preset--color--foreground);
+	border-radius: 0;
+	padding: 5px 10px;
+	max-width: 100%;
+}
+
+textarea {
+	width: 100%;
 }
