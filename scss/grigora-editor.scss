@@ -1,5 +1,6 @@
 @import "helpers/normalize";
 @import "helpers/elements";
+@import "helpers/forms-editor";
 @import "blocks/button";
 @import "blocks/column";
 @import "blocks/cover";
@@ -237,5 +238,25 @@ ul ul li .wp-block-navigation-submenu__toggle {
 			left: 50% !important;
 			right: auto !important;
 		}
+	}
+}
+
+
+ul,
+ol {
+	&.wp-block-post-template,
+	&.wp-block-social-links
+	{
+		margin: 0 0 0rem 0rem;
+	}
+}
+
+li > ul,
+li > ol {
+	&.wp-block-post-template,
+	&.wp-block-social-links
+	{
+		margin-bottom: 0;
+		margin-left: 0em;
 	}
 }

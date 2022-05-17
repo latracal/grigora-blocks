@@ -1,0 +1,44 @@
+// forms
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    color: var(--wp--preset--color--buttontext);
+    background-color: var(--wp--preset--color--button);
+    padding: 17px 30px 17px 30px;
+    margin: 0;
+    line-height: 1;
+	border: 1px solid transparent;
+    border-radius: 2px;
+    vertical-align: baseline;
+	-webkit-appearance: button;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover{
+        filter: brightness(1.125);
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+	color: var(--wp--preset--color--foreground);
+    padding: 0.75em;
+    height: auto;
+    border: 1px solid var(--wp--preset--color--foreground);
+    border-radius: 2px;
+    box-shadow: none;
+    transition: all .2s linear;
+    max-width: 100%;
+}
+
+textarea {
+	width: 100%;
+}
