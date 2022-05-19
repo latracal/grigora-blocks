@@ -2328,3 +2328,7 @@ li > ol.wp-block-social-links {
   margin-bottom: 0;
   margin-left: 0em;
 }
+
+.wp-block-cover .block-editor-block-list__layout {
+  width: auto;
+}

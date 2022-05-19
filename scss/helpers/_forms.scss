@@ -39,6 +39,12 @@ select {
     max-width: 100%;
 }
 
+
+input[type="search"] {
+	background-color: var(--wp--preset--color--transparent);
+}
+
+
 textarea {
 	width: 100%;
 }
