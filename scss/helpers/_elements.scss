@@ -22,8 +22,9 @@ table {
 }
 
 // Lists
-ul:not(.wp-block-post-template, .wp-block-navigation__container),
-ol:not(.wp-block-post-template, .wp-block-navigation__container) {
+// :not(.wp-block-post-template, .wp-block-navigation__container, .select2-results__options),
+ul,
+ol {
 	margin: 0 0 1rem 3rem;
 }
 
@@ -31,6 +32,22 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+}
+
+ul,
+ol {
+	&.wp-block-post-template
+	{
+		margin: 0 0 0rem 0rem;
+	}
+}
+
+li > ul,
+li > ol {
+	&.wp-block-post-template{
+		margin-bottom: 0;
+		margin-left: 0em;
+	}
 }
 
 // Preformatted Block
@@ -197,3 +214,4 @@ img {
 	height: auto;
 	max-width: 100%;
 }
+

@@ -4,7 +4,7 @@ Theme URI: https://wpgrigora.com/
 Author: latracal
 Author URI: https://latracal.com/
 Description: Grigora Blocks. Go to block theme for Bloggers, where you can start effortlessly. The theme supports dynamic sidebar, full-page, and wide-page layouts. Moreover, we've added 62 block styles for buttons, columns, lists, quotes, separators, and headings, making customization easier.
-Tags: full-site-editing, editor-style, block-styles, block-patterns, two-columns, left-sidebar, right-sidebar, wide-blocks, custom-colors, custom-header, featured-images, full-width-template, blog, entertainment, threaded-comments
+Tags: block-patterns, block-styles, blog, buddypress, custom-background, custom-colors, custom-header, custom-menu, e-commerce, editor-style, entertainment, featured-images, flexible-header, full-site-editing, full-width-template, grid-layout, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, three-columns, translation-ready, two-columns, wide-blocks
 Text Domain: grigora-blocks
 Requires at least: 5.9
 Requires PHP: 7.4
@@ -30,7 +30,7 @@ Grigora Blocks uses Normalize CSS from https://github.com/tomusborne/generatepre
 Licensed under GPLv2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
 
 = Screenshot Licenses =
-Screenshot image is snapshot of actual website created using Grigora Blocks.
+Screenshot image is snapshot of actual website created using Grigora Blocks. The above section is a cover block (added as a pattern in theme) while bottom one is simple 3 columns.
 
 == Site Icon ==
 The site icon is taken from bootstrap icon pack and added a linear gradient over it. 
@@ -38,10 +38,12 @@ Bootstrap Icons library (bi-boombox-fill). MIT License ( https://github.com/twbs
 
 == Screenshot images ==
 Images from pxhere.com. CC0 Public Domain:
-https://pxhere.com/en/photo/1656606 - Cover Image
-https://pxhere.com/en/photo/145352 - Testimonial 1 Cover 1
-https://pxhere.com/en/photo/64946 - Testimonial 1 Cover 2
-https://pxhere.com/en/photo/836 - Testimonial 1 Cover 3
+https://pxhere.com/en/photo/678391 - Cover Image
+Banner illustrations used are created by Latracal Solutions and released under Creative Commons ( CC0 ) License. - https://wpgrigora.com/wp-content/uploads/2022/05/banner-illustration-2-800-min.png
+Icons from iconfinder.com (Web Design Creatives). GPL License.
+https://www.iconfinder.com/icons/35189/sscissor_icon - Column 1 Icon
+https://www.iconfinder.com/icons/35204/clock_time_wait_icon - Column 2 Icon
+https://www.iconfinder.com/icons/35125/hoo_icon - Column 3 Icon
 
 == Theme Base ==
 Grigora Blocks is derived from Full site editing starter theme by Carolina Nymark

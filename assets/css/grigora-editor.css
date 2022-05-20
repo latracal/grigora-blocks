@@ -99,8 +99,8 @@ table {
   margin-bottom: 1rem;
 }
 
-ul:not(.wp-block-post-template, .wp-block-navigation__container),
-ol:not(.wp-block-post-template, .wp-block-navigation__container) {
+ul,
+ol {
   margin: 0 0 1rem 3rem;
 }
 
@@ -108,6 +108,17 @@ li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
+}
+
+ul.wp-block-post-template,
+ol.wp-block-post-template {
+  margin: 0 0 0rem 0rem;
+}
+
+li > ul.wp-block-post-template,
+li > ol.wp-block-post-template {
+  margin-bottom: 0;
+  margin-left: 0em;
 }
 
 pre {
@@ -249,6 +260,29 @@ i {
 img {
   height: auto;
   max-width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=number],
+textarea,
+select {
+  color: var(--wp--preset--color--foreground);
+  padding: 0.75em;
+  height: auto;
+  border: 1px solid var(--wp--preset--color--foreground);
+  border-radius: 2px;
+  box-shadow: none;
+  transition: all 0.2s linear;
+  max-width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
 
 .wp-block-button__link {
@@ -2280,4 +2314,21 @@ ul ul li .wp-block-navigation-submenu__toggle {
 .is-style-grigora-heading-3.has-text-align-center::after {
   left: 50% !important;
   right: auto !important;
+}
+
+ul.wp-block-post-template, ul.wp-block-social-links,
+ol.wp-block-post-template,
+ol.wp-block-social-links {
+  margin: 0 0 0rem 0rem;
+}
+
+li > ul.wp-block-post-template, li > ul.wp-block-social-links,
+li > ol.wp-block-post-template,
+li > ol.wp-block-social-links {
+  margin-bottom: 0;
+  margin-left: 0em;
+}
+
+.wp-block-cover .block-editor-block-list__layout {
+  width: auto;
 }

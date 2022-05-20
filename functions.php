@@ -13,7 +13,7 @@
  *
  * @since 1.0.0
  */
-define( 'GRIGORA_DEBUG', false );
+define( 'GRIGORA_DEBUG', true );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 
@@ -25,9 +25,18 @@ define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
  * @return void
  */
 function grigora_setup() {
+	// load translations
+	load_theme_textdomain( 'grigora-blocks' );
+
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 
 	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'status' ) );
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'script', 'style' ) );
 
 	add_theme_support( 'wp-block-styles' );
 
@@ -38,18 +47,6 @@ function grigora_setup() {
 		array(
 			'./assets/css/grigora-editor.min.css'
 		)
-	);
-
-	add_theme_support( 'post-thumbnails' ); 
-
-	add_theme_support('title-tag');
-	add_theme_support(
-		'html5',
-		[
-			'search-form',
-			'comment-form',
-			'comment-list',
-		]
 	);
 
 }
@@ -64,12 +61,23 @@ add_action( 'after_setup_theme', 'grigora_setup' );
  */
 function grigora_styles() {
 	$ver = GRIGORA_DEBUG ? time() : GRIGORA_VERSION;
-	wp_enqueue_style(
-		'grigora-style',
-		get_theme_file_uri('assets/css/global.min.css'),
-		[],
-		$ver
-	);
+	$extension = GRIGORA_DEBUG ? ".css" : ".min.css";
+	if( is_rtl() ){
+		wp_enqueue_style(
+			'grigora-rtl',
+			get_theme_file_uri( 'assets/css/rtl' . $extension ),
+			[],
+			$ver
+		);
+	}
+	else{
+		wp_enqueue_style(
+			'grigora-style',
+			get_theme_file_uri( 'assets/css/global' . $extension ),
+			[],
+			$ver
+		);
+	}
 	wp_register_script('grigora_main_js', get_theme_file_uri('js/main.js'), [], $ver, true);
 	wp_enqueue_script('grigora_main_js');
 }
