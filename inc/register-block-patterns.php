@@ -83,6 +83,7 @@ function grigora_register_block_patterns() {
 		'transparentheaderhero/hero-7',
 		'transparentheaderhero/hero-10',
 		'transparentheaderhero/hero-11',
+		'transparentheaderhero/hero-12',
 		'search',
 		'testimonials/testimonial-1',
 		'testimonials/testimonial-2',
