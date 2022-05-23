@@ -26,16 +26,3 @@
 }
 
 
-.transparent-search {
-	background-color: inherit;
-
-	input {
-		color: inherit;
-		background-color: inherit;
-		border: 1px solid currentColor;
-	}
-	input::placeholder {
-		color: inherit;
-		opacity: 0.6;
-	  }
-}

@@ -13,7 +13,7 @@
  *
  * @since 1.0.0
  */
-define( 'GRIGORA_DEBUG', false );
+define( 'GRIGORA_DEBUG', true );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 

@@ -1289,6 +1289,19 @@ ul.is-style-grigora-no-marker-list li ul {
   vertical-align: middle;
 }
 
+.is-style-transparent-background {
+  background-color: var(--wp--custom--small-button-transparent);
+}
+.is-style-transparent-background input {
+  color: inherit;
+  background-color: inherit;
+  border: 1px solid currentColor;
+}
+.is-style-transparent-background input::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
 .is-style-grigora-separator-1 {
   margin: 1.5em auto;
   position: relative;
@@ -1731,19 +1744,6 @@ ul.is-style-grigora-no-marker-list li ul {
 }
 .hero-10 .wp-block-image {
   margin-bottom: 0px;
-}
-
-.transparent-search {
-  background-color: inherit;
-}
-.transparent-search input {
-  color: inherit;
-  background-color: inherit;
-  border: 1px solid currentColor;
-}
-.transparent-search input::placeholder {
-  color: inherit;
-  opacity: 0.6;
 }
 
 @media (max-width: 768px) {
