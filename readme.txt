@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.05.001
+Version: 2.05.002
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -32,6 +32,10 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.05.002 ==
+Addition: Transparent search bar style
+Bug fix: Transparent search input removed
 
 == v2.05.001 ==
 Addition: New Pattern (Slanting Cover) to replicate the screenhot
