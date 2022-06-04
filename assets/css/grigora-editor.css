@@ -902,8 +902,7 @@ https://github.com/WordPress/gutenberg/pull/35703
   position: relative;
   text-align: center;
   padding: 1rem 1.2rem;
-  width: 80%;
-  /* create space for the quotes */
+  width: 80%; /* create space for the quotes */
   color: #484748;
   margin: 1rem auto 2rem;
 }
@@ -940,8 +939,7 @@ https://github.com/WordPress/gutenberg/pull/35703
 .wp-block-quote.is-style-grigora-quote-quotation-mark-2 {
   position: relative;
   padding: 1rem 1.2rem;
-  width: 80%;
-  /* create space for the quotes */
+  width: 80%; /* create space for the quotes */
   color: #484748;
   margin: 1rem auto 2rem;
 }
@@ -991,8 +989,7 @@ https://github.com/WordPress/gutenberg/pull/35703
 .wp-block-quote.is-style-grigora-quote-quotation-mark-3 {
   position: relative;
   padding: 1rem 1.2rem;
-  width: 80%;
-  /* create space for the quotes */
+  width: 80%; /* create space for the quotes */
   color: #484748;
   margin: 1rem auto 2rem;
   border-left: 5px solid #039be5;
@@ -1038,8 +1035,7 @@ https://github.com/WordPress/gutenberg/pull/35703
 .wp-block-quote.is-style-grigora-quote-quotation-mark-4 {
   position: relative;
   padding: 1rem 1.2rem;
-  width: 80%;
-  /* create space for the quotes */
+  width: 80%; /* create space for the quotes */
   color: #484748;
   margin: 1rem auto 2rem;
 }
@@ -2111,6 +2107,10 @@ ul.is-style-grigora-no-marker-list li ul {
 .is-style-hover-elevate:hover {
   transform: translateY(-10px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.is-style-grigora-shadow-type-2 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 textarea {

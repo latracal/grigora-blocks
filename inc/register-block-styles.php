@@ -131,7 +131,7 @@ function grigora_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'grigora-border',
-			'label' => __( 'Column with border', 'grigora-blocks' ),
+			'label' => __( 'Column with border radius', 'grigora-blocks' ),
 		)
 	);
 
@@ -518,6 +518,22 @@ function grigora_register_block_styles() {
 		array(
 			'name'  => 'transparent-background',
 			'label' => __( 'Transparent Background', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/column',
+		array(
+			'name'  => 'grigora-shadow-type-2',
+			'label' => __( 'Shadow #2', 'grigora-blocks' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/group',
+		array(
+			'name'  => 'grigora-shadow-type-2',
+			'label' => __( 'Shadow #2', 'grigora-blocks' ),
 		)
 	);
 

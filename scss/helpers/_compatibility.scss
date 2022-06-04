@@ -1,0 +1,6 @@
+// wpforms base styling compatibility
+.wpforms-container {
+	.wpforms-submit-container, .wpforms-field{
+		position: inherit !important;
+	}
+}
