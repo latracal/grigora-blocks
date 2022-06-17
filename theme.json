@@ -589,6 +589,11 @@
 			]
 		},
 		{
+			"name": "page-builder-template",
+			"title": "Page Builder",
+			"postTypes": [ "post","page" ]
+		},
+		{
 			"name": "no-title-template",
 			"title": "No title",
 			"postTypes": [ "post","page" ]
