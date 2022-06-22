@@ -1,89 +1,43 @@
 import { __ } from '@wordpress/i18n';
 import { useState } from 'react';
 import {
-	ColorIndicator,
     Button,
     SelectControl,
     __experimentalHStack as HStack,
-	__experimentalVStack as VStack,
 	__experimentalSpacer as Spacer,
     __experimentalView as View,
-    __experimentalHeading as Heading,
-    Icon
+    __experimentalHeading as Heading
 } from '@wordpress/components';
 
 import { plus, trash } from '@wordpress/icons';
 import { ScreenHeader } from './screen-header';
 import googleFonts from './google-fonts.json';
-import { useSetting } from './global-styles';
+import { useSetting, useStyle } from './global-styles';
 
 googleFonts = googleFonts["googleFonts"];
-
-function SingleWebfont({webfonts, setWebfonts, index}){
-
-    function deleteFont(){
-		const fonts = [ ...webfonts ]
-		fonts.splice( index, 1 )
-
-		setWebfonts( fonts );
-    }
-
-    return(
-        <>
-            <HStack spacing={ 2 }>
-                <Spacer>
-                    <Heading level={ 5 }>{ googleFonts[webfonts[index]] }</Heading>
-                </Spacer>
-                <Button isSmall icon={ trash } onClick={deleteFont} />
-            </HStack>
-        </>
-    )
-}
-
-function ScreenActiveWebfonts({ webfonts, setWebfonts }){
-    if(!Array.isArray(webfonts)){
-        setWebfonts([]);
-    }
-
-    return(
-        <View>
-            <Spacer marginBottom={ 0 } paddingX={ 4 } paddingY={ 3 }>
-            {Array.isArray(webfonts) && (
-                <>
-                {webfonts.map(function(webfont, i){
-                    return <SingleWebfont webfonts={webfonts} index={i} setWebfonts={setWebfonts} />
-                })}
-                </>
-            )}
-            </Spacer>
-        </View>
-    )
-}
 
 function ScreenWebfonts({ webfonts, setWebfonts }){
 
     const [ fontSelector, setFontSelector ] = useState(false);
     const [ fontSelected, setFontSelected ] = useState("");
 
-    const [fontFamilies, setfontFamilies] = useSetting(
+    const [colorPalette, setColorPalette] = useSetting(
 		'typography.fontFamilies'
 	);
 
-	// const [ customColors, setCustomColors ] = useSetting(
-	// 	'color.palette.custom'
-	// );
+	const [ color, setColor ] = useStyle( 'layout' ); 
 
 	// const [ defaultPaletteEnabled ] = useSetting(
 	// 	'color.defaultPalette'
 	// );
 
-    console.log(fontFamilies);
-    setfontFamilies([
-        {
-            "name": "System",
-            "slug": "system",
-            "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-        }]);
+    console.log(color);
+    // setfontFamilies([
+    //     {
+    //         "name": "System",
+    //         "slug": "system",
+    //         "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+    //     }]);
 
     function toggleSelector () {
         setFontSelector(!fontSelector);
@@ -137,6 +91,47 @@ function ScreenWebfonts({ webfonts, setWebfonts }){
 
         </>
     );
+}
+
+function SingleWebfont({webfonts, setWebfonts, index}){
+
+    function deleteFont(){
+		const fonts = [ ...webfonts ]
+		fonts.splice( index, 1 )
+
+		setWebfonts( fonts );
+    }
+
+    return(
+        <>
+            <HStack spacing={ 2 }>
+                <Spacer>
+                    <Heading level={ 5 }>{ googleFonts[webfonts[index]] }</Heading>
+                </Spacer>
+                <Button isSmall icon={ trash } onClick={deleteFont} />
+            </HStack>
+        </>
+    )
+}
+
+function ScreenActiveWebfonts({ webfonts, setWebfonts }){
+    if(!Array.isArray(webfonts)){
+        setWebfonts([]);
+    }
+
+    return(
+        <View>
+            <Spacer marginBottom={ 0 } paddingX={ 4 } paddingY={ 3 }>
+            {Array.isArray(webfonts) && (
+                <>
+                {webfonts.map(function(webfont, i){
+                    return <SingleWebfont webfonts={webfonts} index={i} setWebfonts={setWebfonts} />
+                })}
+                </>
+            )}
+            </Spacer>
+        </View>
+    )
 }
 
 

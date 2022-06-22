@@ -1,14 +1,36 @@
 "use strict"
 
+// import { registerPlugin } from '@wordpress/plugins';
+// import MetaSettings from './settings';
+
+// const { __ } = wp.i18n;
+
+// registerPlugin( 'grigora-settings', { render: MetaSettings } );
+
 import { registerPlugin } from '@wordpress/plugins';
-import MetaSettings from './settings';
+import { PluginDocumentSettingPanel } from '@wordpress/edit-post';
+import { useSelect } from '@wordpress/data';
+import { useSetting } from '@wordpress/block-editor';
+// import { useGlobalStylesOutput } from './global-styles';
+import {
+	GlobalStylesContext,
+	getMergedGlobalStyles,
+	// useMobileGlobalStylesColors,
+	// alignmentHelpers,
+	useGlobalStyles
+} from '@wordpress/components';
 
-import {PanelRow, CheckboxControl} from "@wordpress/components";
-import {withSelect, withDispatch} from "@wordpress/data";
-import {Component, createElement, Fragment} from "@wordpress/element";
-import {compose} from "@wordpress/compose";
-import {addFilter} from "@wordpress/hooks";
+const PluginDocumentSettingPanelDemo = () => {
+    const globalStyle = getMergedGlobalStyles;
+	const customProperty = useSetting('layout');
+	console.log(customProperty);
+    // const [ styles, settings ] = useGlobalStylesOutput();
+    console.log(globalStyle);
 
-const { __ } = wp.i18n;
+    return null;
+}
 
-registerPlugin( 'grigora-settings', { render: MetaSettings } );
+registerPlugin( 'plugin-document-setting-panel-demo', {
+    render: PluginDocumentSettingPanelDemo,
+    // icon: 'palmtree',
+} );

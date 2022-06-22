@@ -1,4 +1,3 @@
-import { withSelect, withDispatch } from '@wordpress/data';
 import {
     __experimentalHStack as HStack,
 	__experimentalVStack as VStack,
@@ -9,8 +8,6 @@ import {
 
 import { chevronRight, chevronLeft, typography, layout } from '@wordpress/icons';
 const { isRTL, __ } = wp.i18n;
-
-import { NavigationButtonAsItem } from './navigation-button';
 
 function ScreenHeader( { title, description } ) {
 	return (

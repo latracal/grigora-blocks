@@ -103,6 +103,7 @@ export function useStyle( path, blockName, source = 'all' ) {
 		user: userConfig,
 		setUserConfig,
 	} = useContext( GlobalStylesContext );
+	console.log(baseConfig);
 	const finalPath = ! blockName
 		? `styles.${ path }`
 		: `styles.blocks.${ blockName }.${ path }`;

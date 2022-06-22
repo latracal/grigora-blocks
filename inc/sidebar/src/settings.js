@@ -3,31 +3,20 @@ import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/edit-site';
 import { compose } from '@wordpress/compose';
 import svgIcons from './../../../assets/images/svg/svg.json'
 import { withSelect, withDispatch } from '@wordpress/data';
-import { SelectControl, PanelBody, Modal,
-    Icon,
-    __experimentalUnitControl as UnitControl,
+import {
     __experimentalNavigatorProvider as NavigatorProvider,
     __experimentalNavigatorScreen as NavigatorScreen,
-    __experimentalNavigatorButton as NavigatorButton,
-    __experimentalHStack as HStack,
-	__experimentalVStack as VStack,
 	__experimentalSpacer as Spacer,
-	__experimentalHeading as Heading,
-	__experimentalView as View,
     __experimentalItemGroup as ItemGroup,
-    FlexItem,
 	CardBody,
-	Card,
-	CardDivider,
-	CardMedia,
-    __experimentalNavigatorBackButton as NavigatorBackButton, } from '@wordpress/components';
+	Card } from '@wordpress/components';
 import parse from 'html-react-parser';
-import { chevronRight, chevronLeft, typography, layout } from '@wordpress/icons';
-const { isRTL, __ } = wp.i18n;
+import { typography, layout } from '@wordpress/icons';
+const { __ } = wp.i18n;
 
 import { NavigationButtonAsItem } from './navigation-button';
 import { ScreenWebfonts } from './screen-webfonts';
-import { ScreenHeader } from './screen-header';
+import {ScreenLayout} from './screen-layout';
 
 
 function ScreenRoot() {
@@ -66,12 +55,6 @@ function ScreenRoot() {
 
 const MetaSettings = props => {
 
-
-    const [ isOpen, setOpen ] = useState( false );
-
-    const openModal = () => setOpen( true );
-    const closeModal = () => setOpen( false );
-
     const icon = parse( svgIcons['grigora-icon-bw'] );
 
     const [ webfonts, setWebfonts ] = useState( [] );
@@ -104,25 +87,7 @@ const MetaSettings = props => {
                 </NavigatorScreen>
             
                 <NavigatorScreen path="/layout">
-                    <ScreenHeader 
-                        title={__( 'Layout', "grigora-adons") }
-                        description={__( 'Change theme layout constants.', "grigora-adons")}
-                    />
-                    <UnitControl
-                        label={ __( 'Content Size', "grigora-adons" ) }
-                        value={ "1px" }
-                        onChange={ newValue => console.log(newValue) }
-                    />
-                    <UnitControl
-                        label={ __( 'Wide Size', "grigora-adons" ) }
-                        value={ "1px" }
-                        onChange={ newValue => console.log(newValue) }
-                    />
-                    <UnitControl
-                        label={ __( 'Spacing', "grigora-adons" ) }
-                        value={ "1px" }
-                        onChange={ newValue => console.log(newValue) }
-                    />
+                    <ScreenLayout />
                 </NavigatorScreen>
             </NavigatorProvider>
             </PluginSidebar>
@@ -132,6 +97,8 @@ const MetaSettings = props => {
  
  export default compose(
      withSelect( ( select ) => {
+         const style = select( 'core/editor' );
+         console.log(style);
          const postMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
          const oldPostMeta = select( 'core/editor' ).getCurrentPostAttribute( 'meta' );
          return {
