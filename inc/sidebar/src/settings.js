@@ -16,7 +16,7 @@ const { __ } = wp.i18n;
 
 import { NavigationButtonAsItem } from './navigation-button';
 import { ScreenWebfonts } from './screen-webfonts';
-import {ScreenLayout} from './screen-layout';
+import { ScreenLayout } from './screen-layout';
 
 
 function ScreenRoot() {
@@ -57,6 +57,12 @@ const MetaSettings = props => {
 
     const icon = parse( svgIcons['grigora-icon-bw'] );
 
+    const { style } = props;
+    const { setStyle } = props;
+    console.log(style);
+
+    // setStyle([], style);
+
     const [ webfonts, setWebfonts ] = useState( [] );
 
     return (
@@ -83,7 +89,7 @@ const MetaSettings = props => {
                 </NavigatorScreen>
 
                 <NavigatorScreen path="/webfonts">
-                    <ScreenWebfonts webfonts={webfonts} setWebfonts={setWebfonts} />
+                    <ScreenWebfonts webfonts={webfonts} setWebfonts={setWebfonts} style={style} setStyle={setStyle} />
                 </NavigatorScreen>
             
                 <NavigatorScreen path="/layout">
@@ -97,18 +103,23 @@ const MetaSettings = props => {
  
  export default compose(
      withSelect( ( select ) => {
-         const style = select( 'core/editor' );
-         console.log(style);
-         const postMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
-         const oldPostMeta = select( 'core/editor' ).getCurrentPostAttribute( 'meta' );
+         const expFeatures = select( 'core/block-editor' ).getSettings();
+         console.log(expFeatures);
          return {
-             meta: { ...oldPostMeta, ...postMeta },
-             oldMeta: oldPostMeta,
+            style: { ...expFeatures },
          };
      } ),
      withDispatch( ( dispatch ) => ( {
-         setMetaFieldValue: ( value, field ) => dispatch( 'core/editor' ).editPost(
-             { meta: { [ field ]: value } }
-         ),
+        setStyle: ( newFonts, oldStyle ) => {
+            // oldStyle["typography"]["fontFamilies"]["theme"] = [
+			// 	{
+			// 		"name": "System2",
+			// 		"slug": "system",
+			// 		"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+			// 	}
+			// ];
+            // dispatch( 'core/block-editor' ).updateSettings({"__experimentalFeatures": oldStyle});
+
+        }
      } ) ),
  )( MetaSettings );

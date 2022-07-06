@@ -1,36 +1,29 @@
 "use strict"
 
-// import { registerPlugin } from '@wordpress/plugins';
-// import MetaSettings from './settings';
-
-// const { __ } = wp.i18n;
-
-// registerPlugin( 'grigora-settings', { render: MetaSettings } );
-
 import { registerPlugin } from '@wordpress/plugins';
-import { PluginDocumentSettingPanel } from '@wordpress/edit-post';
-import { useSelect } from '@wordpress/data';
-import { useSetting } from '@wordpress/block-editor';
+import MetaSettings from './settings';
+
+const { __ } = wp.i18n;
+
+registerPlugin( 'grigora-settings', { render: MetaSettings } );
+
+// import { registerPlugin } from '@wordpress/plugins';
 // import { useGlobalStylesOutput } from './global-styles';
-import {
-	GlobalStylesContext,
-	getMergedGlobalStyles,
-	// useMobileGlobalStylesColors,
-	// alignmentHelpers,
-	useGlobalStyles
-} from '@wordpress/components';
+// // import * as AR from '@wordpress/edit-site';
+// import {GlobalStylesContext, useGlobalStyles} from '@wordpress/components';
 
-const PluginDocumentSettingPanelDemo = () => {
-    const globalStyle = getMergedGlobalStyles;
-	const customProperty = useSetting('layout');
-	console.log(customProperty);
-    // const [ styles, settings ] = useGlobalStylesOutput();
-    console.log(globalStyle);
+// const PluginDocumentSettingPanelDemo = () => {
+//     console.log(GlobalStylesContext);
+//     console.log(useGlobalStyles);
 
-    return null;
-}
+//     const [ styles, settings ] = useGlobalStylesOutput();
+// 	// console.log(AR);
+// 	// console.log(styles);
+// 	// console.log(settings);
 
-registerPlugin( 'plugin-document-setting-panel-demo', {
-    render: PluginDocumentSettingPanelDemo,
-    // icon: 'palmtree',
-} );
+//     return null;
+// }
+
+// registerPlugin( 'plugin-document-setting-panel-demo', {
+//     render: PluginDocumentSettingPanelDemo
+// } );

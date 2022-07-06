@@ -12,38 +12,21 @@ import {
 import { plus, trash } from '@wordpress/icons';
 import { ScreenHeader } from './screen-header';
 import googleFonts from './google-fonts.json';
-import { useSetting, useStyle } from './global-styles';
+// import { useSetting, useStyle } from './global-styles';
 
 googleFonts = googleFonts["googleFonts"];
 
-function ScreenWebfonts({ webfonts, setWebfonts }){
+function ScreenWebfonts({ webfonts, setWebfonts, style, setStyle }){
 
     const [ fontSelector, setFontSelector ] = useState(false);
     const [ fontSelected, setFontSelected ] = useState("");
-
-    const [colorPalette, setColorPalette] = useSetting(
-		'typography.fontFamilies'
-	);
-
-	const [ color, setColor ] = useStyle( 'layout' ); 
-
-	// const [ defaultPaletteEnabled ] = useSetting(
-	// 	'color.defaultPalette'
-	// );
-
-    console.log(color);
-    // setfontFamilies([
-    //     {
-    //         "name": "System",
-    //         "slug": "system",
-    //         "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-    //     }]);
 
     function toggleSelector () {
         setFontSelector(!fontSelector);
     }
 
     function addFont () {
+        setStyle([], style);
         setWebfonts([...webfonts, fontSelected]);
         setFontSelector(false);
         setFontSelected("");
