@@ -650,21 +650,23 @@ const MetaSettings = props => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_3__.compose)((0,_wordpress_data__WEBPACK_IMPORTED_MODULE_5__.withSelect)(select => {
-  const expFeatures = select('core/block-editor').getSettings();
+  const expFeatures = select('core/edit-site').getSettings().__experimentalFeatures;
+
   console.log(expFeatures);
   return {
     style: { ...expFeatures
     }
   };
 }), (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_5__.withDispatch)(dispatch => ({
-  setStyle: (newFonts, oldStyle) => {// oldStyle["typography"]["fontFamilies"]["theme"] = [
-    // 	{
-    // 		"name": "System2",
-    // 		"slug": "system",
-    // 		"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-    // 	}
-    // ];
-    // dispatch( 'core/block-editor' ).updateSettings({"__experimentalFeatures": oldStyle});
+  setStyle: (newFonts, oldStyle) => {
+    oldStyle["typography"]["fontFamilies"]["theme"] = [{
+      "name": "System2",
+      "slug": "system",
+      "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+    }];
+    dispatch('core/edit-site').updateSettings({
+      "__experimentalFeatures": oldStyle
+    });
   }
 })))(MetaSettings));
 

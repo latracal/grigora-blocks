@@ -18,7 +18,6 @@ import { NavigationButtonAsItem } from './navigation-button';
 import { ScreenWebfonts } from './screen-webfonts';
 import { ScreenLayout } from './screen-layout';
 
-
 function ScreenRoot() {
 	return (
 		<Card size="small">
@@ -103,7 +102,7 @@ const MetaSettings = props => {
  
  export default compose(
      withSelect( ( select ) => {
-         const expFeatures = select( 'core/block-editor' ).getSettings();
+         const expFeatures = select( 'core/edit-site' ).getSettings().__experimentalFeatures;
          console.log(expFeatures);
          return {
             style: { ...expFeatures },
@@ -111,14 +110,14 @@ const MetaSettings = props => {
      } ),
      withDispatch( ( dispatch ) => ( {
         setStyle: ( newFonts, oldStyle ) => {
-            // oldStyle["typography"]["fontFamilies"]["theme"] = [
-			// 	{
-			// 		"name": "System2",
-			// 		"slug": "system",
-			// 		"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-			// 	}
-			// ];
-            // dispatch( 'core/block-editor' ).updateSettings({"__experimentalFeatures": oldStyle});
+            oldStyle["typography"]["fontFamilies"]["theme"] = [
+				{
+					"name": "System2",
+					"slug": "system",
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+				}
+			];
+            dispatch( 'core/edit-site' ).updateSettings({"__experimentalFeatures": oldStyle});
 
         }
      } ) ),
