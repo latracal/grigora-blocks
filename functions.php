@@ -52,6 +52,9 @@ function grigora_setup() {
 }
 add_action( 'after_setup_theme', 'grigora_setup' );
 
+// Recommend Plugins
+require_once get_theme_file_path( 'inc/recommend-plugins.php' );
+
 /**
  * Enqueue the CSS files.
  *
