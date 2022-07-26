@@ -1,0 +1,20 @@
+.is-style-no-marker-no-underline-hovereffect{
+	list-style: none;
+	margin: 0 !important;
+	padding: 0;
+
+	a{
+		text-decoration: none;
+
+		&:hover{
+			color: var(--wp--preset--color--button)
+		}
+	}
+
+	li{
+		&:hover{
+			color: var(--wp--preset--color--button)
+		}
+	}
+
+}

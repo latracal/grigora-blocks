@@ -1,0 +1,12 @@
+.is-style-cover-image-zoom{
+    overflow: hidden;
+    
+    .wp-block-cover__image-background{
+        transition: 0.3s all ease-in-out;
+    }
+    &:hover{
+        .wp-block-cover__image-background{
+            transform: scale(1.1);
+        }
+    }
+}

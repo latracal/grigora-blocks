@@ -1,0 +1,18 @@
+.is-style-grigora-heading-2 {
+  position: relative;
+}
+.is-style-grigora-heading-2:before {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  content: "";
+  background-color: #c50000;
+}
+.is-style-grigora-heading-2.has-text-align-right::before {
+  right: 0;
+}
+.is-style-grigora-heading-2.has-text-align-center::before {
+  left: 50%;
+  transform: translateX(-50%);
+}

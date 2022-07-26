@@ -1,0 +1,48 @@
+.is-style-grigora-heading-3 {
+	position: relative;
+	padding-bottom: 10px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 5px;
+		width: 55px;
+		background-color: currentColor;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: auto;
+		bottom: 2px;
+		height: 1px;
+		width: 95%;
+		max-width: 255px;
+		background-color: currentColor;
+	}
+
+	&.has-text-align-right{
+		&::before {
+			left: auto;
+			right: 0;
+		}
+		&::after {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&.has-text-align-center{
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

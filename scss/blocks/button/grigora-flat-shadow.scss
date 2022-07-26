@@ -1,0 +1,9 @@
+.is-style-grigora-flat-shadow .wp-block-button__link,
+.is-style-grigora-flat-shadow .wp-block-button__link:active,
+.is-style-grigora-flat-shadow .wp-block-button__link:focus,
+.is-style-grigora-flat-shadow .wp-block-button__link:hover,
+.is-style-grigora-flat-shadow .wp-block-button__link:visited {
+	color: var(--wp--preset--color--buttontext);
+	background-color: var(--wp--preset--color--button);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}

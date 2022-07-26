@@ -1,0 +1,7 @@
+.is-style-hover-shadow{
+    transition: .3s ease-in-out;
+}
+
+.is-style-hover-shadow:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
