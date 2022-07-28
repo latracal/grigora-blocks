@@ -1,0 +1,21 @@
+ul.is-style-grigora-lp-no-indentation,
+ol.is-style-grigora-lp-no-indentation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.is-style-grigora-lp-no-indentation li ul {
+  margin-left: 1em;
+}
+
+.is-style-grigora-lp-no-indentation ul,
+.is-style-grigora-lp-no-indentation ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.is-style-grigora-lp-no-indentation ul li ul {
+  margin-left: 1em;
+}
