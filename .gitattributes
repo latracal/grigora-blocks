@@ -23,3 +23,5 @@ grigora-blocks.zip export-ignore
 .DS_Store export-ignore
 gulpfile.js export-ignore
 package.json export-ignore
+
+assets/css/blocks/ export-ignore
