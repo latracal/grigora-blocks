@@ -1,0 +1,12 @@
+.is-style-grigora-separator-3 {
+  height: 30px;
+  width: 100% !important;
+  opacity: 1;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#369a7e), color-stop(0.49, #369a7e), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
+  border-bottom: none;
+}
+
+.is-style-grigora-separator-3.has-background {
+  height: 30px !important;
+}

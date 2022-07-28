@@ -1,32 +1,104 @@
 @import "helpers/normalize";
 @import "helpers/elements";
 @import "helpers/forms-editor";
+
+// partial blocks css
 @import "blocks/button";
-@import "blocks/column";
-@import "blocks/cover";
-@import "blocks/columns";
-@import "blocks/image";
 @import "blocks/file";
-@import "blocks/heading";
-@import "blocks/helpers";
 @import "blocks/latest-comments";
 @import "blocks/latest-posts";
-@import "blocks/post-title";
-@import "blocks/quote";
-@import "blocks/list";
-@import "blocks/search";
-@import "blocks/separator";
-@import "blocks/tag";
-@import "blocks/pagination";
-@import "blocks/list";
-@import "blocks/navigation";
 @import "blocks/navigation-editor";
-@import "blocks/post-author";
-@import "hero/hero";
+
+// styles
+@import "blocks/button/grigora-button-diagonal-swipe.scss";
+@import "blocks/button/grigora-button-effect-1.scss";
+@import "blocks/button/grigora-button-effect-4.scss";
+@import "blocks/button/grigora-button-effect-5.scss";
+@import "blocks/button/grigora-button-rounded.scss";
+@import "blocks/button/grigora-button-shadow.scss";
+@import "blocks/button/grigora-button-swipe-right.scss";
+@import "blocks/button/grigora-flat-button.scss";
+@import "blocks/button/grigora-flat-outline.scss";
+@import "blocks/button/grigora-flat-shadow.scss";
+
+@import "blocks/categories/grigora-no-marker-list.scss";
+
+@import "blocks/column/grigora-border-rounded.scss";
+@import "blocks/column/grigora-border.scss";
+@import "blocks/column/grigora-shadow-border-rounded.scss";
+@import "blocks/column/grigora-shadow-border.scss";
+@import "blocks/column/grigora-shadow-rounded.scss";
+@import "blocks/column/grigora-shadow-type-2.scss";
+@import "blocks/column/grigora-shadow.scss";
+@import "blocks/column/hover-elevate.scss";
+
+@import "blocks/columns/columns-no-gap.scss";
+
+@import "blocks/cover/cover-image-zoom.scss";
+
+@import "blocks/group/grigora-shadow-type-2.scss";
+@import "blocks/group/hover-elevate.scss";
+@import "blocks/group/hover-shadow.scss";
+
+@import "blocks/heading/grigora-heading-1.scss";
+@import "blocks/heading/grigora-heading-2.scss";
+@import "blocks/heading/grigora-heading-3.scss";
+@import "blocks/heading/grigora-heading-4.scss";
+@import "blocks/heading/grigora-heading-5.scss";
+@import "blocks/heading/no-text-decoration.scss";
+
+@import "blocks/image/image-border.scss";
+@import "blocks/image/image-image-zoom.scss";
+
+@import "blocks/list/grigora-list-style-3.scss";
+@import "blocks/list/grigora-no-marker-list.scss";
+@import "blocks/list/grigora-ordered-list-style-1.scss";
+@import "blocks/list/grigora-ordered-list-style-2.scss";
+@import "blocks/list/no-marker-no-underline-hovereffect.scss";
+
+@import "blocks/navigation/grigora-navigation-style-1.scss";
+
+@import "blocks/navigation-link/custom-link-button.scss";
+
+@import "blocks/page-list/grigora-no-marker-list.scss";
+
+@import "blocks/post-author/grigora-post-author-style-1.scss";
+
+@import "blocks/post-terms/grigora-tag-style-2.scss";
+@import "blocks/post-terms/grigora-tag-style-3.scss";
+@import "blocks/post-terms/grigora-tag-style.scss";
+
+@import "blocks/post-title/grigora-heading-1.scss";
+@import "blocks/post-title/grigora-heading-2.scss";
+@import "blocks/post-title/grigora-heading-3.scss";
+@import "blocks/post-title/grigora-heading-4.scss";
+@import "blocks/post-title/grigora-heading-5.scss";
+@import "blocks/post-title/no-text-decoration.scss";
+
+@import "blocks/query-pagination/grigora-query-pagination-buttons.scss";
+
+@import "blocks/quote/grigora-quote-quotation-marks-2.scss";
+@import "blocks/quote/grigora-quote-quotation-marks-3.scss";
+@import "blocks/quote/grigora-quote-quotation-marks-4.scss";
+@import "blocks/quote/grigora-quote-quotation-marks.scss";
+
+@import "blocks/search/transparent-background.scss";
+
+@import "blocks/separator/grigora-separator-1.scss";
+@import "blocks/separator/grigora-separator-2.scss";
+@import "blocks/separator/grigora-separator-3.scss";
+@import "blocks/separator/grigora-separator-4.scss";
+@import "blocks/separator/grigora-separator-5.scss";
+@import "blocks/separator/grigora-separator-6.scss";
+@import "blocks/separator/separator-align-left.scss";
+@import "blocks/separator/separator-align-right.scss";
+
+@import "blocks/site-title/no-underline.scss";
+
+@import "blocks/latest-posts/grigora-lp-no-indentation.scss";
+
+// other
 @import "testimonial/testimonial";
-@import "footer/footer";
-@import "blocks/site-title";
-@import "blocks/group";
 
 textarea {
 	padding: 1rem;

@@ -1,0 +1,9 @@
+.is-style-image-image-zoom {
+  overflow: hidden;
+}
+.is-style-image-image-zoom img {
+  transition: 0.3s all ease-in-out;
+}
+.is-style-image-image-zoom:hover img {
+  transform: scale(1.1);
+}

@@ -52,6 +52,9 @@ function grigora_setup() {
 }
 add_action( 'after_setup_theme', 'grigora_setup' );
 
+// Recommend Plugins
+require_once get_theme_file_path( 'inc/recommend-plugins.php' );
+
 /**
  * Enqueue the CSS files.
  *
@@ -96,6 +99,9 @@ require_once get_theme_file_path( 'inc/register-block-variations.php' );
 
 // Block style examples.
 require_once get_theme_file_path( 'inc/register-block-styles.php' );
+
+// Load Styles CSS conditionally.
+require_once get_theme_file_path( 'inc/smart-styles.php' );
 
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );

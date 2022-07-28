@@ -1,0 +1,13 @@
+.is-style-transparent-background {
+	background-color: var(--wp--custom--small-button-transparent);
+
+	input {
+		color: inherit;
+		background-color: inherit;
+		border: 1px solid currentColor;
+	}
+	input::placeholder {
+		color: inherit;
+		opacity: 0.6;
+	  }
+}

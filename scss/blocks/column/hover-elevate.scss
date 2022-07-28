@@ -1,0 +1,8 @@
+.is-style-hover-elevate{
+    transition: .3s ease-in-out;
+
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
