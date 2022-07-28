@@ -594,6 +594,21 @@
 			"postTypes": [ "post","page" ]
 		},
 		{
+			"name": "page-builder-no-header-template",
+			"title": "Page Builder - No Header",
+			"postTypes": [ "post","page" ]
+		},
+		{
+			"name": "page-builder-no-footer-template",
+			"title": "Page Builder - No Footer",
+			"postTypes": [ "post","page" ]
+		},
+		{
+			"name": "page-builder-only-content-template",
+			"title": "Page Builder - Only Content",
+			"postTypes": [ "post","page" ]
+		},
+		{
 			"name": "no-title-template",
 			"title": "No title",
 			"postTypes": [ "post","page" ]
