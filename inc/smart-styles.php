@@ -259,7 +259,7 @@ if(!function_exists("grigora_load_block_styles_css")){
                 }
             }
             // site title
-            else if ($block['blockName'] == 'core/no-underline') {
+            else if ($block['blockName'] == 'core/site-title') {
                 if (str_contains($block['attrs']['className'], 'is-style-no-underline') !== false) {
                     $used_styles->render_inline_styles("grigora-used-styles", 'is-style-no-underline', ".is-style-no-underline a{text-decoration:none}.is-style-no-underline a:hover{filter:brightness(94%) !important}");
                 }

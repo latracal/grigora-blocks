@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.07.000
+Version: 2.07.001
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -31,6 +31,9 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.07.001 ==
+Bug Fix: Site Title styles were not working.
 
 == v2.07.000 ==
 Addition: Plugin recommendation tab.
