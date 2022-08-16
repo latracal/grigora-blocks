@@ -13,7 +13,7 @@
  *
  * @since 1.0.0
  */
-define( 'GRIGORA_DEBUG', true );
+define( 'GRIGORA_DEBUG', false );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 
@@ -126,7 +126,7 @@ function grigora_site_editor_script($hook) {
 	wp_register_script(
 		'grigora-site-editor-settings',
 		$path,
-		array( 'wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element' ),
+		array( 'react', 'wp-api-fetch', 'wp-components', 'wp-compose', 'wp-data', 'wp-edit-site', 'wp-element', 'wp-i18n', 'wp-plugins', 'wp-polyfill', 'wp-primitives' ),
 		$ver,
 		true
 	);

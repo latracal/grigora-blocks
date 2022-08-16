@@ -25,3 +25,8 @@ gulpfile.js export-ignore
 package.json export-ignore
 
 assets/css/blocks/ export-ignore
+
+inc/sidebar/package.json export-ignore
+inc/sidebar/package-lock.json export-ignore
+inc/sidebar/scss/ export-ignore
+inc/sidebar/src/ export-ignore
