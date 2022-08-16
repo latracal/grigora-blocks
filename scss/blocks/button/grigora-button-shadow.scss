@@ -1,0 +1,9 @@
+.is-style-grigora-button-shadow .wp-block-button__link,
+.is-style-grigora-button-shadow .wp-block-button__link:focus,
+.is-style-grigora-button-shadow .wp-block-button__link:hover,
+.is-style-grigora-button-shadow .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
+}
+.is-style-grigora-button-shadow .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
+}

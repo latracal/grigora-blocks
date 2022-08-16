@@ -1,0 +1,27 @@
+.is-style-grigora-heading-4 {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 60px;
+		height: 1px;
+		content: "";
+		background-color: currentColor;
+	}
+
+	&.has-text-align-right{
+		&::before {
+			left: auto;
+			right: 0;
+		}
+	}
+
+	&.has-text-align-center{
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

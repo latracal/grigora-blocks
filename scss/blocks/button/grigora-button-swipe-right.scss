@@ -1,0 +1,30 @@
+.is-style-grigora-button-swipe-right .wp-block-button__link {
+	position: relative;
+	color: currentColor;
+	background-color: var(--wp--preset--color--button);
+	border: 1px solid currentColor;
+	border-radius: 0;
+	z-index: 2;
+	transition: all 0.35s;
+
+	&:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+		transition: all 0.35s;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: #fff;
+		border: 1px solid #404040;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+}

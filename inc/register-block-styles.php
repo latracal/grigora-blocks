@@ -537,6 +537,14 @@ function grigora_register_block_styles() {
 		)
 	);
 
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/latest-posts',
+		array(
+			'name'  => 'grigora-lp-no-indentation',
+			'label' => __( 'No Indentation', 'grigora-blocks' ),
+		)
+	);
+
 }
 
 add_action( 'init', 'grigora_register_block_styles' );

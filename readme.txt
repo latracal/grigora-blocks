@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 5.9
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.05.004
+Version: 2.07.001
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -19,7 +19,6 @@ Command to create a export zip: git archive --format zip --output grigora-blocks
 2. Search for “Grigora Blocks”
 3. Install and Activate
 
-
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +31,21 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.07.001 ==
+Bug Fix: Site Title styles were not working.
+
+== v2.07.000 ==
+Addition: Plugin recommendation tab.
+Addition: 3 new templates - Page Builder - No Header, Page Builder - No Footer, Page Builder - Only Content
+Improvement: Conditional inline CSS loading for block styles.
+Improvement: Removed the block styles css from global.scss
+
+== v2.06.000 ==
+Change: Moved the patterns from patterns/ to grigora_patterns/ to avoid auto registration error.
+
+== v2.05.005 ==
+Bug fix: Fixed a major bug where button style "Button with effect background" was causing a pseudo element to span whole window.
 
 == v2.05.004 ==
 Addition: Page Builder Template for Page and Posts

@@ -1,0 +1,77 @@
+.is-style-grigora-button-effect-5 .wp-block-button__link,
+.is-style-grigora-button-effect-5 .wp-block-button__link::after {
+  background-color: inherit;
+  border: 0;
+  color: #fff;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+}
+
+.is-style-grigora-button-effect-5 .wp-block-button__link {
+  background-color: #ff013c;
+}
+
+.is-style-grigora-button-effect-5 .wp-block-button__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: inset(50% 50% 50% 50%);
+}
+
+.is-style-grigora-button-effect-5 .wp-block-button__link:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(80% -6px 0 0);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: inset(10% -6px 85% 0);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: inset(80% -6px 0 0);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: inset(10% -6px 85% 0);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: inset(50% -6px 30% 0);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: inset(10% -6px 85% 0);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: inset(40% -6px 43% 0);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: inset(50% -6px 30% 0);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: inset(80% -6px 5% 0);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: inset(80% -6px 0 0);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: inset(80% -6px 0 0);
+    transform: translate(0);
+  }
+}

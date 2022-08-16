@@ -1,0 +1,33 @@
+.is-style-grigora-button-diagonal-swipe .wp-block-button__link {
+	position: relative;
+	overflow: hidden;
+	color: currentColor;
+	background-color: transparent;
+	border: 1px solid currentColor;
+	border-radius: 0;
+	transition: 0.5s ease-in-out;
+	z-index: 2;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -50px;
+		bottom: 0;
+		left: 0;
+		border-right: 50px solid transparent;
+		border-bottom: 80px solid var(--wp--preset--color--button);
+		transform: translateX(-100%);
+		transition: 0.5s ease-in-out;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: var(--wp--preset--color--buttontext);
+		border: 1px solid #404040;
+
+		&:before {
+			transform: translateX(0);
+		}
+	}
+}
