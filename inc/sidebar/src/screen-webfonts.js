@@ -1,61 +1,83 @@
 import { __ } from '@wordpress/i18n';
-import { useState } from 'react';
+import { useEffect, useState } from '@wordpress/element';
 import {
     Button,
     SelectControl,
+    Spinner,
     __experimentalHStack as HStack,
 	__experimentalSpacer as Spacer,
     __experimentalView as View,
-    __experimentalHeading as Heading
+    __experimentalHeading as Heading,
+    Notice,
 } from '@wordpress/components';
 
 import { plus, trash } from '@wordpress/icons';
 import { ScreenHeader } from './screen-header';
-import googleFonts from './google-fonts.json';
-// import { useSetting, useStyle } from './global-styles';
+import G_FONTS from './google-fonts.json';
+import apiFetch from '@wordpress/api-fetch';
 
-googleFonts = googleFonts["googleFonts"];
 
-function ScreenWebfonts({ webfonts, setWebfonts, style, setStyle }){
+
+function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfontsSaved, setWebfontsSaved }){
 
     const [ fontSelector, setFontSelector ] = useState(false);
     const [ fontSelected, setFontSelected ] = useState("");
+    const [ targetSelected, setTargetSelected ] = useState("body");
 
     function toggleSelector () {
         setFontSelector(!fontSelector);
     }
 
     function addFont () {
-        setStyle([], style);
-        setWebfonts([...webfonts, fontSelected]);
+        setWebfonts([...webfonts, {font: fontSelected, target: targetSelected}]);
         setFontSelector(false);
         setFontSelected("");
+
     }
 
     return(
         <>
             <ScreenHeader 
-                title={__( 'Webfonts', "grigora-adons") }
-                description={__( 'Add google fonts to your Wordpress site.', "grigora-adons")}
+                title={__( 'Typography', "grigora-blocks") }
+                description={__( 'Add global fonts to your site.', "grigora-blocks")}
             />
-            <ScreenActiveWebfonts webfonts={webfonts} setWebfonts={setWebfonts} />
+            <ScreenActiveWebfonts webfonts={webfonts} setWebfonts={setWebfonts} fontTargets={fontTargets} />
             { fontSelector && (
                 <>
                 <View>
                     <Spacer marginBottom={ 0 } paddingX={ 4 } paddingY={ 3 }>
                         <SelectControl
-                        onChange={ newFontSelected => setFontSelected(newFontSelected) }
+                        onChange={ targetSelected => setTargetSelected(targetSelected) }
+                        value={ targetSelected }
+                        options={ fontTargets }
+                        label={__( 'Target', 'grigora-blocks' )}
+                        />
+                        <SelectControl
+                        onChange={ fontSelected => setFontSelected(fontSelected) }
                         value={ fontSelected }
-                        options={ Object.keys(googleFonts).map(function(key) {
-                            return {
-                                label: googleFonts[key],
-                                value: key
-                            };
-                          } ) }
+                        options={ [
+                            {
+                                label: 'Default',
+                                value: '',
+                            },
+                        ].concat(
+                            G_FONTS.map( function ( item ) {
+                                return {
+                                    label: item,
+                                    value: item,
+                                };
+                            } )
+                        ) }
+                        label={__( 'Font', 'grigora-blocks' )}
                         />
                         <HStack spacing={ 2 }>
                             <Button variant="secondary" onClick={toggleSelector}>Cancel</Button>
-                            <Button variant="primary" onClick={addFont}>Add</Button>
+                            { fontSelected && webfonts.find(o => o.target === targetSelected) && (
+                                <Button variant="primary" disabled>{__( 'Already Used', "grigora-blocks")}</Button>
+                            ) }
+                            { fontSelected && !webfonts.find(o => o.target === targetSelected) && (
+                                <Button variant="primary" onClick={addFont}>{__( 'Add', "grigora-blocks")}</Button>
+                            ) }
                         </HStack>
                     </Spacer>
                 </View>
@@ -67,37 +89,57 @@ function ScreenWebfonts({ webfonts, setWebfonts, style, setStyle }){
                         className="grigora-settings-webfonts-new-btn"
                         onClick={toggleSelector}
                     >
-                        {__( 'Add Google Font', 'grigora-blocks' )}
+                        {__( 'Add Font', 'grigora-blocks' )}
                     </Button>
                 </div>
             )}
-
+            <br></br>
+                <View>
+                    <Spacer marginBottom={ 0 } paddingX={ 4 } paddingY={ 3 }>
+                    <Button variant="secondary"
+                        onClick={updateFonts}
+                    >
+                        {__( 'Save Changes', 'grigora-blocks' )}
+                    </Button>
+                    </Spacer>
+                </View>
+                { webfontsSaved && (
+                    <Notice status={ 'success' } isDismissible={ true } onDismiss={()=>{setWebfontsSaved(false)}}>
+                        <p>{__( 'Saved', 'grigora-blocks' )}</p>
+                    </Notice>
+                ) }
         </>
     );
 }
 
-function SingleWebfont({webfonts, setWebfonts, index}){
+function SingleWebfont({webfonts, setWebfonts, index, fontTargets}){
 
     function deleteFont(){
 		const fonts = [ ...webfonts ]
 		fonts.splice( index, 1 )
+		setWebfonts( fonts )
+    }
 
-		setWebfonts( fonts );
+    function getTargetString(target){
+        var results = fontTargets.find(o => o.value === target);
+        return  results.label
     }
 
     return(
         <>
             <HStack spacing={ 2 }>
                 <Spacer>
-                    <Heading level={ 5 }>{ googleFonts[webfonts[index]] }</Heading>
+                    <Heading level={ 4 }>{ getTargetString(webfonts[index].target) }</Heading>
+                    <p>{ webfonts[index].font }</p>
                 </Spacer>
                 <Button isSmall icon={ trash } onClick={deleteFont} />
             </HStack>
+            <br></br>
         </>
     )
 }
 
-function ScreenActiveWebfonts({ webfonts, setWebfonts }){
+function ScreenActiveWebfonts({ webfonts, setWebfonts, fontTargets }){
     if(!Array.isArray(webfonts)){
         setWebfonts([]);
     }
@@ -108,7 +150,7 @@ function ScreenActiveWebfonts({ webfonts, setWebfonts }){
             {Array.isArray(webfonts) && (
                 <>
                 {webfonts.map(function(webfont, i){
-                    return <SingleWebfont webfonts={webfonts} index={i} setWebfonts={setWebfonts} />
+                    return <SingleWebfont webfonts={webfonts} index={i} setWebfonts={setWebfonts} fontTargets={fontTargets} />
                 })}
                 </>
             )}
