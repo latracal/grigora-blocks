@@ -13,7 +13,7 @@
  *
  * @since 1.0.0
  */
-define( 'GRIGORA_DEBUG', false );
+define( 'GRIGORA_DEBUG', true );
 define( 'GRIGORA_VERSION', wp_get_theme()->get( 'Version' ) );
 define( 'GRIGORA_HOME', 'https://wpgrigora.com/');
 
@@ -88,11 +88,14 @@ function grigora_styles() {
 
 add_action( 'wp_enqueue_scripts', 'grigora_styles' );
 
+// WPTT Webfont Loader.
+require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+
 // Filters.
 require_once get_theme_file_path( 'inc/filters.php' );
 
-// Webfonts.
-// require_once get_theme_file_path( 'inc/fonts.php' );
+// REST API.
+require_once get_theme_file_path( 'inc/register-rest-api.php' );
 
 // Block variation example.
 require_once get_theme_file_path( 'inc/register-block-variations.php' );
@@ -105,3 +108,35 @@ require_once get_theme_file_path( 'inc/smart-styles.php' );
 
 // Block pattern and block category examples.
 require_once get_theme_file_path( 'inc/register-block-patterns.php' );
+
+// Block pattern and block category examples.
+require_once get_theme_file_path( 'inc/enqueue-dynamic-fonts.php' );
+
+function grigora_site_editor_script($hook) {
+	echo $hook;
+	$ver = GRIGORA_DEBUG ? time() : GRIGORA_VERSION;
+	$extension = GRIGORA_DEBUG ? ".css" : ".min.css";
+	$path = get_template_directory_uri() . '/inc/sidebar/build/index.js';
+	wp_enqueue_style(
+		'grigora-site-editor-settings-css',
+		get_theme_file_uri( 'inc/sidebar/assets/css/main' . $extension ),
+		[],
+		$ver
+	);
+	wp_register_script(
+		'grigora-site-editor-settings',
+		$path,
+		array( 'wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element' ),
+		$ver,
+		true
+	);
+	wp_localize_script( 'grigora-site-editor-settings', 'grigora_constants',
+        array( 
+            'current_screen' => get_current_screen()->id,
+        )
+    );
+	wp_enqueue_script( 'grigora-site-editor-settings' );
+}
+
+
+add_action( 'enqueue_block_editor_assets', 'grigora_site_editor_script' );
