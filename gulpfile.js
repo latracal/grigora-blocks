@@ -4,14 +4,14 @@ var rename = require("gulp-rename");
 
 //sass
 gulp.task('sass', function () {
-    return gulp.src(['scss/*.scss'])
+    return gulp.src(['scss/*.scss', 'scss/**/*.scss', 'scss/**/**/*.scss'])
         .pipe(sass())
         .pipe(gulp.dest('assets/css/'));
 });
 
 //sass-minify
 gulp.task('sass-minify', function () {
-    return gulp.src(['scss/*.scss'])
+    return gulp.src(['scss/*.scss', 'scss/**/*.scss', 'scss/**/**/*.scss'])
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename(function (path) {
             path.extname = ".min.css"
@@ -38,11 +38,12 @@ gulp.task('sass-minify-sidebar', function () {
 
 // watch
 gulp.task('watch', function() {
-    gulp.watch('scss/*.scss', gulp.series('sass', 'sass-minify'));
-    gulp.watch('scss/**/*.scss', gulp.series('sass', 'sass-minify'));
-    gulp.watch('inc/sidebar/scss/*.scss', gulp.series('sass', 'sass-sidebar'));
-    gulp.watch('inc/sidebar/scss/**/*.scss', gulp.series('sass', 'sass-minify-sidebar'));
-  });
+  gulp.watch('scss/*.scss', gulp.series('sass', 'sass-minify'));
+  gulp.watch('scss/**/*.scss', gulp.series('sass', 'sass-minify'));
+  gulp.watch('scss/**/**/*.scss', gulp.series('sass', 'sass-minify'));
+  gulp.watch('inc/sidebar/scss/*.scss', gulp.series('sass', 'sass-sidebar'));
+  gulp.watch('inc/sidebar/scss/**/*.scss', gulp.series('sass', 'sass-minify-sidebar'));
+});
 
 // Default task
 gulp.task('default', gulp.series('sass', 'sass-minify', 'sass-sidebar', 'sass-minify-sidebar', 'watch'));
