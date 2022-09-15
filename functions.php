@@ -113,7 +113,6 @@ require_once get_theme_file_path( 'inc/register-block-patterns.php' );
 require_once get_theme_file_path( 'inc/enqueue-dynamic-fonts.php' );
 
 function grigora_site_editor_script($hook) {
-	echo $hook;
 	$ver = GRIGORA_DEBUG ? time() : GRIGORA_VERSION;
 	$extension = GRIGORA_DEBUG ? ".css" : ".min.css";
 	$path = get_template_directory_uri() . '/inc/sidebar/build/index.js';

@@ -1,9 +1,9 @@
 === grigora-blocks ===
 Contributors: latracal
-Tested up to: 5.9
+Tested up to: 6.0
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.08.001
+Version: 2.08.002
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -31,6 +31,9 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.08.002 ==
+Bug Fix: Hook name was echoed in block editor window.
 
 == v2.08.001 ==
 Major Addition: You can now add Google fonts on Theme Level.
