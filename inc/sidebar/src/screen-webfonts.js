@@ -1,3 +1,5 @@
+import Select from 'react-select'
+
 import { __ } from '@wordpress/i18n';
 import { useEffect, useState } from '@wordpress/element';
 import {
@@ -22,6 +24,7 @@ function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfo
 
     const [ fontSelector, setFontSelector ] = useState(false);
     const [ fontSelected, setFontSelected ] = useState("");
+    const [ variantSelected, setVariantSelected ] = useState([]);
     const [ targetSelected, setTargetSelected ] = useState("body");
 
     function toggleSelector () {
@@ -29,10 +32,9 @@ function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfo
     }
 
     function addFont () {
-        setWebfonts([...webfonts, {font: fontSelected, target: targetSelected}]);
+        setWebfonts([...webfonts, {font: fontSelected, target: targetSelected, variants: variantSelected.map(a => a.value)}]);
         setFontSelector(false);
         setFontSelected("");
-
     }
 
     return(
@@ -53,7 +55,10 @@ function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfo
                         label={__( 'Target', 'grigora-blocks' )}
                         />
                         <SelectControl
-                        onChange={ fontSelected => setFontSelected(fontSelected) }
+                        onChange={ fontSelected => {
+                            setFontSelected(fontSelected);
+                            setVariantSelected([]);
+                        } }
                         value={ fontSelected }
                         options={ [
                             {
@@ -61,7 +66,7 @@ function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfo
                                 value: '',
                             },
                         ].concat(
-                            G_FONTS.map( function ( item ) {
+                            Object.keys(G_FONTS).map( function ( item ) {
                                 return {
                                     label: item,
                                     value: item,
@@ -70,6 +75,28 @@ function ScreenWebfonts({ webfonts, setWebfonts, fontTargets, updateFonts, webfo
                         ) }
                         label={__( 'Font', 'grigora-blocks' )}
                         />
+                        { G_FONTS[fontSelected]?.variants && (
+                            <>
+                            <p>{__( 'Variants', 'grigora-blocks' )}</p>
+                            <p class="fonts-variant-notice">{__( 'Select variants you want to import. By default, only the regular 400 variant is imported. Importing bold variants might be a good idea for bolder headings.', 'grigora-blocks' )}</p>
+                            <Select
+                                isMulti
+                                name="colors"
+                                options={G_FONTS[fontSelected].variants.map(function ( item ) {
+                                    return {
+                                        label: item,
+                                        value: item,
+                                    };
+                                } )}
+                                className="basic-multi-select"
+                                classNamePrefix="select"
+                                placeholder={__( 'Select Variants...', 'grigora-blocks' )}
+                                value={variantSelected}
+                                onChange={(values)=>{setVariantSelected(values);console.log(values)}}
+                            />
+                            <br></br>
+                        </>
+                        ) }
                         <HStack spacing={ 2 }>
                             <Button variant="secondary" onClick={toggleSelector}>Cancel</Button>
                             { fontSelected && webfonts.find(o => o.target === targetSelected) && (
@@ -125,12 +152,14 @@ function SingleWebfont({webfonts, setWebfonts, index, fontTargets}){
         return  results.label
     }
 
+    const variants = (webfonts[index].variants && webfonts[index].variants.length > 0) ? webfonts[index].variants.join(", ") : "regular";
+
     return(
         <>
             <HStack spacing={ 2 }>
                 <Spacer>
                     <Heading level={ 4 }>{ getTargetString(webfonts[index].target) }</Heading>
-                    <p>{ webfonts[index].font }</p>
+                    <p>{ webfonts[index].font + " @ " + variants }</p>
                 </Spacer>
                 <Button isSmall icon={ trash } onClick={deleteFont} />
             </HStack>

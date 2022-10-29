@@ -127,7 +127,7 @@ function updateFontCSS(webfonts){
                 var cssLink = document.createElement("style");
                 cssLink.id = "grigora-webfont-css-editor"; 
                 cssLink.innerHTML = css;
-                tryNtimes(cssLink, 1000, 5);
+                tryNtimes(cssLink, 1000, 20);
             }
         }
         else{
@@ -240,12 +240,17 @@ const MetaSettings = props => {
         },
     ];
 
+    const get_font_string = (obj) => {
+        const variant = (obj.variants && obj.variants.length > 0) ? ":" + obj.variants.join(",") : "";
+        return obj.font + variant;
+    }
+
     return (
         <>
             <Googlefontloader
 				config={ {
 					google: {
-						families: Array.from(webfonts, obj => obj.font),
+						families: Array.from(webfonts, obj => get_font_string(obj)),
 					},
 				} }
 

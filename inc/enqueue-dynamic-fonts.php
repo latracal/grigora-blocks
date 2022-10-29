@@ -14,7 +14,13 @@ if(!function_exists("grigora_blocks_enqueue_gfonts")){
                 if( isset($gfont["target"]) && isset($gfont["font"]) ){
                     $target = $gfont["target"];
                     $font = $gfont["font"];
-                    $font_request = $font_request . $font . '|';
+                    if( isset($gfont["variants"]) && is_array($gfont["variants"]) && count($gfont["variants"]) > 0 ){
+                        $variants = ":" . join(" ", $gfont["variants"]);
+                    }
+                    else{
+                        $variants = "";
+                    }
+                    $font_request = $font_request . $font . $variants . '|';
                     if($target == "body" ){
                         $css = $css . "body{font-family:$font,$fallback}";
                     }

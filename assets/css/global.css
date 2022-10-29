@@ -674,7 +674,6 @@ Sticky button is experimental, only use it on the front for screens above 782px 
     top: 2em;
     right: 2em;
   }
-
   /* Move the sticky position down to adjust for the WordPress admin bar */
   .admin-bar .is-style-grigora-sticky .wp-block-navigation__responsive-container-open {
     top: calc(2em + 32px);

@@ -3,8 +3,7 @@
   position: relative;
   text-align: center;
   padding: 1rem 1.2rem;
-  width: 80%;
-  /* create space for the quotes */
+  width: 80%; /* create space for the quotes */
   color: #484748;
   margin: 1rem auto 2rem;
 }
