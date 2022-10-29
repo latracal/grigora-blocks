@@ -15,7 +15,7 @@ if(!function_exists("grigora_blocks_enqueue_gfonts")){
                     $target = $gfont["target"];
                     $font = $gfont["font"];
                     if( isset($gfont["variants"]) && is_array($gfont["variants"]) && count($gfont["variants"]) > 0 ){
-                        $variants = ":" . join(" ", $gfont["variants"]);
+                        $variants = ":" . join(",", $gfont["variants"]);
                     }
                     else{
                         $variants = "";
