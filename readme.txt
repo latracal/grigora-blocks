@@ -3,7 +3,7 @@ Contributors: latracal
 Tested up to: 6.0
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 2.08.003
+Version: 2.08.004
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: latracal
@@ -31,6 +31,10 @@ Grigora Blocks is licensed under the GNU General Public License v2 or later.
 == Changelog ==
 
 All changes will be noted here
+
+== v2.08.004 ==
+Addition: Added functionality to select variants in font family.
+Improvement: Site Editor Webfonts loading delay to ensure its loaded every time.
 
 == v2.08.003 ==
 Bug Fix: Removed the sidebar template area registry.

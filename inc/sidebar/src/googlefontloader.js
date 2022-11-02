@@ -34,14 +34,16 @@ class Googlefontloader extends Component {
 			return
 		}
 		this.delay(wait).then(() => {
-			if(frames['editor-canvas']){
-				WebFont.load( {
-					...config,
-					loading: () => onStatus( statuses.loading ),
-					active: () => onStatus( statuses.active ),
-					inactive: () => onStatus( statuses.inactive ),
-					context: frames[ 'editor-canvas' ],
-				} );
+			if(frames['editor-canvas'] && frames['editor-canvas'].document.head){
+				this.delay(wait).then(() => {
+					WebFont.load( {
+						...config,
+						loading: () => onStatus( statuses.loading ),
+						active: () => onStatus( statuses.active ),
+						inactive: () => onStatus( statuses.inactive ),
+						context: frames[ 'editor-canvas' ],
+					} );
+				});
 			}
 			else{
 				this.tryNtimes(wait, n-1);

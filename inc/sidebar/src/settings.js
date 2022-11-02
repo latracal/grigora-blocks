@@ -57,8 +57,10 @@ function tryNtimes(css, wait, n){
         return
     }
         delay(wait).then(() => {
-            if(frames['editor-canvas']){
-                frames['editor-canvas'].document.head.appendChild(css);
+            if(frames['editor-canvas'] && frames['editor-canvas'].document.head){
+                delay(wait).then(() => {
+                    frames['editor-canvas'].document.head.appendChild(css);
+                });
             }
             else{
                 tryNtimes(css, wait, n-1);
@@ -117,7 +119,12 @@ function updateFontCSS(webfonts){
                     var cssLink = document.createElement("style");
                     cssLink.id = "grigora-webfont-css-editor"; 
                     cssLink.innerHTML = css;
-                    frames['editor-canvas'].document.head.appendChild(cssLink);
+                    if(frames['editor-canvas'].document.head){
+                        frames['editor-canvas'].document.head.appendChild(cssLink);
+                    }
+                    else{
+                        tryNtimes(cssLink, 1000, 20);
+                    }
                 }
                 else{
                     dynamicsheet.innerHTML = css;
@@ -174,7 +181,6 @@ const MetaSettings = props => {
                 method: 'POST',
                 data: {webfonts}
             } ).then( ( result ) => {
-                console.log(__( 'Updated Font.', "grigora-blocks"));
                 setWebfontsSaved(true);
             } );
         }
