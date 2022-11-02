@@ -1,6 +1,6 @@
 === grigora-blocks ===
 Contributors: latracal
-Tested up to: 6.0
+Tested up to: 6.1
 Requires at least: 5.9
 Requires PHP: 7.4
 Version: 2.08.004
