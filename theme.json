@@ -572,6 +572,11 @@
 			"name": "footer-7",
 			"title": "Footer-7",
 			"area": "footer"
+		},
+		{
+			"name": "sidebar",
+			"title": "Sidebar",
+			"area": "uncategorized"
 		}
 	],
 	"customTemplates": [
